@@ -1,0 +1,174 @@
+{
+  "base": "(?<datetime>(?<date>^[0-9]{4}\\/[0-9]{2}\\/[0-9]{2}) (?<time>[0-9]{2}:[0-9]{2}:[0-9]{2})).*\\[(?<level>[A-Z]*) (?<src>[a-zA-Z]* [0-9]*)\\] (?<msg>.*)",
+  "whisper": "@((?<from>From|De|Von|От кого|จาก|수신)|(?<to>To|À|An|Para|Кому|ถึง|발신)) (?<guild><.*>)?\\s?(?<other>\\S+): (?<whisper>.*)",
+  "tradeItemPrice": {
+    "en": "^(((Hi, )?I would like to buy your)|wtb) (?<name>.*) listed for (?<price>\\d*([.|,]\\d*)?) (?<currency>.*) in (?<league>.*) \\(stash( tab)? \"(?<stash>.*)\";( position:)? left (?<left>\\d*), top (?<top>\\d*)\\)(?<message>.*)?",
+    "pt-BR": "^Olá, eu gostaria de comprar o seu item (?<name>.*) listado por (?<price>\\d*([.|,]\\d*)?) (?<currency>.*) na (?<league>.*) \\(aba do baú: \"(?<stash>.*)\"; posição: esquerda (?<left>\\d*), topo (?<top>\\d*)\\)\\.?(?<message>.*)?",
+    "ru": "^Здравствуйте, хочу купить у вас (?<name>.*) за (?<price>\\d*([.|,]\\d*)?) (?<currency>.*) в лиге (?<league>.*) \\(секция \"(?<stash>.*)\"; позиция: (?<left>\\d*) столбец, (?<top>\\d*) ряд\\)\\.?(?<message>.*)?",
+    "th": "^สวัสดี เราต้องการซื้อ (?<name>.*) ของคุณซึ่งตั้งขายไว้ในราคา (?<price>\\d*([.|,]\\d*)?) (?<currency>.*) ในลีก (?<league>.*) \\(คลังชื่อ \"(?<stash>.*)\"; ตำแหน่ง: ซ้าย (?<left>\\d*), บน (?<top>\\d*)\\)\\.?(?<message>.*)?",
+    "de": "^Hi, ich möchte '\\s?(?<name>.*)' zum angebotenen Preis von (?<price>\\d*([.|,]\\d*)?) (?<currency>.*) in der (?<league>.*)-Liga kaufen \\(Truhenfach \"(?<stash>.*)\"; Position: (?<left>\\d*) von links, (?<top>\\d*) von oben\\)\\.?(?<message>.*)?",
+    "fr": "^Bonjour, je souhaiterais t'acheter (?<name>.*) pour (?<price>\\d*([.|,]\\d*)?) (?<currency>.*) dans la ligue (?<league>.*) \\(stash tab \"(?<stash>.*)\"; position: left (?<left>\\d*), top (?<top>\\d*)\\)\\.?(?<message>.*)?",
+    "es": "^Hola, quisiera comprar tu (?<name>.*) listado por (?<price>\\d*([.|,]\\d*)?) (?<currency>.*) en (?<league>.*) \\(pestaña de alijo \"(?<stash>.*)\"; posición: izquierda\\s?(?<left>\\d*), arriba (?<top>\\d*)\\)\\.?(?<message>.*)?",
+    "ko-KR": "^안녕하세요, (?<price>\\d*([.|,]\\d*)?) (?<currency>.*)\\(으\\)로 올려놓은 (?<league>.*) 리그의 (?<name>.*)\\(을\\)를 구매하고 싶습니다 \\(보관함 탭 \"(?<stash>.*)\", 위치: 왼쪽 (?<left>\\d*), 상단 (?<top>\\d*)\\)\\.?(?<message>.*)?"
+  },
+  "tradeItemNoPrice": {
+    "en": "^(((Hi, )?I would like to buy your)|wtb) (?<name>.*) in (?<league>.*) \\(stash( tab)? \"(?<stash>.*)\";( position:)? left (?<left>\\d*), top (?<top>\\d*)\\)(?<message>.*)?",
+    "pt-BR": "^Olá, eu gostaria de comprar o seu item (?<name>.*) na (?<league>.*) \\(aba do baú: \"(?<stash>.*)\"; posição: esquerda (?<left>\\d*), topo (?<top>\\d*)\\)(?<message>.*)?",
+    "ru": "^Здравствуйте, хочу купить у вас (?<name>.*) в лиге (?<league>.*) \\(секция \"(?<stash>.*)\"; позиция: (?<left>\\d*) столбец, (?<top>\\d*) ряд\\)\\.?(?<message>.*)?",
+    "th": "^สวัสดี เราต้องการซื้อ (?<name>.*) ของคุณซึ่งตั้งขายไว้ในลีก (?<league>.*) \\(คลังชื่อ \"(?<stash>.*)\"; ตำแหน่ง: ซ้าย (?<left>\\d*), บน (?<top>\\d*)\\)\\.?(?<message>.*)?",
+    "de": "^Hi, ich möchte '\\s?(?<name>.*)' in der (?<league>.*)-Liga kaufen \\(Truhenfach \"(?<stash>.*)\"; Position: (?<left>\\d*) von links, (?<top>\\d*) von oben\\)\\.?(?<message>.*)?",
+    "fr": "^Bonjour, je souhaiterais t'acheter (?<name>.*) dans la ligue (?<league>.*) \\(stash tab \"(?<stash>.*)\"; position: left (?<left>\\d*), top (?<top>\\d*)\\)\\.?(?<message>.*)?",
+    "es": "^Hola, quisiera comprar tu (?<name>.*) en (?<league>.*) \\(pestaña de alijo \"(?<stash>.*)\"; posición: izquierda(?<left>\\s?\\d*), arriba (?<top>\\d*)\\)\\.?(?<message>.*)?",
+    "ko-KR": "^안녕하세요, (?<league>.*) 리그의 (?<name>.*)\\(을\\)를 구매하고 싶습니다 \\(보관함 탭 \"(?<stash>.*)\", 위치: 왼쪽 (?<left>\\d*), 상단 (?<top>\\d*)\\)\\.?(?<message>.*)?"
+  },
+  "tradeBulk": {
+    "en": "^((Hi, )?I'd like to buy your) (?<count>\\d*) (?<name>.*) for my (?<price>\\d*([.|,]\\d*)?) (?<currency>.*) in (?<league>.*)\\.?(?<message>.*)?",
+    "pt-BR": "^Olá, eu gostaria de comprar seu(\\(s\\))? (?<count>\\d*) (?<name>.*) (pelo\\(s\\)|por) meu\\(s\\) (?<price>\\d*([.|,]\\d*)?) (?<currency>.*) na (?<league>.*)\\.?(?<message>.*)?",
+    "ru": "^Здравствуйте, хочу купить у вас (?<count>\\d*) (?<name>.*) за (?<price>\\d*([.|,]\\d*)?) (?<currency>.*) в лиге (?<league>.*)\\.?(?<message>.*)?",
+    "th": "^สวัสดี เราต้องการแลก (?<price>\\d*([.|,]\\d*)?) (?<currency>.*) ของเรากับ (?<count>\\d*) (?<name>.*) ของคุณในลีก (?<league>.*)\\.?(?<message>.*)?",
+    "de": "^Hi, ich möchte dein (?<count>\\d*) (?<name>.*) für mein (?<price>\\d*([.|,]\\d*)?) (?<currency>.*) in der (?<league>.*)-Liga kaufen\\.?(?<message>.*)?",
+    "fr": "^(Bonjour|Hi), (je voudrais t'acheter|I'd like to buy your) (?<count>\\d*) (?<name>.*) (contre|for my) (?<price>\\d*([.|,]\\d*)?) (?<currency>.*) (dans la ligue|in) (?<league>.*)\\.?(?<message>.*)?",
+    "es": "^Hola, quiero comprar tu\\(s\\) (?<count>\\d*) (?<name>.*) por mi\\(s\\) (?<price>\\d*([.|,]\\d*)?) (?<currency>.*) en la liga (?<league>.*)\\.?(?<message>.*)?",
+    "ko-KR": "^안녕하세요, (?<league>.*) 리그의 (?<count>\\d*) (?<name>.*)\\(을\\)를 (?<price>\\d*([.|,]\\d*)?) (?<currency>.*)\\(으\\)로 구매하고 싶습니다(?<message>.*)?"
+  },
+  "areaEntered": {
+    "en": ": You have entered (?<area>.*)\\.",
+    "pt-BR": ": .*Você entrou em: (?<area>.*)",
+    "ru": ": .*Вы вошли в область (?<area>.*)\\.",
+    "th": ": คุณเข้าสู่ (?<area>.*)",
+    "de": ": .*Ihr habt '(?<area>.*)' betreten\\.",
+    "fr": ": .*Vous êtes à présent dans : (?<area>.*)\\.",
+    "es": ": .*Has entrado a (?<area>.*)",
+    "ko-KR": ": (?<area>.*)에 진입했습니다"
+  },
+  "joinedArea": {
+    "en": ": (?<player>.*?) has joined the area",
+    "pt-BR": ": (?<player>.*?) entrou na área",
+    "ru": ": (?<player>.*?) присоединился",
+    "th": ": (?<player>.*?) เข้าสู่พื้นที่",
+    "de": ": (?<player>.*?) hat das Gebiet betreten",
+    "fr": ": (?<player>.*?) a rejoint la zone",
+    "es": ": (?<player>.*?) se unió al área",
+    "ko-KR": ": (?<player>.*?) 님이 지역에 들어왔습니다"
+  },
+  "leftArea": {
+    "en": ": (?<player>.*?) has left the area",
+    "pt-BR": ": (?<player>.*?) saiu da área",
+    "ru": ": (?<player>.*?) покинул область",
+    "th": ": (?<player>.*?) ออกจากพื้นที่",
+    "de": ": (?<player>.*?) hat das Gebiet verlassen",
+    "fr": ": (?<player>.*?) a quitté la zone",
+    "es": ": (?<player>.*?) abandonó el área",
+    "ko-KR": ": (?<player>.*?) 님이 지역에서 나갔습니다"
+  },
+  "away": {
+    "en": ": ((?<afk>AFK)|(?<dnd>DND)) mode is now (?=(?:(?<statusOn>ON)\\. Autoreply \"(?<reply>.*)\")|(?<statusOff>OFF))",
+    "pt-BR": ": Modo ((?<afk>LDT)|(?<dnd>NP)) (?=(?:(?<statusOn>Ativado)\\. Reposta automática \"(?<reply>.*)\")|(?<statusOff>Desativado))",
+    "ru": ": Режим ((?<afk>\"отошёл\")|(?<dnd>\"недоступен\")) (?=(?:(?<statusOn>включён)\\. Авто-ответ \"(?<reply>.*)\")|(?<statusOff>выключен))",
+    "th": ": ((?<statusOn>เปิดโหมด)|(?<statusOff>ปิดโหมด)) ((?<afk>AFK)|(?<dnd>DND)) แล้ว(?=(?: ตอบกลับอัตโนมัติ \"(?<reply>.*)\")|())",
+    "de": ": ((?<afk>AFK)|(?<dnd>Nicht-Stören))-Modus ist nun (?=(?:(?<statusOn>AN)\\. Automatische Antwort: '(?<reply>.*)')|(?<statusOff>AUS))",
+    "fr": ": Le mode ((?<afk>Absent \\(AFK\\))|(?<dnd>Ne Pas Déranger \\(DND\\))) est (?=(?:(?<statusOn>désormais activé)\\. Réponse automatique : «(?<reply>.*)»)|(?<statusOff>désactivé))",
+    "es": ": El modo ((?<afk>Ausente)|(?<dnd>No Molestar)) está (?=(?:(?<statusOn>habilitado)\\. Autorespuesta \"(?<reply>.*)\")|(?<statusOff>deshabilitado))",
+    "ko-KR": ": ((?<afk>자리 비움)|(?<dnd>방해 금지)) 모드를 (?=(?:(?<statusOn>설정했습니다)\\. \"(?<reply>.*)\"을\\(를\\) 자동으로 답신합니다\\.)|(?<statusOff>해제했습니다))"
+  },
+  "chatJoined": {
+    "en": ": You have joined ((?<trade>trade)|(?<global>global)) chat channel (?<channel>[0-9]+) (?<lang>[a-zA-Z]+)\\.",
+    "pt-BR": ": Você entrou no canal de chat ((?<trade>de comércio)|(?<global>global)) (?<channel>[0-9]+) (?<lang>[a-zA-Z]+)\\.",
+    "ru": ": Вы присоединились к ((?<trade>чату Торговли)|(?<global>Общему каналу чата)) (?<channel>[0-9]+)\\.",
+    "th": ": คุณได้เข้าร่วมช่องแชท((?<trade>เพื่อแลกเปลี่ยน)|(?<global>สาธารณะ))(?<lang>[a-zA-Z]+) หมายเลข (?<channel>[0-9]+) แล้ว",
+    "de": ": ((?<trade>Handelskanal)|(?<global>Chatkanal)) (?<channel>[0-9]+) (?<lang>[a-zA-Z]+) beigetreten\\.",
+    "fr": ": Vous avez rejoint le canal (?<channel>[0-9]+) du tchat ((?<trade>d'échanges)|(?<global>global)) \\((?<lang>[a-zA-Z]+)\\)\\.",
+    "es": ": Te has unido al canal de chat ((?<trade>de comercio)|(?<global>global)) (?<channel>[0-9]+) (?<lang>[a-zA-Z]+)\\.",
+    "ko-KR": ": ((?<trade>거래)|(?<global>전체)) 채팅 채널 (?<channel>[0-9]+) (?<lang>[a-zA-Z]+)에 참가했습니다\\."
+  },
+  "connected": {
+    "en": "Connecting to instance server at (?<address>.*)",
+    "pt-BR": "Connecting to instance server at (?<address>.*)",
+    "ru": "Connecting to instance server at (?<address>.*)",
+    "th": "Connecting to instance server at (?<address>.*)",
+    "de": "Connecting to instance server at (?<address>.*)",
+    "fr": "Connecting to instance server at (?<address>.*)",
+    "es": "Connecting to instance server at (?<address>.*)",
+    "ko-KR": "Connecting to instance server at (?<address>.*)"
+  },
+  "created": {
+    "en": ": Your character was created (?:(?<days>[0-9]*) days?)?(?:, )?(?:(?<hours>[0-9]*) hours?)?(?:, )?(?:(?<minutes>[0-9]*) minutes?)?(?:, )?(?:and )?(?:(?<seconds>[0-9]*) seconds?)",
+    "pt-BR": ": Seu personagem foi criado há (?:(?<days>[0-9]*)\\sdias?)?(?:,\\s)?(?:(?<hours>[0-9]*)\\shoras?)?(?:,\\s)?(?:(?<minutes>[0-9]*)\\sminutos?)?(?:, )?(?:e )?(?:(?<seconds>[0-9]*)\\ssegundos?)",
+    "ru": ": Ваш персонаж был создан (?:(?<days>[0-9]*)\\sдн\\.?)?(?:,\\s)?(?:(?<hours>[0-9]*)\\sчас\\.?)?(?:,\\s)?(?:(?<minutes>[0-9]*)\\sмин\\.?)?(?: )?(?:и )?(?:(?<seconds>[0-9]*)\\sсек\\.?) назад\\.",
+    "th": ": ตัวละครของคุณสร้างขึ้นเมื่อ (?:(?<days>[0-9]*) วัน)?(?:, )?(?:(?<hours>[0-9]*) ชั่วโมง)?(?:, )?(?:(?<minutes>[0-9]*) นาที)?(?: )?(?:และ )?(?:(?<seconds>[0-9]*) วินาที) ก่อน",
+    "de": ": Dein Charakter ist vor (?:(?<days>[0-9]*) Tage?)?(?:, )?(?:(?<hours>[0-9]*) Stunden?)?(?:, )?(?:(?<minutes>[0-9]*) Minute?)?(?: )?(?:und )?(?:(?<seconds>[0-9]*) Sekunden?) erstellt worden\\.",
+    "fr": ": Vous avez créé votre personnage il y a (?:(?<days>[0-9]*)\\sjours?)?(?:,\\s)?(?:(?<hours>[0-9]*)\\sheures?)?(?:,\\s)?(?:(?<minutes>[0-9]*)\\sminutes?)?(?: )?(?:et )?(?:(?<seconds>[0-9]*)\\ssecondes?)",
+    "es": ": Tu personaje fue creado hace (?:(?<days>[0-9]*)\\sdías?)?(?:,\\s)?(?:(?<hours>[0-9]*)\\shoras?)?(?:,\\s)?(?:(?<minutes>[0-9]*)\\sminutos?)?(?:, )?(?:y )?(?:(?<seconds>[0-9]*)\\ssegundos?)",
+    "ko-KR": ": (?:(?<days>[0-9]*)일)?(?:, )?(?:(?<hours>[0-9]*)시)?(?:, )?(?:(?<minutes>[0-9]*)분)?(?:, )?(?:(?<seconds>[0-9]*)초) 전에 캐릭터를 만들었습니다\\."
+  },
+  "deaths": {
+    "en": ": You have died (?<count>[0-9]+) times\\.",
+    "pt-BR": ": Você morreu (?<count>[0-9]+) vezes\\.",
+    "ru": ": Вы погибли (?<count>[0-9]+) раз\\.",
+    "th": ": คุณตายมาทั้งหมด (?<count>[0-9]+) ครั้ง",
+    "de": ": Ihr seid (?<count>[0-9]+)-mal gestorben\\.",
+    "fr": ": Votre personnage est mort (?<count>[0-9]+) fois\\.",
+    "es": ": Has muerto (?<count>[0-9]+) veces\\.",
+    "ko-KR": ": (?<count>[0-9]+)회 죽었습니다\\."
+  },
+  "level": {
+    "en": ": (?<name>\\S+) \\((?<class>\\S+)\\) is now level (?<level>[0-9]+)",
+    "pt-BR": ": (?<name>\\S+) \\((?<class>\\S+)\\) chegou no nível (?<level>[0-9]+)",
+    "ru": ": (?<name>\\S+) \\((?<class>\\S+)\\) достигает (?<level>[0-9]+) уровня",
+    "th": ": ตอนนี้ (?<name>\\S+) \\((?<class>\\S+)\\) เข้าสู่เลเวล (?<level>[0-9]+) แล้ว",
+    "de": ": (?<name>\\S+) \\((?<class>\\S+)\\) hat Stufe (?<level>[0-9]+) erreicht\\.",
+    "fr": ": (?<name>\\S+) \\((?<class>\\S+)\\) a atteint le niveau (?<level>[0-9]+)",
+    "es": ": (?<name>\\S+) \\((?<class>\\S+)\\) es ahora nivel (?<level>[0-9]+)",
+    "ko-KR": ": (?<name>\\S+)\\((?<class>\\S+)\\) 님이 (?<level>[0-9]+)레벨이 되었습니다\\."
+  },
+  "login": {
+    "en": "Connected to (?<address>[a-z]+[0-9]*\\.login\\.pathofexile\\.com) in (?<time>[0-9]*)ms\\.",
+    "pt-BR": "Connected to (?<address>[a-z]+[0-9]*\\.login\\.pathofexile\\.com) in (?<time>[0-9]*)ms\\.",
+    "ru": "Connected to (?<address>[a-z]+[0-9]*\\.login\\.pathofexile\\.com) in (?<time>[0-9]*)ms\\.",
+    "th": "Connected to (?<address>[a-z]+[0-9]*\\.login\\.pathofexile\\.com) in (?<time>[0-9]*)ms\\.",
+    "de": "Connected to (?<address>[a-z]+[0-9]*\\.login\\.pathofexile\\.com) in (?<time>[0-9]*)ms\\.",
+    "fr": "Connected to (?<address>[a-z]+[0-9]*\\.login\\.pathofexile\\.com) in (?<time>[0-9]*)ms\\.",
+    "es": "Connected to (?<address>[a-z]+[0-9]*\\.login\\.pathofexile\\.com) in (?<time>[0-9]*)ms\\.",
+    "ko-KR": "Connected to (?<address>[a-z]+[0-9]*\\.login\\.pathofexile\\.com) in (?<time>[0-9]*)ms\\."
+  },
+  "played": {
+    "en": ": You have played for (?:(?<days>[0-9]*) days?)?(?:, )?(?:(?<hours>[0-9]*) hours?)?(?:, )?(?:(?<minutes>[0-9]*) minutes?)?(?:, )?(?:and )?(?:(?<seconds>[0-9]*) seconds?)",
+    "pt-BR": ": Você jogou por (?:(?<days>[0-9]*)\\sdias?)?(?:,\\s)?(?:(?<hours>[0-9]*)\\shoras?)?(?:,\\s)?(?:(?<minutes>[0-9]*)\\sminutos?)?(?:, )?(?:e\\s)?(?:(?<seconds>[0-9]*)\\ssegundos?)\\.",
+    "ru": ": Время игры на этом персонаже: (?:(?<days>[0-9]*)\\sдн\\.?)?(?:,\\s)?(?:(?<hours>[0-9]*)\\sчас\\.?)?(?:,\\s)?(?:(?<minutes>[0-9]*)\\sмин\\.?)?(?: )?(?:и )?(?:(?<seconds>[0-9]*)\\sсек\\.?)\\.",
+    "th": ": คุณเล่นไป (?:(?<days>[0-9]*) วัน)?(?:, )?(?:(?<hours>[0-9]*) ชั่วโมง)?(?:, )?(?:(?<minutes>[0-9]*) นาที)?(?: )?(?:และ )?(?:(?<seconds>[0-9]*) วินาที) แล้ว",
+    "de": ": Du hast (?:(?<days>[0-9]*) Tage?)?(?:, )?(?:(?<hours>[0-9]*) Stunden?)?(?:, )?(?:(?<minutes>[0-9]*) Minuten?)?(?: )?(?:und )?(?:(?<seconds>[0-9]*) Sekunden?) lang gespielt\\.",
+    "fr": ": Vous avez joué pendant (?:(?<days>[0-9]*)\\sjours?)?(?:,\\s)?(?:(?<hours>[0-9]*)\\sheures?)?(?:,\\s)?(?:(?<minutes>[0-9]*)\\sminutes?)?(?: )?(?:et\\s)?(?:(?<seconds>[0-9]*)\\ssecondes?)\\.",
+    "es": ": Has jugado (?:(?<days>[0-9]*)\\sdías?)?(?:,\\s)?(?:(?<hours>[0-9]*)\\shoras?)?(?:,\\s)?(?:(?<minutes>[0-9]*)\\sminutos?)?(?:, )?(?:y\\s)?(?:(?<seconds>[0-9]*)\\ssegundos?)\\.",
+    "ko-KR": ": (?:(?<days>[0-9]*)일)?(?:, )?(?:(?<hours>[0-9]*)시)?(?:, )?(?:(?<minutes>[0-9]*)분)?(?:, )?(?:(?<seconds>[0-9]*)초) 동안 플레이했습니다\\."
+  },
+  "remaining": {
+    "en": ": (?:(?<more>More) than )?(?<count>[0-9]+) monsters? remains?\\.",
+    "pt-BR": ": (?:(?<more>Mais) de )?(?<count>[0-9]+) monstros restantes\\.",
+    "ru": ": Осталось ((?<more>более)|(монстров:)) ?(?<count>[0-9]+)",
+    "th": "((?<more>เหลือมอนสเตอร์มากกว่า)|(เหลือมอนสเตอร์อีก)) (?<count>[0-9]+) ตัว",
+    "de": ": (?:(?<more>Mehr) als )?(?<count>[0-9]+) Monster übrig\\.",
+    "fr": ": Il reste (?:(?<more>plus) de )?(?<count>[0-9]+) monstres\\.",
+    "es": ": Quedan (?:(?<more>más) de )?(?<count>[0-9]+) monstruos\\.",
+    "ko-KR": ": (몬스터가|몬스터) (?<count>[0-9]+)개체((?<more> 이상)|가) 남아있습니다\\."
+  },
+  "slain": {
+    "en": ": (?<name>\\S+) has been slain\\.",
+    "pt-BR": ": (?<name>\\S+) foi morto\\.",
+    "ru": ": (?<name>\\S+) был повержен\\.",
+    "th": ": (?<name>\\S+) ถูกสังหาร",
+    "de": ": (?<name>\\S+) wurde getötet\\.",
+    "fr": ": (?<name>\\S+) vient de mourir\\.",
+    "es": ": (?<name>\\S+) ha muerto\\.",
+    "ko-KR": ": (?<name>\\S+) 님이 사망했습니다\\."
+  },
+  "trade": {
+    "en": ": Trade (?<accpeted>accepted)|(?<cancelled>cancelled)\\.",
+    "pt-BR": ": Negociação (?<accpeted>aceita)|(?<cancelled>cancelada)\\.",
+    "ru": ": Сделка (?<accpeted>совершена)|(?<cancelled>отклонена)\\.",
+    "th": "(?<accpeted>ยอมรับการแลกเปลี่ยนแล้ว)|(?<cancelled>การแลกเปลี่ยนถูกยกเลิก)",
+    "de": ": Handel (?<accpeted>angenommen)|(?<cancelled>abgebrochen)\\.",
+    "fr": ": Échange (?<accpeted>accepté)|(?<cancelled>annulé)\\.",
+    "es": ": Intercambio (?<accpeted>aceptado)|(?<cancelled>cancelado)\\.",
+    "ko-KR": ": 거래를 (?<accpeted>수락)|(?<cancelled>취소)했습니다\\."
+  }
+}
