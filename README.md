@@ -83,7 +83,7 @@ poeLog.on("error", (err) => {
 
 ## Events
 
-The available events are defined by the interface [PathOfExileLogEvents](src\events\PathOfExileLogEvents.ts). See below for a list.
+The available events are defined by the interface [PathOfExileLogEvents](src/events/PathOfExileLogEvents.ts). See below for a list.
 
 | **Name**                | **Description**                                          |
 | ----------------------- | -------------------------------------------------------- |
