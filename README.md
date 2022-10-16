@@ -1,6 +1,6 @@
 # Path of Exile Log Events
 
-![NPM Version](https://img.shields.io/npm/v/npm) ![LICENSE](https://img.shields.io/github/license/moepmoep12/poe-log-events) ![TOP LANGUAGE](https://img.shields.io/github/languages/top/moepmoep12/poe-log-events) ![ISSUES](https://img.shields.io/github/issues/moepmoep12/poe-log-events) ![TEST_WORKFLOW](https://img.shields.io/github/workflow/status/moepmoep12/poe-log-events/Test)[![codecov](https://codecov.io/gh/moepmoep12/poe-log-events/branch/master/graph/badge.svg?token=b82B6AxIpl)](https://codecov.io/gh/moepmoep12/poe-log-events)
+![NPM Version](https://img.shields.io/npm/v/npm) ![LICENSE](https://img.shields.io/github/license/moepmoep12/poe-log-events) ![TOP LANGUAGE](https://img.shields.io/github/languages/top/moepmoep12/poe-log-events) ![ISSUES](https://img.shields.io/github/issues/moepmoep12/poe-log-events) ![TEST_WORKFLOW](https://img.shields.io/github/workflow/status/moepmoep12/poe-log-events/Test) [![codecov](https://codecov.io/gh/moepmoep12/poe-log-events/branch/master/graph/badge.svg?token=b82B6AxIpl)](https://codecov.io/gh/moepmoep12/poe-log-events)
 
 ## Table of Contents
 
