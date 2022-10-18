@@ -194,7 +194,12 @@
         "item": "Kraken Heart, Crimson Jewel",
         "league": "Kalandra",
         "price": 130,
-        "currency": "chaos",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "chaos",
+          "localizedLabel": "Chaos Orb",
+          "whisperLabel": "chaos"
+        },
         "stashTab": "$",
         "left": 6,
         "top": 7
@@ -218,10 +223,20 @@
         "logMessage": "Hi, I'd like to buy your 10 Crimson Temple Map (T16) for my 34 Chaos Orb in Kalandra",
         "whisper": "Hi, I'd like to buy your 10 Crimson Temple Map (T16) for my 34 Chaos Orb in Kalandra",
         "direction": "To",
-        "item": "Crimson Temple Map (T16)",
+        "item": {
+          "currencyGroup": "MapsTier16",
+          "currencyId": "crimson-temple-map-tier-16",
+          "localizedLabel": "Crimson Temple Map (Tier 16)",
+          "whisperLabel": "Crimson Temple Map (T16)"
+        },
         "league": "Kalandra",
         "price": 34,
-        "currency": "Chaos Orb",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "chaos",
+          "localizedLabel": "Chaos Orb",
+          "whisperLabel": "Chaos Orb"
+        },
         "amount": 10
       }
     ]
@@ -422,7 +437,12 @@
         "item": "Katastrophen-Streifen, Opalring",
         "league": "Kalandra",
         "price": 75,
-        "currency": "chaos",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "chaos",
+          "localizedLabel": "Chaossphäre",
+          "whisperLabel": "chaos"
+        },
         "stashTab": "Shop2",
         "left": 12,
         "top": 9
@@ -445,10 +465,20 @@
         "logMessage": "@An plasma_heist: Hi, ich möchte dein 10 'Bluttempel'-Karte (hochwertig) (Lvl. 16) für mein 34 Chaossphäre in der Kalandra-Liga kaufen",
         "whisper": "Hi, ich möchte dein 10 'Bluttempel'-Karte (hochwertig) (Lvl. 16) für mein 34 Chaossphäre in der Kalandra-Liga kaufen",
         "direction": "To",
-        "item": "'Bluttempel'-Karte (hochwertig) (Lvl. 16)",
+        "item": {
+          "currencyGroup": "MapsTier16",
+          "currencyId": "crimson-temple-map-tier-16",
+          "localizedLabel": "'Bluttempel'-Karte (Level 16)",
+          "whisperLabel": "'Bluttempel'-Karte (hochwertig) (Lvl. 16)"
+        },
         "league": "Kalandra",
         "price": 34,
-        "currency": "Chaossphäre",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "chaos",
+          "localizedLabel": "Chaossphäre",
+          "whisperLabel": "Chaossphäre"
+        },
         "amount": 10
       },
       {
@@ -456,10 +486,20 @@
         "logMessage": "@An Fever_Mfer: Hi, ich möchte dein 400 Meißel des Kartographen für mein 50 Chaossphäre in der Kalandra-Liga kaufen",
         "whisper": "Hi, ich möchte dein 400 Meißel des Kartographen für mein 50 Chaossphäre in der Kalandra-Liga kaufen",
         "direction": "To",
-        "item": "Meißel des Kartographen",
+        "item": {
+          "currencyGroup": "Currency",
+          "currencyId": "chisel",
+          "localizedLabel": "Meißel des Kartographen",
+          "whisperLabel": "Meißel des Kartographen"
+        },
         "league": "Kalandra",
         "price": 50,
-        "currency": "Chaossphäre",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "chaos",
+          "localizedLabel": "Chaossphäre",
+          "whisperLabel": "Chaossphäre"
+        },
         "amount": 400
       },
       {
@@ -467,10 +507,20 @@
         "logMessage": "@An CratoIgniteKal: Hi, ich möchte dein 1200 Verbindungssphäre für mein 1 Göttliche Sphäre in der Kalandra-Liga kaufen",
         "whisper": "Hi, ich möchte dein 1200 Verbindungssphäre für mein 1 Göttliche Sphäre in der Kalandra-Liga kaufen",
         "direction": "To",
-        "item": "Verbindungssphäre",
+        "item": {
+          "currencyGroup": "Currency",
+          "currencyId": "fusing",
+          "localizedLabel": "Verbindungssphäre",
+          "whisperLabel": "Verbindungssphäre"
+        },
         "league": "Kalandra",
         "price": 1,
-        "currency": "Göttliche Sphäre",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "divine",
+          "localizedLabel": "Göttliche Sphäre",
+          "whisperLabel": "Göttliche Sphäre"
+        },
         "amount": 1200
       }
     ]
@@ -671,7 +721,12 @@
         "item": "Wut de niveau 21 à 0% de qualité",
         "league": "Kalandra",
         "price": 45,
-        "currency": "chaos",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "chaos",
+          "localizedLabel": "Orbe du chaos",
+          "whisperLabel": "chaos"
+        },
         "stashTab": "Shop",
         "left": 11,
         "top": 6
@@ -694,10 +749,20 @@
         "logMessage": "@À RUKA_LIN: Bonjour, je voudrais t'acheter 1 Fragment de l'Éradication contre 20 Orbe du chaos dans la ligue Archnemesis",
         "whisper": "Bonjour, je voudrais t'acheter 1 Fragment de l'Éradication contre 20 Orbe du chaos dans la ligue Archnemesis",
         "direction": "To",
-        "item": "Fragment de l'Éradication",
+        "item": {
+          "currencyGroup": "Fragments",
+          "currencyId": "fragment-of-eradication",
+          "localizedLabel": "Fragment de l'Éradication",
+          "whisperLabel": "Fragment de l'Éradication"
+        },
         "league": "Archnemesis",
         "price": 20,
-        "currency": "Orbe du chaos",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "chaos",
+          "localizedLabel": "Orbe du chaos",
+          "whisperLabel": "Orbe du chaos"
+        },
         "amount": 1
       },
       {
@@ -705,11 +770,42 @@
         "logMessage": "@À CratoIgniteKal: Hi, I'd like to buy your 1200 Orbe de fusion for my 1 Orbe divin in Kalandra",
         "whisper": "Hi, I'd like to buy your 1200 Orbe de fusion for my 1 Orbe divin in Kalandra",
         "direction": "To",
-        "item": "Orbe de fusion",
+        "item": {
+          "currencyGroup": "Currency",
+          "currencyId": "fusing",
+          "localizedLabel": "Orbe de fusion",
+          "whisperLabel": "Orbe de fusion"
+        },
         "league": "Kalandra",
         "price": 1,
-        "currency": "Orbe divin",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "divine",
+          "localizedLabel": "Orbe divin",
+          "whisperLabel": "Orbe divin"
+        },
         "amount": 1200
+      },
+      {
+        "rawLine": "2022/10/16 23:04:31 278025609 cff943d8 [INFO Client 24756] @À CratoIgniteKal: Hi, I'd like to buy your 1 Dédale, Carte supérieure (P8) for my 5 Orbe du chaos in Kalandra",
+        "logMessage": "@À CratoIgniteKal: Hi, I'd like to buy your 1 Dédale, Carte supérieure (P8) for my 5 Orbe du chaos in Kalandra",
+        "whisper": "Hi, I'd like to buy your 1 Dédale, Carte supérieure (P8) for my 5 Orbe du chaos in Kalandra",
+        "direction": "To",
+        "item": {
+          "currencyGroup": "MapsTier8",
+          "currencyId": "maze-map-tier-8",
+          "localizedLabel": "Dédale, Carte (Palier 8)",
+          "whisperLabel": "Dédale, Carte supérieure (P8)"
+        },
+        "league": "Kalandra",
+        "price": 5,
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "chaos",
+          "localizedLabel": "Orbe du chaos",
+          "whisperLabel": "Orbe du chaos"
+        },
+        "amount": 1
       }
     ]
   },
@@ -909,7 +1005,12 @@
         "item": "Canto de Asenath Tiara de Ferro",
         "league": "Expedition",
         "price": 1,
-        "currency": "exalted",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "exalted",
+          "localizedLabel": "Orbe Exaltado",
+          "whisperLabel": "exalted"
+        },
         "stashTab": "Vendas",
         "left": 1,
         "top": 6
@@ -928,25 +1029,45 @@
     ],
     "buyBulkWhisperSent": [
       {
-        "rawLine": "2022/10/12 14:16:53 2347185593 cff943d8 [INFO Client 82104] @De Path_Of_Dik: Olá, eu gostaria de comprar seu 20 Mapa de Templo Carmesí Superior (T16) por meu(s) 68 Orbe do Caos na Kalandra",
-        "logMessage": "@Para Path_Of_Dik: Olá, eu gostaria de comprar seu 20 Mapa de Templo Carmesí Superior (T16) por meu(s) 68 Orbe do Caos na Kalandra",
-        "whisper": "Olá, eu gostaria de comprar seu 20 Mapa de Templo Carmesí Superior (T16) por meu(s) 68 Orbe do Caos na Kalandra",
+        "rawLine": "2022/10/17 18:43:36 348770671 cff943d8 [INFO Client 19972] @Para CratoIgniteKal: Olá, eu gostaria de comprar seu 10 Mapa: Templo Carmesim Superior (T16) por meu(s) 34 Orbe do Caos na Kalandra",
+        "logMessage": "@Para CratoIgniteKal: Olá, eu gostaria de comprar seu 10 Mapa: Templo Carmesim Superior (T16) por meu(s) 34 Orbe do Caos na Kalandra",
+        "whisper": "Olá, eu gostaria de comprar seu 10 Mapa: Templo Carmesim Superior (T16) por meu(s) 34 Orbe do Caos na Kalandra",
         "direction": "To",
-        "item": "Mapa de Templo Carmesí Superior (T16)",
+        "item": {
+          "currencyGroup": "MapsTier16",
+          "currencyId": "crimson-temple-map-tier-16",
+          "localizedLabel": "Mapa: Templo Carmesim (Tier 16)",
+          "whisperLabel": "Mapa: Templo Carmesim Superior (T16)"
+        },
         "league": "Kalandra",
-        "price": 68,
-        "currency": "Orbe do Caos",
-        "amount": 20
+        "price": 34,
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "chaos",
+          "localizedLabel": "Orbe do Caos",
+          "whisperLabel": "Orbe do Caos"
+        },
+        "amount": 10
       },
       {
         "rawLine": "2022/10/16 10:39:23 233317281 cff943d8 [INFO Client 19824] @Para CratoIgniteKal: Olá, eu gostaria de comprar seu 2300 Força Vital Cristalizada Vívida por meu(s) 1 Orbe Divino na Kalandra",
         "logMessage": "@Para CratoIgniteKal: Olá, eu gostaria de comprar seu 2300 Força Vital Cristalizada Vívida por meu(s) 1 Orbe Divino na Kalandra",
         "whisper": "Olá, eu gostaria de comprar seu 2300 Força Vital Cristalizada Vívida por meu(s) 1 Orbe Divino na Kalandra",
         "direction": "To",
-        "item": "Força Vital Cristalizada Vívida",
+        "item": {
+          "currencyGroup": "ExoticCurrency",
+          "currencyId": "vivid-lifeforce",
+          "localizedLabel": "Força Vital Cristalizada Vívida",
+          "whisperLabel": "Força Vital Cristalizada Vívida"
+        },
         "league": "Kalandra",
         "price": 1,
-        "currency": "Orbe Divino",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "divine",
+          "localizedLabel": "Orbe Divino",
+          "whisperLabel": "Orbe Divino"
+        },
         "amount": 2300
       },
       {
@@ -954,10 +1075,20 @@
         "logMessage": "@Para TryingForChallenges: Olá, eu gostaria de comprar seu 10 Mapa: Mata Cinzenta (T16) por meu(s) 35 Orbe do Caos na Kalandra",
         "whisper": "Olá, eu gostaria de comprar seu 10 Mapa: Mata Cinzenta (T16) por meu(s) 35 Orbe do Caos na Kalandra",
         "direction": "To",
-        "item": "Mapa: Mata Cinzenta (T16)",
+        "item": {
+          "currencyGroup": "MapsTier16",
+          "currencyId": "ashen-wood-map-tier-16",
+          "localizedLabel": "Mapa: Mata Cinzenta (Tier 16)",
+          "whisperLabel": "Mapa: Mata Cinzenta (T16)"
+        },
         "league": "Kalandra",
         "price": 35,
-        "currency": "Orbe do Caos",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "chaos",
+          "localizedLabel": "Orbe do Caos",
+          "whisperLabel": "Orbe do Caos"
+        },
         "amount": 10
       }
     ]
@@ -1158,7 +1289,12 @@
         "item": "Torques de Condenación Amuleto Citrino",
         "league": "Expedition",
         "price": 3,
-        "currency": "chaos",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "chaos",
+          "localizedLabel": "Orbe de caos",
+          "whisperLabel": "chaos"
+        },
         "stashTab": "~price 3 chaos",
         "left": 18,
         "top": 10
@@ -1181,10 +1317,20 @@
         "logMessage": "@Para CratoIgniteKal: Hola, quiero comprar tu(s) 1600 Orbe de alteración por mi(s) 2 Orbe divino en la liga Kalandra",
         "whisper": "Hola, quiero comprar tu(s) 1600 Orbe de alteración por mi(s) 2 Orbe divino en la liga Kalandra",
         "direction": "To",
-        "item": "Orbe de alteración",
+        "item": {
+          "currencyGroup": "Currency",
+          "currencyId": "alt",
+          "localizedLabel": "Orbe de alteración",
+          "whisperLabel": "Orbe de alteración"
+        },
         "league": "Kalandra",
         "price": 2,
-        "currency": "Orbe divino",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "divine",
+          "localizedLabel": "Orbe divino",
+          "whisperLabel": "Orbe divino"
+        },
         "amount": 1600
       },
       {
@@ -1192,11 +1338,42 @@
         "logMessage": "@Para CratoIgniteKal: Hola, quiero comprar tu(s) 1200 Orbe de fusión por mi(s) 1 Orbe divino en la liga Kalandra",
         "whisper": "Hola, quiero comprar tu(s) 1200 Orbe de fusión por mi(s) 1 Orbe divino en la liga Kalandra",
         "direction": "To",
-        "item": "Orbe de fusión",
+        "item": {
+          "currencyGroup": "Currency",
+          "currencyId": "fusing",
+          "localizedLabel": "Orbe de fusión",
+          "whisperLabel": "Orbe de fusión"
+        },
         "league": "Kalandra",
         "price": 1,
-        "currency": "Orbe divino",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "divine",
+          "localizedLabel": "Orbe divino",
+          "whisperLabel": "Orbe divino"
+        },
         "amount": 1200
+      },
+      {
+        "rawLine": "2022/10/17 19:36:44 351958578 cff943d8 [INFO Client 21020] @Para CratoIgniteKal: Hola, quiero comprar tu(s) 1 Mapa de Laberinto Superior (G8) por mi(s) 5 Orbe de caos en la liga Kalandra",
+        "logMessage": "@Para CratoIgniteKal: Hola, quiero comprar tu(s) 1 Mapa de Laberinto Superior (G8) por mi(s) 5 Orbe de caos en la liga Kalandra",
+        "whisper": "Hola, quiero comprar tu(s) 1 Mapa de Laberinto Superior (G8) por mi(s) 5 Orbe de caos en la liga Kalandra",
+        "direction": "To",
+        "item": {
+          "currencyGroup": "MapsTier8",
+          "currencyId": "maze-map-tier-8",
+          "localizedLabel": "Mapa de Laberinto (Grado 8)",
+          "whisperLabel": "Mapa de Laberinto Superior (G8)"
+        },
+        "league": "Kalandra",
+        "price": 5,
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "chaos",
+          "localizedLabel": "Orbe de caos",
+          "whisperLabel": "Orbe de caos"
+        },
+        "amount": 1
       }
     ]
   },
@@ -1396,7 +1573,12 @@
         "item": "Чистое прорицание, Большой флакон равновесия",
         "league": "Kalandra",
         "price": 90,
-        "currency": "chaos",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "chaos",
+          "localizedLabel": "Сфера хаоса",
+          "whisperLabel": "chaos"
+        },
         "stashTab": "Shop2",
         "left": 11,
         "top": 6
@@ -1419,10 +1601,20 @@
         "logMessage": "@Кому кого <$$HU$$> RF_L_kaland: Здравствуйте, хочу купить у вас 20 Карта кровавого храма высокого качества (T16) за 68 Сфера хаоса в лиге Kalandra",
         "whisper": "Здравствуйте, хочу купить у вас 20 Карта кровавого храма высокого качества (T16) за 68 Сфера хаоса в лиге Kalandra",
         "direction": "To",
-        "item": "Карта кровавого храма высокого качества (T16)",
+        "item": {
+          "currencyGroup": "MapsTier16",
+          "currencyId": "crimson-temple-map-tier-16",
+          "localizedLabel": "Карта кровавого храма (Уровень 16)",
+          "whisperLabel": "Карта кровавого храма высокого качества (T16)"
+        },
         "league": "Kalandra",
         "price": 68,
-        "currency": "Сфера хаоса",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "chaos",
+          "localizedLabel": "Сфера хаоса",
+          "whisperLabel": "Сфера хаоса"
+        },
         "amount": 20
       },
       {
@@ -1430,10 +1622,20 @@
         "logMessage": "@Кому CratoIgniteKal: Здравствуйте, хочу купить у вас 1200 Сфера соединения за 1 Божественная сфера в лиге Kalandra",
         "whisper": "Здравствуйте, хочу купить у вас 1200 Сфера соединения за 1 Божественная сфера в лиге Kalandra",
         "direction": "To",
-        "item": "Сфера соединения",
+        "item": {
+          "currencyGroup": "Currency",
+          "currencyId": "fusing",
+          "localizedLabel": "Сфера соединения",
+          "whisperLabel": "Сфера соединения"
+        },
         "league": "Kalandra",
         "price": 1,
-        "currency": "Божественная сфера",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "divine",
+          "localizedLabel": "Божественная сфера",
+          "whisperLabel": "Божественная сфера"
+        },
         "amount": 1200
       }
     ]
@@ -1634,7 +1836,12 @@
         "item": "Einhar's Memory of the Sacred Grove",
         "league": "Kalandra",
         "price": 1.5,
-        "currency": "divine",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "divine",
+          "localizedLabel": "Divine Orb",
+          "whisperLabel": "divine"
+        },
         "stashTab": "7777",
         "left": 4,
         "top": 11
@@ -1647,7 +1854,12 @@
         "item": "คำเชิญของเมเวน: ผู้สังหารเอลเดอร์",
         "league": "Kalandra",
         "price": 75,
-        "currency": "chaos",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "chaos",
+          "localizedLabel": "Chaos Orb",
+          "whisperLabel": "chaos"
+        },
         "stashTab": "Shop",
         "left": 10,
         "top": 8
@@ -1670,11 +1882,42 @@
         "logMessage": "@ถึง CratoIgniteKal: สวัสดี เราต้องการแลก 1 Divine Orb ของเรากับ 1200 Orb of Fusing ของคุณในลีก Kalandra",
         "whisper": "สวัสดี เราต้องการแลก 1 Divine Orb ของเรากับ 1200 Orb of Fusing ของคุณในลีก Kalandra",
         "direction": "To",
-        "item": "Orb of Fusing",
+        "item": {
+          "currencyGroup": "Currency",
+          "currencyId": "fusing",
+          "localizedLabel": "Orb of Fusing",
+          "whisperLabel": "Orb of Fusing"
+        },
         "league": "Kalandra",
         "price": 1,
-        "currency": "Divine Orb",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "divine",
+          "localizedLabel": "Divine Orb",
+          "whisperLabel": "Divine Orb"
+        },
         "amount": 1200
+      },
+      {
+        "rawLine": "2022/10/17 22:12:51 361325562 cff943d8 [INFO Client 12460] @ถึง CratoIgniteKal: สวัสดี เราต้องการแลก 5 Chaos Orb ของเรากับ 1 Superior Maze Map (T8) ของคุณในลีก Kalandra",
+        "logMessage": "@ถึง CratoIgniteKal: สวัสดี เราต้องการแลก 5 Chaos Orb ของเรากับ 1 Superior Maze Map (T8) ของคุณในลีก Kalandra",
+        "whisper": "สวัสดี เราต้องการแลก 5 Chaos Orb ของเรากับ 1 Superior Maze Map (T8) ของคุณในลีก Kalandra",
+        "direction": "To",
+        "item": {
+          "currencyGroup": "MapsTier8",
+          "currencyId": "maze-map-tier-8",
+          "localizedLabel": "Maze Map (ระดับ 8)",
+          "whisperLabel": "Superior Maze Map (T8)"
+        },
+        "league": "Kalandra",
+        "price": 5,
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "chaos",
+          "localizedLabel": "Chaos Orb",
+          "whisperLabel": "Chaos Orb"
+        },
+        "amount": 1
       }
     ]
   },
@@ -1874,7 +2117,12 @@
         "item": "Cospri's Malice, Jewelled Foil",
         "league": "Kalandra",
         "price": 25,
-        "currency": "chaos",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "chaos",
+          "localizedLabel": "카오스 오브",
+          "whisperLabel": "chaos"
+        },
         "stashTab": "Shop2",
         "left": 2,
         "top": 1
@@ -1897,11 +2145,42 @@
         "logMessage": "@발신 CratoIgniteKal: 안녕하세요, Kalandra 리그의 1200 연결의 오브(을)를 1 신성한 오브(으)로 구매하고 싶습니다",
         "whisper": "안녕하세요, Kalandra 리그의 1200 연결의 오브(을)를 1 신성한 오브(으)로 구매하고 싶습니다",
         "direction": "To",
-        "item": "연결의 오브",
+        "item": {
+          "currencyGroup": "Currency",
+          "currencyId": "fusing",
+          "localizedLabel": "연결의 오브",
+          "whisperLabel": "연결의 오브"
+        },
         "league": "Kalandra",
         "price": 1,
-        "currency": "신성한 오브",
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "divine",
+          "localizedLabel": "신성한 오브",
+          "whisperLabel": "신성한 오브"
+        },
         "amount": 1200
+      },
+      {
+        "rawLine": "2022/10/18 18:54:03 435797750 cff943d8 [INFO Client 32324] @발신 CratoIgniteKal: 안녕하세요, Kalandra 리그의 1 상급 미로 지도(T8)(을)를 5 카오스 오브(으)로 구매하고 싶습니다",
+        "logMessage": "@발신 CratoIgniteKal: 안녕하세요, Kalandra 리그의 1 상급 미로 지도(T8)(을)를 5 카오스 오브(으)로 구매하고 싶습니다",
+        "whisper": "안녕하세요, Kalandra 리그의 1 상급 미로 지도(T8)(을)를 5 카오스 오브(으)로 구매하고 싶습니다",
+        "direction": "To",
+        "item": {
+          "currencyGroup": "MapsTier8",
+          "currencyId": "maze-map-tier-8",
+          "localizedLabel": "미로 지도 (등급 {Tier})",
+          "whisperLabel": "상급 미로 지도(T8)"
+        },
+        "league": "Kalandra",
+        "price": 5,
+        "currency": {
+          "currencyGroup": "Currency",
+          "currencyId": "chaos",
+          "localizedLabel": "카오스 오브",
+          "whisperLabel": "카오스 오브"
+        },
+        "amount": 1
       }
     ]
   }

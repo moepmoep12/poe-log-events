@@ -93,17 +93,7 @@ function testMatcher(
         expect(event, "Failed to match!").to.be.not.undefined;
       });
 
-      for (const [key, actualValue] of Object.entries(event || [])) {
-        if (ignoreKeys.includes(key as keyof LogEvent)) continue;
-
-        it(`${key}`, () => {
-          const val: unknown = handleDate(actualValue);
-          expect(val, `Wrong value for key ${key}`).to.be.equal(
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-            testEvent[key as keyof typeof testEvent]
-          );
-        });
-      }
+      testObject(event as object, testEvent, ignoreKeys);
     }
   });
 }
@@ -113,5 +103,25 @@ function handleDate(obj: unknown): unknown {
 
   if ("toISOString" in (obj as Date)) {
     return (obj as Date).toISOString();
-  } else return (obj as object).toString();
+  } else return obj;
+}
+
+function testObject(actual: object, expected: object, ignoreKeys: Array<keyof LogEvent>) {
+  for (const [key, actualValue] of Object.entries(actual || [])) {
+    if (ignoreKeys.includes(key as keyof LogEvent)) continue;
+
+    const val: unknown = handleDate(actualValue);
+
+    if (typeof val == "object") {
+      describe(`${key}`, () => {
+        testObject(val as object, expected[key as keyof typeof expected], ignoreKeys);
+      });
+    } else {
+      it(`${key}`, () => {
+        expect(val, `Wrong value for key ${key}`).to.be.equal(
+          expected[key as keyof typeof expected]
+        );
+      });
+    }
+  }
 }

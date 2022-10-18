@@ -7,6 +7,7 @@ import { Language, WhisperDirection } from "../../models";
 import { tradeItemPrice, tradeItemNoPrice } from "../../resources/Regex.json";
 
 import { Matcher } from "../Matcher";
+import { getCurrencyItem } from "../../models/CurrencyItem";
 
 export class TradeItemWhisperMatcher extends Matcher {
   protected static readonly pricedItemRegex: Record<Language, RegExp> = regexPerLanguage(
@@ -40,6 +41,8 @@ export class TradeItemWhisperMatcher extends Matcher {
     if (logEvent.direction == WhisperDirection.From) this.eventName = "sellItemWhisperReceived";
     else this.eventName = "buyItemWhisperSent";
 
+    const currency = getCurrencyItem(groups["currency"], language);
+
     return {
       ...logEvent,
       item: groups["name"],
@@ -47,7 +50,7 @@ export class TradeItemWhisperMatcher extends Matcher {
       top: parseInt(groups["top"]),
       stashTab: groups["stash"],
       price: groups["price"] ? parseFloat(groups["price"]) : undefined,
-      currency: groups["currency"],
+      currency: currency,
       additionalMessage: groups["message"],
       league: groups["league"],
     };

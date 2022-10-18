@@ -1,13 +1,16 @@
+import { CurrencyItem } from "./CurrencyItem";
+
 export interface TradeRequest {
-  item: string;
+  item: string | CurrencyItem;
 
   league: string;
 
   price?: number;
-  currency?: string;
+  currency?: CurrencyItem;
 }
 
 export interface TradeItemRequest extends TradeRequest {
+  item: string;
   stashTab: string;
   left: number;
   top: number;
@@ -15,4 +18,5 @@ export interface TradeItemRequest extends TradeRequest {
 
 export interface TradeBulkRequest extends TradeRequest {
   amount: number;
+  item: CurrencyItem;
 }

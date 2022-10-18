@@ -170,5 +170,39 @@
     "fr": ": Échange (?<accpeted>accepté)|(?<cancelled>annulé)\\.",
     "es": ": Intercambio (?<accpeted>aceptado)|(?<cancelled>cancelado)\\.",
     "ko-KR": ": 거래를 (?<accpeted>수락)|(?<cancelled>취소)했습니다\\."
+  },
+  "map": {
+    "en": {
+      "search": "(Superior\\s)?(?<name>.*)\\s\\(T(?<tier>\\d+)\\)",
+      "replace": "$<name> (Tier $<tier>)"
+    },
+    "de": {
+      "search": "(?<name>.*)-Karte (\\(hochwertig\\)\\s)?\\(Lvl. (?<tier>\\d+)\\)",
+      "replace": "$<name>-Karte (Level $<tier>)"
+    },
+    "fr": {
+      "search": "(?<name>.*), Carte (supérieure\\s)?\\(P(?<tier>\\d+)\\)",
+      "replace": "$<name>, Carte (Palier $<tier>)"
+    },
+    "pt-BR": {
+      "search": "Mapa: (?<name>.+?) (Superior\\s)?\\(T(?<tier>\\d+)\\)",
+      "replace": "Mapa: $<name> (Tier $<tier>)"
+    },
+    "es": {
+      "search": "Mapa de (?<name>.+?) (Superior\\s)?\\(G(?<tier>\\d+)\\)",
+      "replace": "Mapa de $<name> (Grado $<tier>)"
+    },
+    "ru": {
+      "search": "Карта (?<name>.+?) (высокого качества\\s)?\\(T(?<tier>\\d+)\\)",
+      "replace": "Карта $<name> (Уровень $<tier>)"
+    },
+    "th": {
+      "search": "(Superior\\s)?(?<name>.+?)\\s\\(T(?<tier>\\d+)\\)",
+      "replace": "$<name> (ระดับ $<tier>)"
+    },
+    "ko-KR": {
+      "search": "(상급\\s)?(?<name>.+?)\\(T(?<tier>\\d+)\\)",
+      "replace": "$<name> (등급 {Tier})"
+    }
   }
 }

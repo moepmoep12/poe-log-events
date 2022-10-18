@@ -8,7 +8,8 @@
     "test:ci": "nyc mocha",
     "lint": "eslint src/ tests/",
     "prettier": "prettier --write \"**/*.ts\"",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "updateCurrencies": "ts-node scripts/updateCurrencies.ts && prettier --write \"src/models/CurrencyGroup.ts\" \"src/models/CurrencyId.ts\" \"src/resources/Currency.json\""
   },
   "keywords": [
     "Typescript",
@@ -46,6 +47,7 @@
     "mocha": "^10.0.0",
     "mocha-steps": "^1.3.0",
     "nyc": "^15.1.0",
+    "poe-api-ts": "^2.1.0",
     "prettier": "^2.7.1",
     "semantic-release": "^19.0.3",
     "source-map-support": "^0.5.21",

@@ -1,5 +1,6 @@
 import { regexPerLanguage } from "../../utils/Functions";
 
+import { CurrencyItem, getCurrencyItem } from "../../models/CurrencyItem";
 import { TradeBulkEvent } from "../../events";
 import { PathOfExileLogEvents } from "../../events/PathOfExileLogEvents";
 import { WhisperEvent } from "../../events/whispers/WhisperEvent";
@@ -34,11 +35,19 @@ export class TradeBulkWhisperMatcher extends Matcher {
     if (logEvent.direction == WhisperDirection.From) this.eventName = "sellBulkWhisperReceived";
     else this.eventName = "buyBulkWhisperSent";
 
+    const currencyItem: CurrencyItem =
+      getCurrencyItem(groups["currency"], language) ||
+      ({ whisperLabel: groups["currency"] } as CurrencyItem);
+
+    const item: CurrencyItem =
+      getCurrencyItem(groups["name"], language) ||
+      ({ whisperLabel: groups["name"] } as CurrencyItem);
+
     return {
       ...logEvent,
-      item: groups["name"],
+      item: item,
       price: parseFloat(groups["price"]),
-      currency: groups["currency"],
+      currency: currencyItem,
       additionalMessage: groups["message"],
       league: groups["league"],
       amount: parseInt(groups["count"]),

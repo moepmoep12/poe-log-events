@@ -1,7 +1,7 @@
 import { describe, it } from "mocha";
 import { expect } from "chai";
 
-import { PathOfExileLog } from "../src//PathOfExileLog";
+import { PathOfExileLog } from "../src/PathOfExileLog";
 
 describe(`PoELogEvents - PathOfExileLog`, function () {
   it(`invalid log file - should throw`, () => {

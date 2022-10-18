@@ -12,6 +12,7 @@ import { PlayedQueryMatcher } from "./PlayedQueryMatcher";
 import { RemainingMonsterMatcher } from "./RemainingMonsterMatcher";
 import { SlainMatcher } from "./SlainMatcher";
 import { TradeActionMatcher } from "./TradeActionMatcher";
+import { TradeBulkWhisperMatcher } from "./whispers/TradeBulkWhisperMatcher";
 import { TradeItemWhisperMatcher } from "./whispers/TradeItemWhisperMatcher";
 import { WhisperMatcher } from "./whispers/WhisperMatcher";
 
@@ -31,5 +32,5 @@ export const rootMatcher = new BaseMatcher([
   new RemainingMonsterMatcher(),
   new SlainMatcher(),
   new TradeActionMatcher(),
-  new WhisperMatcher([new TradeItemWhisperMatcher()]),
+  new WhisperMatcher([new TradeItemWhisperMatcher(), new TradeBulkWhisperMatcher()]),
 ]);
