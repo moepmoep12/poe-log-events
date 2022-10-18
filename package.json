@@ -1,6 +1,6 @@
 {
   "name": "poe-log-events",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Monitors the PoE log file and emits events",
   "scripts": {
     "build": "tsc",
