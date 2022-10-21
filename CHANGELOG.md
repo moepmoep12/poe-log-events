@@ -1,3 +1,10 @@
+## [3.1.2](https://github.com/moepmoep12/poe-log-events/compare/v3.1.1...v3.1.2) (2022-10-21)
+
+
+### Bug Fixes
+
+* Export world area ([03d7026](https://github.com/moepmoep12/poe-log-events/commit/03d7026b410e30718effc8741ace8ed848baacbe))
+
 ## [3.1.1](https://github.com/moepmoep12/poe-log-events/compare/v3.1.0...v3.1.1) (2022-10-21)
 
 
