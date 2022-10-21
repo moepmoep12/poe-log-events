@@ -1,6 +1,6 @@
 {
   "name": "poe-log-events",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "Monitors the PoE log file and emits events",
   "scripts": {
     "build": "tsc && npm run cpy-resources",

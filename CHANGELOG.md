@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/moepmoep12/poe-log-events/compare/v3.1.0...v3.1.1) (2022-10-21)
+
+
+### Bug Fixes
+
+* Add logLevel to test events ([be4b261](https://github.com/moepmoep12/poe-log-events/commit/be4b261adfd86a2044909f7c0ebd77e92bf7d9fb))
+
 # [3.1.0](https://github.com/moepmoep12/poe-log-events/compare/v3.0.1...v3.1.0) (2022-10-21)
 
 
