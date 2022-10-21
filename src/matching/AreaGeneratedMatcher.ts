@@ -5,7 +5,7 @@ import { AreaGeneratedEvent } from "../events";
 
 import { Matcher } from "./Matcher";
 import { getWorldAreaById, WorldArea } from "../models/WorldArea";
-import { Language } from "../models";
+import { Language, LogLevel } from "../models";
 
 export class AreaGeneratedMatcher extends Matcher {
   protected static readonly regex = new RegExp(areaGenerated);
@@ -17,6 +17,8 @@ export class AreaGeneratedMatcher extends Matcher {
     logEvent: LogEvent,
     language: Language
   ): AreaGeneratedEvent | undefined {
+    if (logEvent.logLevel != LogLevel.Debug) return;
+
     const match = AreaGeneratedMatcher.regex.exec(line);
     if (!match) return;
 

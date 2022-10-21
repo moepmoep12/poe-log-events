@@ -6,6 +6,7 @@ import { PathOfExileLogEvents } from "../events/PathOfExileLogEvents";
 import { Language } from "../models/Language";
 
 import { Matcher } from "./Matcher";
+import { LogLevel } from "../models";
 
 export class AreaEnteredMatcher extends Matcher {
   protected static readonly areaEnteredRegex: Record<Language, RegExp> = regexPerLanguage(
@@ -15,6 +16,8 @@ export class AreaEnteredMatcher extends Matcher {
   public eventName: keyof PathOfExileLogEvents = "areaEntered";
 
   public match(line: string, logEvent: LogEvent, language: Language): AreaEnteredEvent | undefined {
+    if (logEvent.logLevel != LogLevel.Info) return;
+
     const regex = AreaEnteredMatcher.areaEnteredRegex[language];
     if (!regex) throw new Error(`Missing regex for language ${language}!`);
 

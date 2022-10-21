@@ -8,6 +8,7 @@ import { AwayStatus } from "../models/AwayStatus";
 import { Language } from "../models/Language";
 
 import { Matcher } from "./Matcher";
+import { LogLevel } from "../models";
 
 export class AwayMatcher extends Matcher {
   protected static readonly awayRegex: Record<Language, RegExp> = regexPerLanguage(
@@ -22,6 +23,8 @@ export class AwayMatcher extends Matcher {
   }
 
   public match(line: string, logEvent: LogEvent, language: Language): AwayEvent | undefined {
+    if (logEvent.logLevel != LogLevel.Info) return;
+
     const regex = AwayMatcher.awayRegex[language];
     if (!regex) throw new Error(`Missing regex for language ${language}!`);
 

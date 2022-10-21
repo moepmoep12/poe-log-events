@@ -7,6 +7,7 @@ import { AreaAction } from "../models/AreaAction";
 import { Language } from "../models/Language";
 import { Matcher } from "./Matcher";
 import { regexPerLanguage } from "../utils/Functions";
+import { LogLevel } from "../models";
 
 export class AreaMatcher extends Matcher {
   public eventName: keyof PathOfExileLogEvents;
@@ -41,6 +42,8 @@ export class AreaMatcher extends Matcher {
     logEvent: LogEvent,
     language: Language
   ): AreaEvent | undefined {
+    if (logEvent.logLevel != LogLevel.Info) return;
+
     const regex = AreaMatcher.joinedAreaRegex[language];
     const match = regex.exec(line);
     if (!match) return;

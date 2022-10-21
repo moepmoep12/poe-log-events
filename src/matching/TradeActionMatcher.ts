@@ -7,6 +7,7 @@ import { TradeAction } from "../models/TradeAction";
 import { Language } from "../models/Language";
 
 import { Matcher } from "./Matcher";
+import { LogLevel } from "../models";
 
 export class TradeActionMatcher extends Matcher {
   protected static readonly tradeRegex: Record<Language, RegExp> = regexPerLanguage(
@@ -20,6 +21,8 @@ export class TradeActionMatcher extends Matcher {
   }
 
   public match(line: string, logEvent: LogEvent, language: Language): TradeEvent | undefined {
+    if (logEvent.logLevel != LogLevel.Info) return;
+
     const regex = TradeActionMatcher.tradeRegex[language];
     if (!regex) throw new Error(`Missing regex for language ${language}!`);
 

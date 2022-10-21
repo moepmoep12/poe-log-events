@@ -6,6 +6,7 @@ import { PathOfExileLogEvents } from "../events/PathOfExileLogEvents";
 import { Language } from "../models/Language";
 
 import { Matcher } from "./Matcher";
+import { LogLevel } from "../models";
 
 export class CreatedQueryMatcher extends Matcher {
   protected static readonly createdRegex: Record<Language, RegExp> = regexPerLanguage(
@@ -19,6 +20,8 @@ export class CreatedQueryMatcher extends Matcher {
     logEvent: LogEvent,
     language: Language
   ): CreatedQueryEvent | undefined {
+    if (logEvent.logLevel != LogLevel.Info) return;
+
     const regex = CreatedQueryMatcher.createdRegex[language];
     if (!regex) throw new Error(`Missing regex for language ${language}!`);
 

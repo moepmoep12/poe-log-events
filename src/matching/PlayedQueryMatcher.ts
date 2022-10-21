@@ -6,6 +6,7 @@ import { PlayedQueryEvent } from "../events/PlayedQueryEvent";
 import { Language } from "../models/Language";
 
 import { Matcher } from "./Matcher";
+import { LogLevel } from "../models";
 
 export class PlayedQueryMatcher extends Matcher {
   protected static readonly playedRegex: Record<Language, RegExp> = regexPerLanguage(
@@ -15,6 +16,8 @@ export class PlayedQueryMatcher extends Matcher {
   public eventName: keyof PathOfExileLogEvents = "playedQuery";
 
   public match(line: string, logEvent: LogEvent, language: Language): PlayedQueryEvent | undefined {
+    if (logEvent.logLevel != LogLevel.Info) return;
+
     const regex = PlayedQueryMatcher.playedRegex[language];
     if (!regex) throw new Error(`Missing regex for language ${language}!`);
 

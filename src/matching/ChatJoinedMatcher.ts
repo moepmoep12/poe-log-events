@@ -7,6 +7,7 @@ import { Language } from "../models/Language";
 import { ChatType } from "../models/ChatType";
 
 import { Matcher } from "./Matcher";
+import { LogLevel } from "../models";
 
 export class ChatJoinedMatcher extends Matcher {
   protected static readonly chatJoinedRegex: Record<Language, RegExp> = regexPerLanguage(
@@ -16,6 +17,8 @@ export class ChatJoinedMatcher extends Matcher {
   public eventName: keyof PathOfExileLogEvents = "chatJoined";
 
   public match(line: string, logEvent: LogEvent, language: Language): ChatJoinedEvent | undefined {
+    if (logEvent.logLevel != LogLevel.Info) return;
+
     const regex = ChatJoinedMatcher.chatJoinedRegex[language];
     if (!regex) throw new Error(`Missing regex for language ${language}!`);
 

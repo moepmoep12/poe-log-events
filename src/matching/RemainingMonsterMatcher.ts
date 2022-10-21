@@ -6,6 +6,7 @@ import { RemainingMonsterEvent } from "../events/RemainingMonsterEvent";
 import { Language } from "../models/Language";
 
 import { Matcher } from "./Matcher";
+import { LogLevel } from "../models";
 
 export class RemainingMonsterMatcher extends Matcher {
   protected static readonly remainingRegex: Record<Language, RegExp> = regexPerLanguage(
@@ -20,6 +21,8 @@ export class RemainingMonsterMatcher extends Matcher {
     language: Language
   ): RemainingMonsterEvent | undefined {
     const regex = RemainingMonsterMatcher.remainingRegex[language];
+    if (logEvent.logLevel != LogLevel.Info) return;
+
     if (!regex) throw new Error(`Missing regex for language ${language}!`);
 
     const match = regex.exec(line);
