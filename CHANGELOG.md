@@ -1,3 +1,15 @@
+# [3.1.0](https://github.com/moepmoep12/poe-log-events/compare/v3.0.1...v3.1.0) (2022-10-21)
+
+
+### Bug Fixes
+
+* Remove console.log ([7a4d617](https://github.com/moepmoep12/poe-log-events/commit/7a4d6170376563ed6c26fba4815f323094a79e6b))
+
+
+### Features
+
+* Improve tail & matching ([67633e7](https://github.com/moepmoep12/poe-log-events/commit/67633e77ef136155e0df1c78402e620c5184eda4))
+
 ## [3.0.1](https://github.com/moepmoep12/poe-log-events/compare/v3.0.0...v3.0.1) (2022-10-21)
 
 
