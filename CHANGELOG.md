@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/moepmoep12/poe-log-events/compare/v3.0.0...v3.0.1) (2022-10-21)
+
+
+### Bug Fixes
+
+* Add dependency tiny-typed-emitter ([148c60c](https://github.com/moepmoep12/poe-log-events/commit/148c60c9aac1efc41c1e33dc281854019ba84b14))
+
 # [3.0.0](https://github.com/moepmoep12/poe-log-events/compare/v2.0.0...v3.0.0) (2022-10-21)
 
 
