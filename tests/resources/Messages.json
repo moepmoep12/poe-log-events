@@ -13,6 +13,7 @@
       {
         "rawLine": "2022/10/21 17:42:46 690719921 1186952b [DEBUG Client 39648] Generating level 69 area \"2_10_town\" with seed 1",
         "logMessage": "Generating level 69 area \"2_10_town\" with seed 1",
+        "logLevel": "DEBUG",
         "Id": "2_10_town",
         "Name": "Oriath Docks",
         "Act": 10,
@@ -31,6 +32,7 @@
       {
         "rawLine": "2022/10/18 21:59:25 446919843 1186952b [DEBUG Client 24888] Generating level 83 area \"MapWorldsDunes\" with seed 3221167377",
         "logMessage": "Generating level 83 area \"MapWorldsDunes\" with seed 3221167377",
+        "logLevel": "DEBUG",
         "Id": "MapWorldsDunes",
         "Name": "Dunes",
         "Act": 11,
@@ -49,6 +51,7 @@
       {
         "rawLine": "2021/10/22 23:02:02 725176437 412 [DEBUG Client 30224] Generating level 33 area \"1_Labyrinth_OH_straight\" with seed 3762873214",
         "logMessage": "Generating level 33 area \"1_Labyrinth_OH_straight\" with seed 3762873214",
+        "logLevel": "DEBUG",
         "Id": "1_Labyrinth_OH_straight",
         "Name": "Estate Path",
         "Act": 3,
@@ -67,6 +70,7 @@
       {
         "rawLine": "2021/10/23 00:51:48 731761718 412 [DEBUG Client 30224] Generating level 68 area \"HeistHub\" with seed 3419980492",
         "logMessage": "Generating level 68 area \"HeistHub\" with seed 3419980492",
+        "logLevel": "DEBUG",
         "Id": "HeistHub",
         "Name": "The Rogue Harbour",
         "Act": 1,
@@ -85,6 +89,7 @@
       {
         "rawLine": "2021/10/27 17:47:04 99887093 412 [DEBUG Client 7768] Generating level 84 area \"MavenBoss\" with seed 1400455492",
         "logMessage": "Generating level 84 area \"MavenBoss\" with seed 1400455492",
+        "logLevel": "DEBUG",
         "Id": "MavenBoss",
         "Name": "Absence of Mercy and Empathy",
         "Act": 11,
@@ -105,6 +110,7 @@
       {
         "rawLine": "2020/03/10 23:02:29 2283562078 ac9 [INFO Client 10556] : You have entered Kaom's Stronghold.",
         "logMessage": ": You have entered Kaom's Stronghold.",
+        "logLevel": "INFO",
         "newArea": "Kaom's Stronghold"
       }
     ],
@@ -112,6 +118,7 @@
       {
         "rawLine": "2020/03/14 12:39:40 3005328 ac9 [INFO Client 14500] : NeverAloneItIn has left the area.",
         "logMessage": ": NeverAloneItIn has left the area.",
+        "logLevel": "INFO",
         "player": "NeverAloneItIn",
         "action": "left"
       }
@@ -120,6 +127,7 @@
       {
         "rawLine": "2020/03/14 12:39:18 2983218 ac9 [INFO Client 14500] : NeverAloneItIn has joined the area.",
         "logMessage": ": NeverAloneItIn has joined the area.",
+        "logLevel": "INFO",
         "player": "NeverAloneItIn",
         "action": "joined"
       }
@@ -128,6 +136,7 @@
       {
         "rawLine": "2020/03/14 19:43:03 28408421 ac9 [INFO Client 7016] : AFK mode is now ON. Autoreply \"This player is AFK.\"",
         "logMessage": ": AFK mode is now ON. Autoreply \"This player is AFK.\"",
+        "logLevel": "INFO",
         "newMode": "AFK",
         "newStatus": "ON",
         "autoreply": "This player is AFK."
@@ -137,6 +146,7 @@
       {
         "rawLine": "2020/03/14 19:55:15 29139937 ac9 [INFO Client 7016] : AFK mode is now OFF.",
         "logMessage": ": AFK mode is now OFF.",
+        "logLevel": "INFO",
         "newMode": "AFK",
         "newStatus": "OFF"
       }
@@ -145,6 +155,7 @@
       {
         "rawLine": "2020/03/20 20:34:07 36437515 ac9 [INFO Client 9440] : DND mode is now ON. Autoreply \"This player has DND mode enabled.\"",
         "logMessage": ": DND mode is now ON. Autoreply \"This player has DND mode enabled.\"",
+        "logLevel": "INFO",
         "newMode": "DND",
         "newStatus": "ON",
         "autoreply": "This player has DND mode enabled."
@@ -154,6 +165,7 @@
       {
         "rawLine": "2020/03/30 00:55:03 826093375 ac9 [INFO Client 9152] : DND mode is now OFF.",
         "logMessage": ": DND mode is now OFF.",
+        "logLevel": "INFO",
         "newMode": "DND",
         "newStatus": "OFF"
       }
@@ -162,6 +174,7 @@
       {
         "rawLine": "2020/03/30 11:44:46 865076796 ac9 [INFO Client 4240] : You have joined trade chat channel 3 English.",
         "logMessage": ": You have joined trade chat channel 3 English.",
+        "logLevel": "INFO",
         "chatType": "trade",
         "channel": 3,
         "language": "English"
@@ -169,6 +182,7 @@
       {
         "rawLine": "2020/03/30 11:44:46 865076796 ac9 [INFO Client 4240] : You have joined global chat channel 820 English.",
         "logMessage": ": You have joined global chat channel 820 English.",
+        "logLevel": "INFO",
         "chatType": "global",
         "channel": 820,
         "language": "English"
@@ -178,6 +192,7 @@
       {
         "rawLine": "2020/03/30 11:44:43 865073390 f9 [INFO Client 4240] Connecting to instance server at 172.255.12.180:6112",
         "logMessage": "Connecting to instance server at 172.255.12.180:6112",
+        "logLevel": "INFO",
         "serverAddress": "172.255.12.180:6112"
       }
     ],
@@ -185,6 +200,7 @@
       {
         "rawLine": "2022/10/05 19:50:03 1762375562 cff943d8 [INFO Client 63760] : Your character was created 18 days, 22 hours, 53 minutes, and 41 seconds ago.",
         "logMessage": ": Your character was created 18 days, 22 hours, 53 minutes, and 41 seconds ago.",
+        "logLevel": "INFO",
         "days": 18,
         "hours": 22,
         "minutes": 53,
@@ -195,6 +211,7 @@
       {
         "rawLine": "2020/10/16 22:39:39 22456843 ba9 [INFO Client 18920] : You have died 263 times.",
         "logMessage": ": You have died 263 times.",
+        "logLevel": "INFO",
         "deathCount": 263
       }
     ],
@@ -202,6 +219,7 @@
       {
         "rawLine": "2020/10/17 14:21:02 78939984 ba9 [INFO Client 4740] : CratoHeistKb (Assassin) is now level 90",
         "logMessage": ": CratoHeistKb (Assassin) is now level 90",
+        "logLevel": "INFO",
         "characterLevel": 90,
         "character": "CratoHeistKb",
         "class": "Assassin"
@@ -211,6 +229,7 @@
       {
         "rawLine": "2020/10/17 15:22:58 82656609 de [INFO Client 4740] Connected to fra01.login.pathofexile.com in 16ms.",
         "logMessage": "Connected to fra01.login.pathofexile.com in 16ms.",
+        "logLevel": "INFO",
         "time": 16,
         "address": "fra01.login.pathofexile.com"
       }
@@ -219,6 +238,7 @@
       {
         "rawLine": "2021/07/17 13:32:29 7087953 bad [INFO Client 17036] : You have played for 1 hour, 11 minutes, and 42 seconds.",
         "logMessage": ": You have played for 1 hour, 11 minutes, and 42 seconds.",
+        "logLevel": "INFO",
         "hours": 1,
         "minutes": 11,
         "seconds": 42
@@ -228,12 +248,14 @@
       {
         "rawLine": "2021/07/17 16:00:24 15963359 bad [INFO Client 17036] : 1 monster remains.",
         "logMessage": ": 1 monster remains.",
+        "logLevel": "INFO",
         "monsterCount": 1,
         "more": false
       },
       {
         "rawLine": "2022/10/05 19:35:58 1761530875 cff943d8 [INFO Client 63760] : More than 50 monsters remain.",
         "logMessage": ": More than 50 monsters remain.",
+        "logLevel": "INFO",
         "monsterCount": 50,
         "more": true
       }
@@ -242,6 +264,7 @@
       {
         "rawLine": "2022/10/08 13:45:34 1999706812 cff943d8 [INFO Client 66160] : CratoIgniteKal has been slain.",
         "logMessage": ": CratoIgniteKal has been slain.",
+        "logLevel": "INFO",
         "player": "CratoIgniteKal"
       }
     ],
@@ -249,6 +272,7 @@
       {
         "rawLine": "2022/10/08 14:39:28 2002940796 cff943d8 [INFO Client 66160] : Trade accepted.",
         "logMessage": ": Trade accepted.",
+        "logLevel": "INFO",
         "tradeAction": "accepted"
       }
     ],
@@ -256,6 +280,7 @@
       {
         "rawLine": "2022/10/08 19:00:14 2018587078 cff943d8 [INFO Client 41860] : Trade cancelled.",
         "logMessage": ": Trade cancelled.",
+        "logLevel": "INFO",
         "tradeAction": "cancelled"
       }
     ],
@@ -263,6 +288,7 @@
       {
         "rawLine": "2022/10/09 19:33:16 2106968187 cff943d8 [INFO Client 61804] @From <†MPE†™> BadaElem: Hi, I'd like to buy your 10 Superior Crimson Temple Map (T16) for my 34 Chaos Orb in Kalandra",
         "logMessage": "@From <†MPE†™> BadaElem: Hi, I'd like to buy your 10 Superior Crimson Temple Map (T16) for my 34 Chaos Orb in Kalandra",
+        "logLevel": "INFO",
         "whisper": "Hi, I'd like to buy your 10 Superior Crimson Temple Map (T16) for my 34 Chaos Orb in Kalandra",
         "player": "BadaElem",
         "direction": "From"
@@ -272,6 +298,7 @@
       {
         "rawLine": "2022/10/09 19:34:11 2107023390 cff943d8 [INFO Client 61804] @To 小肌霸: Do you still want Skin of the Lords, Simple Robe for 100 chaos?",
         "logMessage": "@To 小肌霸: Do you still want Skin of the Lords, Simple Robe for 100 chaos?",
+        "logLevel": "INFO",
         "whisper": "Do you still want Skin of the Lords, Simple Robe for 100 chaos?",
         "player": "小肌霸",
         "direction": "To"
@@ -281,6 +308,7 @@
       {
         "rawLine": "2022/10/09 22:28:25 2117477437 cff943d8 [INFO Client 75972] @To Chandra: Hi, I would like to buy your Kraken Heart, Crimson Jewel listed for 130 chaos in Kalandra (stash tab \"$\"; position: left 6, top 7)",
         "logMessage": "Hi, I would like to buy your Kraken Heart, Crimson Jewel listed for 130 chaos in Kalandra (stash tab \"$\"; position: left 6, top 7)",
+        "logLevel": "INFO",
         "whisper": "Hi, I would like to buy your Kraken Heart, Crimson Jewel listed for 130 chaos in Kalandra (stash tab \"$\"; position: left 6, top 7)",
         "direction": "To",
         "item": "Kraken Heart, Crimson Jewel",
@@ -299,6 +327,7 @@
       {
         "rawLine": "2022/10/08 18:08:13 2015466140 cff943d8 [INFO Client 41860] @From Erect_Totemz: Hi, I would like to buy your Einhar's Memory in Kalandra (stash tab \"19\"; position: left 3, top 12) I offer 150 chaos",
         "logMessage": "Hi, I would like to buy your Einhar's Memory in Kalandra (stash tab \"19\"; position: left 3, top 12) I offer 150 chaos",
+        "logLevel": "INFO",
         "whisper": "Hi, I would like to buy your Einhar's Memory in Kalandra (stash tab \"19\"; position: left 3, top 12) I offer 150 chaos",
         "direction": "To",
         "item": "Einhar's Memory",
@@ -313,6 +342,7 @@
       {
         "rawLine": "2022/10/09 11:06:52 2076584171 cff943d8 [INFO Client 5616] @From TricksterGift: Hi, I'd like to buy your 10 Crimson Temple Map (T16) for my 34 Chaos Orb in Kalandra",
         "logMessage": "Hi, I'd like to buy your 10 Crimson Temple Map (T16) for my 34 Chaos Orb in Kalandra",
+        "logLevel": "INFO",
         "whisper": "Hi, I'd like to buy your 10 Crimson Temple Map (T16) for my 34 Chaos Orb in Kalandra",
         "direction": "To",
         "item": {
@@ -347,6 +377,7 @@
       {
         "rawLine": "2022/10/21 17:42:46 690719921 1186952b [DEBUG Client 39648] Generating level 69 area \"2_10_town\" with seed 1",
         "logMessage": "Generating level 69 area \"2_10_town\" with seed 1",
+        "logLevel": "DEBUG",
         "Id": "2_10_town",
         "Name": "Die Docks von Oriath",
         "Act": 10,
@@ -365,6 +396,7 @@
       {
         "rawLine": "2022/10/18 21:59:25 446919843 1186952b [DEBUG Client 24888] Generating level 83 area \"MapWorldsDunes\" with seed 3221167377",
         "logMessage": "Generating level 83 area \"MapWorldsDunes\" with seed 3221167377",
+        "logLevel": "DEBUG",
         "Id": "MapWorldsDunes",
         "Name": "Dünen",
         "Act": 11,
@@ -383,6 +415,7 @@
       {
         "rawLine": "2021/10/22 23:02:02 725176437 412 [DEBUG Client 30224] Generating level 33 area \"1_Labyrinth_OH_straight\" with seed 3762873214",
         "logMessage": "Generating level 33 area \"1_Labyrinth_OH_straight\" with seed 3762873214",
+        "logLevel": "DEBUG",
         "Id": "1_Labyrinth_OH_straight",
         "Name": "Besitzweg",
         "Act": 3,
@@ -401,6 +434,7 @@
       {
         "rawLine": "2021/10/23 00:51:48 731761718 412 [DEBUG Client 30224] Generating level 68 area \"HeistHub\" with seed 3419980492",
         "logMessage": "Generating level 68 area \"HeistHub\" with seed 3419980492",
+        "logLevel": "DEBUG",
         "Id": "HeistHub",
         "Name": "Der Hafen der Abtrünnigen",
         "Act": 1,
@@ -419,6 +453,7 @@
       {
         "rawLine": "2021/10/27 17:47:04 99887093 412 [DEBUG Client 7768] Generating level 84 area \"MavenBoss\" with seed 1400455492",
         "logMessage": "Generating level 84 area \"MavenBoss\" with seed 1400455492",
+        "logLevel": "DEBUG",
         "Id": "MavenBoss",
         "Name": "Die Gefühllosigkeit",
         "Act": 11,
@@ -439,6 +474,7 @@
       {
         "rawLine": "2022/10/11 18:48:08 2277060718 cff943d8 [INFO Client 71404] : <<set:N>><<set:S>><<set:NS>>Ihr habt 'Synthesis-Versteck' betreten.",
         "logMessage": ": <<set:N>><<set:S>><<set:NS>>Ihr habt 'Synthesis-Versteck' betreten.",
+        "logLevel": "INFO",
         "newArea": "Synthesis-Versteck"
       }
     ],
@@ -446,6 +482,7 @@
       {
         "rawLine": "2022/10/11 22:05:59 2288931359 cff943d8 [INFO Client 49028] : KineticBlastTorture hat das Gebiet verlassen.",
         "logMessage": ": KineticBlastTorture hat das Gebiet verlassen.",
+        "logLevel": "INFO",
         "player": "KineticBlastTorture",
         "action": "left"
       }
@@ -454,6 +491,7 @@
       {
         "rawLine": "2022/10/11 22:05:38 2288910468 cff943d8 [INFO Client 49028] : KineticBlastTorture hat das Gebiet betreten.",
         "logMessage": ": KineticBlastTorture hat das Gebiet betreten.",
+        "logLevel": "INFO",
         "player": "KineticBlastTorture",
         "action": "joined"
       }
@@ -462,6 +500,7 @@
       {
         "rawLine": "2022/10/11 19:13:04 2278556312 cff943d8 [INFO Client 71404] : AFK-Modus ist nun AN. Automatische Antwort: 'Dieser Spieler ist AFK.'",
         "logMessage": ": AFK-Modus ist nun AN. Automatische Antwort: 'Dieser Spieler ist AFK.'",
+        "logLevel": "INFO",
         "newMode": "AFK",
         "newStatus": "ON",
         "autoreply": "Dieser Spieler ist AFK."
@@ -471,6 +510,7 @@
       {
         "rawLine": "2022/10/11 19:17:47 2278839781 cff943d8 [INFO Client 71404] : AFK-Modus ist nun AUS.",
         "logMessage": ": AFK-Modus ist nun AUS.",
+        "logLevel": "INFO",
         "newMode": "AFK",
         "newStatus": "OFF"
       }
@@ -479,6 +519,7 @@
       {
         "rawLine": "2022/10/11 19:23:12 2279165140 cff943d8 [INFO Client 71404] : Nicht-Stören-Modus ist nun AN. Automatische Antwort: 'Dieser Spieler hat den DND-Modus aktiviert.'",
         "logMessage": ": Nicht-Stören-Modus ist nun AN. Automatische Antwort: 'Dieser Spieler hat den DND-Modus aktiviert.'",
+        "logLevel": "INFO",
         "newMode": "DND",
         "newStatus": "ON",
         "autoreply": "Dieser Spieler hat den DND-Modus aktiviert."
@@ -488,6 +529,7 @@
       {
         "rawLine": "2022/10/11 19:23:17 2279169781 cff943d8 [INFO Client 71404] : Nicht-Stören-Modus ist nun AUS.",
         "logMessage": ": Nicht-Stören-Modus ist nun AUS.",
+        "logLevel": "INFO",
         "newMode": "DND",
         "newStatus": "OFF"
       }
@@ -496,6 +538,7 @@
       {
         "rawLine": "2022/10/11 19:26:25 2279357187 cff943d8 [INFO Client 71404] : Handelskanal 1 English beigetreten.",
         "logMessage": ": Handelskanal 1 English beigetreten.",
+        "logLevel": "INFO",
         "chatType": "trade",
         "channel": 1,
         "language": "English"
@@ -503,6 +546,7 @@
       {
         "rawLine": "2022/10/11 19:26:27 2279359546 cff943d8 [INFO Client 71404] : Chatkanal 1 English beigetreten.",
         "logMessage": ": Chatkanal 1 English beigetreten.",
+        "logLevel": "INFO",
         "chatType": "global",
         "channel": 1,
         "language": "English"
@@ -512,6 +556,7 @@
       {
         "rawLine": "2022/10/11 18:48:07 2277059640 ca3a6737 [INFO Client 71404] Connecting to instance server at 185.19.219.31:6112",
         "logMessage": "Connecting to instance server at 185.19.219.31:6112",
+        "logLevel": "INFO",
         "serverAddress": "185.19.219.31:6112"
       }
     ],
@@ -519,6 +564,7 @@
       {
         "rawLine": "2022/10/11 18:57:59 2277651515 cff943d8 [INFO Client 71404] : Dein Charakter ist vor 24 Tage, 22 Stunden, 1 Minute und 37 Sekunden erstellt worden.",
         "logMessage": ": Dein Charakter ist vor 24 Tage, 22 Stunden, 1 Minute und 37 Sekunden erstellt worden.",
+        "logLevel": "INFO",
         "days": 24,
         "hours": 22,
         "minutes": 1,
@@ -529,6 +575,7 @@
       {
         "rawLine": "2022/10/11 18:58:04 2277656234 cff943d8 [INFO Client 71404] : Ihr seid 21-mal gestorben.",
         "logMessage": ": Ihr seid 21-mal gestorben.",
+        "logLevel": "INFO",
         "deathCount": 21
       }
     ],
@@ -536,6 +583,7 @@
       {
         "rawLine": "2022/10/11 19:43:55 2280407203 cff943d8 [INFO Client 71404] : Testitestis (Adelstochter) hat Stufe 2 erreicht.",
         "logMessage": ": Testitestis (Adelstochter) hat Stufe 2 erreicht.",
+        "logLevel": "INFO",
         "characterLevel": 2,
         "character": "Testitestis",
         "class": "Adelstochter"
@@ -545,6 +593,7 @@
       {
         "rawLine": "2022/10/11 18:46:41 2276973593 890d9d9b [INFO Client 71404] Connected to fra01.login.pathofexile.com in 16ms.",
         "logMessage": "Connected to fra01.login.pathofexile.com in 16ms.",
+        "logLevel": "INFO",
         "time": 16,
         "address": "fra01.login.pathofexile.com"
       }
@@ -553,6 +602,7 @@
       {
         "rawLine": "2022/10/11 19:29:19 2279531718 cff943d8 [INFO Client 71404] : Du hast 2 Tage, 13 Stunden, 32 Minuten und 27 Sekunden lang gespielt.",
         "logMessage": ": Du hast 2 Tage, 13 Stunden, 32 Minuten und 27 Sekunden lang gespielt.",
+        "logLevel": "INFO",
         "days": 2,
         "hours": 13,
         "minutes": 32,
@@ -563,12 +613,14 @@
       {
         "rawLine": "2022/10/11 18:57:42 2277634843 cff943d8 [INFO Client 71404] : 0 Monster übrig.",
         "logMessage": ": 0 Monster übrig.",
+        "logLevel": "INFO",
         "monsterCount": 0,
         "more": false
       },
       {
         "rawLine": "2022/10/11 18:57:51 2277643343 cff943d8 [INFO Client 71404] : Mehr als 50 Monster übrig.",
         "logMessage": ": Mehr als 50 Monster übrig.",
+        "logLevel": "INFO",
         "monsterCount": 50,
         "more": true
       }
@@ -577,6 +629,7 @@
       {
         "rawLine": "2022/10/11 19:43:04 2280357015 cff943d8 [INFO Client 71404] : Testitestis wurde getötet.",
         "logMessage": ": Testitestis wurde getötet.",
+        "logLevel": "INFO",
         "player": "Testitestis"
       }
     ],
@@ -584,6 +637,7 @@
       {
         "rawLine": "2022/10/11 18:56:11 2277543875 cff943d8 [INFO Client 71404] : Handel angenommen.",
         "logMessage": ": Handel angenommen.",
+        "logLevel": "INFO",
         "tradeAction": "accepted"
       }
     ],
@@ -591,6 +645,7 @@
       {
         "rawLine": "2022/10/11 18:56:13 2277545546 cff943d8 [INFO Client 71404] : Handel abgebrochen.",
         "logMessage": ": Handel abgebrochen.",
+        "logLevel": "INFO",
         "tradeAction": "cancelled"
       }
     ],
@@ -598,6 +653,7 @@
       {
         "rawLine": "2022/10/11 19:02:28 2277920203 cff943d8 [INFO Client 71404] @Von Wardilla: Hi, ich möchte ' Drachen-Stern, Kobaltblaues Juwel' zum angebotenen Preis von 4 divine in der Kalandra-Liga kaufen (Truhenfach \"Shop\"; Position: 12 von links, 10 von oben)",
         "logMessage": "@Von Wardilla: Hi, ich möchte ' Drachen-Stern, Kobaltblaues Juwel' zum angebotenen Preis von 4 divine in der Kalandra-Liga kaufen (Truhenfach \"Shop\"; Position: 12 von links, 10 von oben)",
+        "logLevel": "INFO",
         "whisper": "Hi, ich möchte ' Drachen-Stern, Kobaltblaues Juwel' zum angebotenen Preis von 4 divine in der Kalandra-Liga kaufen (Truhenfach \"Shop\"; Position: 12 von links, 10 von oben)",
         "player": "Wardilla",
         "direction": "From"
@@ -607,6 +663,7 @@
       {
         "rawLine": "2022/10/11 19:17:55 2278847828 cff943d8 [INFO Client 71404] @An Wardilla: Do you still want Drachen-Stern, Kobaltblaues Juwel for 4 divine?",
         "logMessage": "@An Wardilla: Do you still want Drachen-Stern, Kobaltblaues Juwel for 4 divine?",
+        "logLevel": "INFO",
         "whisper": "Do you still want Drachen-Stern, Kobaltblaues Juwel for 4 divine?",
         "player": "Wardilla",
         "direction": "To"
@@ -616,6 +673,7 @@
       {
         "rawLine": "2022/10/16 11:46:34 237348625 cff943d8 [INFO Client 17308] @An CratoIgniteKal: Hi, ich möchte ' Katastrophen-Streifen, Opalring' zum angebotenen Preis von 75 chaos in der Kalandra-Liga kaufen (Truhenfach \"Shop2\"; Position: 12 von links, 9 von oben)",
         "logMessage": "@An CratoIgniteKal: Hi, ich möchte ' Katastrophen-Streifen, Opalring' zum angebotenen Preis von 75 chaos in der Kalandra-Liga kaufen (Truhenfach \"Shop2\"; Position: 12 von links, 9 von oben)",
+        "logLevel": "INFO",
         "whisper": "Hi, ich möchte ' Katastrophen-Streifen, Opalring' zum angebotenen Preis von 75 chaos in der Kalandra-Liga kaufen (Truhenfach \"Shop2\"; Position: 12 von links, 9 von oben)",
         "direction": "To",
         "item": "Katastrophen-Streifen, Opalring",
@@ -634,6 +692,7 @@
       {
         "rawLine": "2022/10/16 11:45:12 237266796 cff943d8 [INFO Client 17308] @An CratoIgniteKal: Hi, ich möchte ' Einladung der Seherin: Der Atlas' in der Kalandra-Liga kaufen (Truhenfach \"Frags\"; Position: 10 von links, 2 von oben)",
         "logMessage": "@An CratoIgniteKal: Hi, ich möchte ' Einladung der Seherin: Der Atlas' in der Kalandra-Liga kaufen (Truhenfach \"Frags\"; Position: 10 von links, 2 von oben)",
+        "logLevel": "INFO",
         "whisper": "Hi, ich möchte ' Einladung der Seherin: Der Atlas' in der Kalandra-Liga kaufen (Truhenfach \"Frags\"; Position: 10 von links, 2 von oben)",
         "direction": "To",
         "item": "Einladung der Seherin: Der Atlas",
@@ -647,6 +706,7 @@
       {
         "rawLine": "2022/10/11 19:29:36 2279548531 cff943d8 [INFO Client 71404] @An plasma_heist: Hi, ich möchte dein 10 'Bluttempel'-Karte (hochwertig) (Lvl. 16) für mein 34 Chaossphäre in der Kalandra-Liga kaufen",
         "logMessage": "@An plasma_heist: Hi, ich möchte dein 10 'Bluttempel'-Karte (hochwertig) (Lvl. 16) für mein 34 Chaossphäre in der Kalandra-Liga kaufen",
+        "logLevel": "INFO",
         "whisper": "Hi, ich möchte dein 10 'Bluttempel'-Karte (hochwertig) (Lvl. 16) für mein 34 Chaossphäre in der Kalandra-Liga kaufen",
         "direction": "To",
         "item": {
@@ -668,6 +728,7 @@
       {
         "rawLine": "2022/10/11 19:38:04 2280056437 cff943d8 [INFO Client 71404] @An Fever_Mfer: Hi, ich möchte dein 400 Meißel des Kartographen für mein 50 Chaossphäre in der Kalandra-Liga kaufen",
         "logMessage": "@An Fever_Mfer: Hi, ich möchte dein 400 Meißel des Kartographen für mein 50 Chaossphäre in der Kalandra-Liga kaufen",
+        "logLevel": "INFO",
         "whisper": "Hi, ich möchte dein 400 Meißel des Kartographen für mein 50 Chaossphäre in der Kalandra-Liga kaufen",
         "direction": "To",
         "item": {
@@ -689,6 +750,7 @@
       {
         "rawLine": "2022/10/16 11:43:59 237193781 cff943d8 [INFO Client 17308] @An CratoIgniteKal: Hi, ich möchte dein 1200 Verbindungssphäre für mein 1 Göttliche Sphäre in der Kalandra-Liga kaufen",
         "logMessage": "@An CratoIgniteKal: Hi, ich möchte dein 1200 Verbindungssphäre für mein 1 Göttliche Sphäre in der Kalandra-Liga kaufen",
+        "logLevel": "INFO",
         "whisper": "Hi, ich möchte dein 1200 Verbindungssphäre für mein 1 Göttliche Sphäre in der Kalandra-Liga kaufen",
         "direction": "To",
         "item": {
@@ -723,6 +785,7 @@
       {
         "rawLine": "2022/10/21 17:42:46 690719921 1186952b [DEBUG Client 39648] Generating level 69 area \"2_10_town\" with seed 1",
         "logMessage": "Generating level 69 area \"2_10_town\" with seed 1",
+        "logLevel": "DEBUG",
         "Id": "2_10_town",
         "Name": "Les Docks d'Oriath",
         "Act": 10,
@@ -741,6 +804,7 @@
       {
         "rawLine": "2022/10/18 21:59:25 446919843 1186952b [DEBUG Client 24888] Generating level 83 area \"MapWorldsDunes\" with seed 3221167377",
         "logMessage": "Generating level 83 area \"MapWorldsDunes\" with seed 3221167377",
+        "logLevel": "DEBUG",
         "Id": "MapWorldsDunes",
         "Name": "Dunes",
         "Act": 11,
@@ -759,6 +823,7 @@
       {
         "rawLine": "2021/10/22 23:02:02 725176437 412 [DEBUG Client 30224] Generating level 33 area \"1_Labyrinth_OH_straight\" with seed 3762873214",
         "logMessage": "Generating level 33 area \"1_Labyrinth_OH_straight\" with seed 3762873214",
+        "logLevel": "DEBUG",
         "Id": "1_Labyrinth_OH_straight",
         "Name": "Sentier de la propriété",
         "Act": 3,
@@ -777,6 +842,7 @@
       {
         "rawLine": "2021/10/23 00:51:48 731761718 412 [DEBUG Client 30224] Generating level 68 area \"HeistHub\" with seed 3419980492",
         "logMessage": "Generating level 68 area \"HeistHub\" with seed 3419980492",
+        "logLevel": "DEBUG",
         "Id": "HeistHub",
         "Name": "Le Port des Malfaiteurs",
         "Act": 1,
@@ -795,6 +861,7 @@
       {
         "rawLine": "2021/10/27 17:47:04 99887093 412 [DEBUG Client 7768] Generating level 84 area \"MavenBoss\" with seed 1400455492",
         "logMessage": "Generating level 84 area \"MavenBoss\" with seed 1400455492",
+        "logLevel": "DEBUG",
         "Id": "MavenBoss",
         "Name": "L'Absence de Pitié et d'Empathie",
         "Act": 11,
@@ -815,6 +882,7 @@
       {
         "rawLine": "2022/10/11 21:50:17 2287989578 cff943d8 [INFO Client 84684] : <<set:M>><<set:S>><<set:MS>>Vous êtes à présent dans : Le Rivage du crépuscule.",
         "logMessage": ": <<set:M>><<set:S>><<set:MS>>Vous êtes à présent dans : Le Rivage du crépuscule.",
+        "logLevel": "INFO",
         "newArea": "Le Rivage du crépuscule"
       }
     ],
@@ -822,6 +890,7 @@
       {
         "rawLine": "2022/10/11 22:03:22 2288774859 cff943d8 [INFO Client 84684] : Akiléïne a quitté la zone.",
         "logMessage": ": Akiléïne a quitté la zone.",
+        "logLevel": "INFO",
         "player": "Akiléïne",
         "action": "left"
       }
@@ -830,6 +899,7 @@
       {
         "rawLine": "2022/10/11 22:03:03 2288755750 cff943d8 [INFO Client 84684] : Akiléïne a rejoint la zone.",
         "logMessage": ": Akiléïne a rejoint la zone.",
+        "logLevel": "INFO",
         "player": "Akiléïne",
         "action": "joined"
       }
@@ -838,6 +908,7 @@
       {
         "rawLine": "2022/10/11 22:13:26 2289378218 cff943d8 [INFO Client 31708] : Le mode Absent (AFK) est désormais activé. Réponse automatique : « Ce joueur est absent. »",
         "logMessage": ": Le mode Absent (AFK) est désormais activé. Réponse automatique : « Ce joueur est absent. »",
+        "logLevel": "INFO",
         "newMode": "AFK",
         "newStatus": "ON",
         "autoreply": " Ce joueur est absent. "
@@ -847,6 +918,7 @@
       {
         "rawLine": "2022/10/11 22:13:28 2289380296 cff943d8 [INFO Client 31708] : Le mode Absent (AFK) est désactivé.",
         "logMessage": ": Le mode Absent (AFK) est désactivé.",
+        "logLevel": "INFO",
         "newMode": "AFK",
         "newStatus": "OFF"
       }
@@ -855,6 +927,7 @@
       {
         "rawLine": "2022/10/11 22:13:30 2289382281 cff943d8 [INFO Client 31708] : Le mode Ne Pas Déranger (DND) est désormais activé. Réponse automatique : « Ce joueur est en mode NPD (Ne pas déranger). »",
         "logMessage": ": Le mode Ne Pas Déranger (DND) est désormais activé. Réponse automatique : « Ce joueur est en mode NPD (Ne pas déranger). »",
+        "logLevel": "INFO",
         "newMode": "DND",
         "newStatus": "ON",
         "autoreply": " Ce joueur est en mode NPD (Ne pas déranger). "
@@ -864,6 +937,7 @@
       {
         "rawLine": "2022/10/11 22:13:32 2289385156 cff943d8 [INFO Client 31708] : Le mode Ne Pas Déranger (DND) est désactivé.",
         "logMessage": ": Le mode Ne Pas Déranger (DND) est désactivé.",
+        "logLevel": "INFO",
         "newMode": "DND",
         "newStatus": "OFF"
       }
@@ -872,6 +946,7 @@
       {
         "rawLine": "2022/10/11 21:50:17 2287989890 cff943d8 [INFO Client 84684] : Vous avez rejoint le canal 1 du tchat d'échanges (English).",
         "logMessage": ": Vous avez rejoint le canal 1 du tchat d'échanges (English).",
+        "logLevel": "INFO",
         "chatType": "trade",
         "channel": 1,
         "language": "English"
@@ -879,6 +954,7 @@
       {
         "rawLine": "2022/10/11 21:50:17 2287989890 cff943d8 [INFO Client 84684] : Vous avez rejoint le canal 1 du tchat global (English).",
         "logMessage": ": Vous avez rejoint le canal 1 du tchat global (English).",
+        "logLevel": "INFO",
         "chatType": "global",
         "channel": 1,
         "language": "English"
@@ -888,6 +964,7 @@
       {
         "rawLine": "2022/10/11 18:48:07 2277059640 ca3a6737 [INFO Client 71404] Connecting to instance server at 185.19.219.31:6112",
         "logMessage": "Connecting to instance server at 185.19.219.31:6112",
+        "logLevel": "INFO",
         "serverAddress": "185.19.219.31:6112"
       }
     ],
@@ -895,6 +972,7 @@
       {
         "rawLine": "2022/10/11 21:53:36 2288188281 cff943d8 [INFO Client 84684] : Vous avez créé votre personnage il y a 25 jours, 0 heures, 57 minutes et 14 secondes.",
         "logMessage": ": Vous avez créé votre personnage il y a 25 jours, 0 heures, 57 minutes et 14 secondes.",
+        "logLevel": "INFO",
         "days": 25,
         "hours": 0,
         "minutes": 57,
@@ -905,6 +983,7 @@
       {
         "rawLine": "2022/10/11 21:53:42 2288195031 cff943d8 [INFO Client 84684] : Votre personnage est mort 21 fois.",
         "logMessage": ": Votre personnage est mort 21 fois.",
+        "logLevel": "INFO",
         "deathCount": 21
       }
     ],
@@ -912,6 +991,7 @@
       {
         "rawLine": "2022/10/11 21:52:29 2288121843 cff943d8 [INFO Client 84684] : gsdfewa (Héritière) a atteint le niveau 2.",
         "logMessage": ": gsdfewa (Héritière) a atteint le niveau 2.",
+        "logLevel": "INFO",
         "characterLevel": 2,
         "character": "gsdfewa",
         "class": "Héritière"
@@ -921,6 +1001,7 @@
       {
         "rawLine": "2022/10/11 18:46:41 2276973593 890d9d9b [INFO Client 71404] Connected to fra01.login.pathofexile.com in 16ms.",
         "logMessage": "Connected to fra01.login.pathofexile.com in 16ms.",
+        "logLevel": "INFO",
         "time": 16,
         "address": "fra01.login.pathofexile.com"
       }
@@ -929,6 +1010,7 @@
       {
         "rawLine": "2022/10/11 22:13:24 2289376593 cff943d8 [INFO Client 31708] : Vous avez joué pendant 2 jours, 13 heures, 55 minutes et 2 secondes.",
         "logMessage": ": Vous avez joué pendant 2 jours, 13 heures, 55 minutes et 2 secondes.",
+        "logLevel": "INFO",
         "days": 2,
         "hours": 13,
         "minutes": 55,
@@ -939,12 +1021,14 @@
       {
         "rawLine": "2022/10/11 21:50:45 2288017718 cff943d8 [INFO Client 84684] : Il reste 44 monstres.",
         "logMessage": ": Il reste 44 monstres.",
+        "logLevel": "INFO",
         "monsterCount": 44,
         "more": false
       },
       {
         "rawLine": "2022/10/11 21:53:53 2288205593 cff943d8 [INFO Client 84684] : Il reste plus de 50 monstres.",
         "logMessage": ": Il reste plus de 50 monstres.",
+        "logLevel": "INFO",
         "monsterCount": 50,
         "more": true
       }
@@ -953,6 +1037,7 @@
       {
         "rawLine": "2022/10/11 21:53:07 2288159593 cff943d8 [INFO Client 84684] : gsdfewa vient de mourir.",
         "logMessage": ": gsdfewa vient de mourir.",
+        "logLevel": "INFO",
         "player": "gsdfewa"
       }
     ],
@@ -960,6 +1045,7 @@
       {
         "rawLine": "2022/10/11 21:52:48 2288140171 cff943d8 [INFO Client 84684] : Échange accepté.",
         "logMessage": ": Échange accepté.",
+        "logLevel": "INFO",
         "tradeAction": "accepted"
       }
     ],
@@ -967,6 +1053,7 @@
       {
         "rawLine": "2022/10/11 21:52:49 2288141890 cff943d8 [INFO Client 84684] : Échange annulé.",
         "logMessage": ": Échange annulé.",
+        "logLevel": "INFO",
         "tradeAction": "cancelled"
       }
     ],
@@ -974,6 +1061,7 @@
       {
         "rawLine": "2022/10/11 22:02:38 2288730921 cff943d8 [INFO Client 84684] @De <ZrÚk> Akiléïne: Hi, I'd like to buy your 18 Essence assourdissante de Zèle for my 90 Orbe du chaos in Kalandra",
         "logMessage": "@De <ZrÚk> Akiléïne: Hi, I'd like to buy your 18 Essence assourdissante de Zèle for my 90 Orbe du chaos in Kalandra",
+        "logLevel": "INFO",
         "whisper": "Hi, I'd like to buy your 18 Essence assourdissante de Zèle for my 90 Orbe du chaos in Kalandra",
         "player": "Akiléïne",
         "direction": "From"
@@ -983,6 +1071,7 @@
       {
         "rawLine": "2022/10/11 22:03:21 2288773609 cff943d8 [INFO Client 84684] @À Akiléïne: ty gl",
         "logMessage": "@À Akiléïne: ty gl",
+        "logLevel": "INFO",
         "whisper": "ty gl",
         "player": "Akiléïne",
         "direction": "To"
@@ -992,6 +1081,7 @@
       {
         "rawLine": "2022/10/11 22:05:28 2288901140 cff943d8 [INFO Client 49028] @À KineticBlastTorture: Bonjour, je souhaiterais t'acheter Wut de niveau 21 à 0% de qualité pour 45 chaos dans la ligue Kalandra (stash tab \"Shop\"; position: left 11, top 6)",
         "logMessage": "@À KineticBlastTorture: Bonjour, je souhaiterais t'acheter Wut de niveau 21 à 0% de qualité pour 45 chaos dans la ligue Kalandra (stash tab \"Shop\"; position: left 11, top 6)",
+        "logLevel": "INFO",
         "whisper": "Bonjour, je souhaiterais t'acheter Wut de niveau 21 à 0% de qualité pour 45 chaos dans la ligue Kalandra (stash tab \"Shop\"; position: left 11, top 6)",
         "direction": "To",
         "item": "Wut de niveau 21 à 0% de qualité",
@@ -1010,6 +1100,7 @@
       {
         "rawLine": "2022/10/16 12:01:18 238232546 cff943d8 [INFO Client 23384] @À CratoIgniteKal: Bonjour, je souhaiterais t'acheter Emblème préhistorique, Bague de rubis dans la ligue Kalandra (stash tab \"Shop\"; position: left 12, top 5)",
         "logMessage": "@À CratoIgniteKal: Bonjour, je souhaiterais t'acheter Emblème préhistorique, Bague de rubis dans la ligue Kalandra (stash tab \"Shop\"; position: left 12, top 5)",
+        "logLevel": "INFO",
         "whisper": "Bonjour, je souhaiterais t'acheter Emblème préhistorique, Bague de rubis dans la ligue Kalandra (stash tab \"Shop\"; position: left 12, top 5)",
         "direction": "To",
         "item": "Emblème préhistorique, Bague de rubis",
@@ -1023,6 +1114,7 @@
       {
         "rawLine": "2022/02/26 19:33:20 71255296 cff94452 [INFO Client 23212] @À RUKA_LIN: Bonjour, je voudrais t'acheter 1 Fragment de l'Éradication contre 20 Orbe du chaos dans la ligue Archnemesis",
         "logMessage": "@À RUKA_LIN: Bonjour, je voudrais t'acheter 1 Fragment de l'Éradication contre 20 Orbe du chaos dans la ligue Archnemesis",
+        "logLevel": "INFO",
         "whisper": "Bonjour, je voudrais t'acheter 1 Fragment de l'Éradication contre 20 Orbe du chaos dans la ligue Archnemesis",
         "direction": "To",
         "item": {
@@ -1044,6 +1136,7 @@
       {
         "rawLine": "2022/10/16 12:02:42 238316203 cff943d8 [INFO Client 23384] @À CratoIgniteKal: Hi, I'd like to buy your 1200 Orbe de fusion for my 1 Orbe divin in Kalandra",
         "logMessage": "@À CratoIgniteKal: Hi, I'd like to buy your 1200 Orbe de fusion for my 1 Orbe divin in Kalandra",
+        "logLevel": "INFO",
         "whisper": "Hi, I'd like to buy your 1200 Orbe de fusion for my 1 Orbe divin in Kalandra",
         "direction": "To",
         "item": {
@@ -1065,6 +1158,7 @@
       {
         "rawLine": "2022/10/16 23:04:31 278025609 cff943d8 [INFO Client 24756] @À CratoIgniteKal: Hi, I'd like to buy your 1 Dédale, Carte supérieure (P8) for my 5 Orbe du chaos in Kalandra",
         "logMessage": "@À CratoIgniteKal: Hi, I'd like to buy your 1 Dédale, Carte supérieure (P8) for my 5 Orbe du chaos in Kalandra",
+        "logLevel": "INFO",
         "whisper": "Hi, I'd like to buy your 1 Dédale, Carte supérieure (P8) for my 5 Orbe du chaos in Kalandra",
         "direction": "To",
         "item": {
@@ -1099,6 +1193,7 @@
       {
         "rawLine": "2022/10/21 17:42:46 690719921 1186952b [DEBUG Client 39648] Generating level 69 area \"2_10_town\" with seed 1",
         "logMessage": "Generating level 69 area \"2_10_town\" with seed 1",
+        "logLevel": "DEBUG",
         "Id": "2_10_town",
         "Name": "Docas de Oriath",
         "Act": 10,
@@ -1117,6 +1212,7 @@
       {
         "rawLine": "2022/10/18 21:59:25 446919843 1186952b [DEBUG Client 24888] Generating level 83 area \"MapWorldsDunes\" with seed 3221167377",
         "logMessage": "Generating level 83 area \"MapWorldsDunes\" with seed 3221167377",
+        "logLevel": "DEBUG",
         "Id": "MapWorldsDunes",
         "Name": "Dunas",
         "Act": 11,
@@ -1135,6 +1231,7 @@
       {
         "rawLine": "2021/10/22 23:02:02 725176437 412 [DEBUG Client 30224] Generating level 33 area \"1_Labyrinth_OH_straight\" with seed 3762873214",
         "logMessage": "Generating level 33 area \"1_Labyrinth_OH_straight\" with seed 3762873214",
+        "logLevel": "DEBUG",
         "Id": "1_Labyrinth_OH_straight",
         "Name": "Caminho da Propriedade",
         "Act": 3,
@@ -1153,6 +1250,7 @@
       {
         "rawLine": "2021/10/23 00:51:48 731761718 412 [DEBUG Client 30224] Generating level 68 area \"HeistHub\" with seed 3419980492",
         "logMessage": "Generating level 68 area \"HeistHub\" with seed 3419980492",
+        "logLevel": "DEBUG",
         "Id": "HeistHub",
         "Name": "O Porto dos Renegados",
         "Act": 1,
@@ -1171,6 +1269,7 @@
       {
         "rawLine": "2021/10/27 17:47:04 99887093 412 [DEBUG Client 7768] Generating level 84 area \"MavenBoss\" with seed 1400455492",
         "logMessage": "Generating level 84 area \"MavenBoss\" with seed 1400455492",
+        "logLevel": "DEBUG",
         "Id": "MavenBoss",
         "Name": "Ausência de Misericórdia e Empatia",
         "Act": 11,
@@ -1191,6 +1290,7 @@
       {
         "rawLine": "2022/10/12 13:46:19 2345351921 cff943d8 [INFO Client 46888] : <<set:F>><<set:S>><<set:FS>>Você entrou em: Vigília de Lioneye",
         "logMessage": ": <<set:F>><<set:S>><<set:FS>>Você entrou em: Vigília de Lioneye",
+        "logLevel": "INFO",
         "newArea": "Vigília de Lioneye"
       }
     ],
@@ -1198,6 +1298,7 @@
       {
         "rawLine": "2022/10/12 13:51:01 2345634078 cff943d8 [INFO Client 46888] : gagasw saiu da área",
         "logMessage": ": gagasw saiu da área",
+        "logLevel": "INFO",
         "player": "gagasw",
         "action": "left"
       }
@@ -1206,6 +1307,7 @@
       {
         "rawLine": "2022/10/12 13:51:01 2345634078 cff943d8 [INFO Client 46888] : gagasw entrou na área",
         "logMessage": ": gagasw entrou na área",
+        "logLevel": "INFO",
         "player": "gagasw",
         "action": "joined"
       }
@@ -1214,6 +1316,7 @@
       {
         "rawLine": "2022/10/12 13:51:01 2345634078 cff943d8 [INFO Client 46888] : Modo LDT Ativado. Reposta automática \"Este jogador está AFK.\"",
         "logMessage": ": Modo LDT Ativado. Reposta automática \"Este jogador está AFK.\"",
+        "logLevel": "INFO",
         "newMode": "AFK",
         "newStatus": "ON",
         "autoreply": "Este jogador está AFK."
@@ -1223,6 +1326,7 @@
       {
         "rawLine": "2022/10/12 13:51:03 2345636093 cff943d8 [INFO Client 46888] : Modo LDT Desativado.",
         "logMessage": ": Modo LDT Desativado.",
+        "logLevel": "INFO",
         "newMode": "AFK",
         "newStatus": "OFF"
       }
@@ -1231,6 +1335,7 @@
       {
         "rawLine": "2022/10/12 13:51:13 2345645484 cff943d8 [INFO Client 46888] : Modo NP Ativado. Reposta automática \"Este jogador está com o modo DND habilitado.\"",
         "logMessage": ": Modo NP Ativado. Reposta automática \"Este jogador está com o modo DND habilitado.\"",
+        "logLevel": "INFO",
         "newMode": "DND",
         "newStatus": "ON",
         "autoreply": "Este jogador está com o modo DND habilitado."
@@ -1240,6 +1345,7 @@
       {
         "rawLine": "2022/10/12 13:51:18 2345650406 cff943d8 [INFO Client 46888] : Modo NP Desativado.",
         "logMessage": ": Modo NP Desativado.",
+        "logLevel": "INFO",
         "newMode": "DND",
         "newStatus": "OFF"
       }
@@ -1248,6 +1354,7 @@
       {
         "rawLine": "2022/10/12 13:47:06 2345398296 cff943d8 [INFO Client 46888] : Você entrou no canal de chat global 1 English.",
         "logMessage": ": Você entrou no canal de chat global 1 English.",
+        "logLevel": "INFO",
         "chatType": "global",
         "channel": 1,
         "language": "English"
@@ -1255,6 +1362,7 @@
       {
         "rawLine": "2022/10/12 13:47:06 2345398296 cff943d8 [INFO Client 46888] : Você entrou no canal de chat de comércio 1 English.",
         "logMessage": ": Você entrou no canal de chat de comércio 1 English.",
+        "logLevel": "INFO",
         "chatType": "trade",
         "channel": 1,
         "language": "English"
@@ -1264,6 +1372,7 @@
       {
         "rawLine": "2022/10/11 18:48:07 2277059640 ca3a6737 [INFO Client 71404] Connecting to instance server at 185.19.219.31:6112",
         "logMessage": "Connecting to instance server at 185.19.219.31:6112",
+        "logLevel": "INFO",
         "serverAddress": "185.19.219.31:6112"
       }
     ],
@@ -1271,6 +1380,7 @@
       {
         "rawLine": "2022/10/12 13:59:13 2346125765 cff943d8 [INFO Client 46888] : Seu personagem foi criado há 25 dias, 17 horas, 2 minutos, e 52 segundos.",
         "logMessage": ": Seu personagem foi criado há 25 dias, 17 horas, 2 minutos, e 52 segundos.",
+        "logLevel": "INFO",
         "days": 25,
         "hours": 17,
         "minutes": 2,
@@ -1281,6 +1391,7 @@
       {
         "rawLine": "2022/10/12 13:59:18 2346130265 cff943d8 [INFO Client 46888] : Você morreu 21 vezes.",
         "logMessage": ": Você morreu 21 vezes.",
+        "logLevel": "INFO",
         "deathCount": 21
       }
     ],
@@ -1288,6 +1399,7 @@
       {
         "rawLine": "2022/10/12 13:46:10 2345342453 cff943d8 [INFO Client 46888] : gagasw (Templário) chegou no nível 2",
         "logMessage": ": gagasw (Templário) chegou no nível 2",
+        "logLevel": "INFO",
         "characterLevel": 2,
         "character": "gagasw",
         "class": "Templário"
@@ -1297,6 +1409,7 @@
       {
         "rawLine": "2022/10/11 18:46:41 2276973593 890d9d9b [INFO Client 71404] Connected to fra01.login.pathofexile.com in 16ms.",
         "logMessage": "Connected to fra01.login.pathofexile.com in 16ms.",
+        "logLevel": "INFO",
         "time": 16,
         "address": "fra01.login.pathofexile.com"
       }
@@ -1305,6 +1418,7 @@
       {
         "rawLine": "2022/10/12 13:59:16 2346128250 cff943d8 [INFO Client 46888] : Você jogou por 2 dias, 14 horas, 7 minutos, e 24 segundos.",
         "logMessage": ": Você jogou por 2 dias, 14 horas, 7 minutos, e 24 segundos.",
+        "logLevel": "INFO",
         "days": 2,
         "hours": 14,
         "minutes": 7,
@@ -1315,12 +1429,14 @@
       {
         "rawLine": "2022/10/12 13:46:36 2345368734 cff943d8 [INFO Client 46888] : 0 monstros restantes.",
         "logMessage": ": 0 monstros restantes.",
+        "logLevel": "INFO",
         "monsterCount": 0,
         "more": false
       },
       {
         "rawLine": "2022/10/12 13:46:44 2345376234 cff943d8 [INFO Client 46888] : Mais de 50 monstros restantes.",
         "logMessage": ": Mais de 50 monstros restantes.",
+        "logLevel": "INFO",
         "monsterCount": 50,
         "more": true
       }
@@ -1329,6 +1445,7 @@
       {
         "rawLine": "2022/10/12 13:46:53 2345386078 cff943d8 [INFO Client 46888] : gagasw foi morto.",
         "logMessage": ": gagasw foi morto.",
+        "logLevel": "INFO",
         "player": "gagasw"
       }
     ],
@@ -1336,6 +1453,7 @@
       {
         "rawLine": "2022/10/12 13:46:32 2345364781 cff943d8 [INFO Client 46888] : Negociação aceita.",
         "logMessage": ": Negociação aceita.",
+        "logLevel": "INFO",
         "tradeAction": "accepted"
       }
     ],
@@ -1343,6 +1461,7 @@
       {
         "rawLine": "2022/10/12 13:46:34 2345366796 cff943d8 [INFO Client 46888] : Negociação cancelada.",
         "logMessage": ": Negociação cancelada.",
+        "logLevel": "INFO",
         "tradeAction": "cancelled"
       }
     ],
@@ -1350,6 +1469,7 @@
       {
         "rawLine": "2022/10/12 13:58:57 2346109187 cff943d8 [INFO Client 46888] @De CratoIgniteKal: Olá, eu gostaria de comprar seu Mandíbula da Enganação, Elmo Ósseo listado por 15 chaos na Kalandra (aba do baú: \"Shop2\"; posição: esquerda 11, topo 11)",
         "logMessage": "@De CratoIgniteKal: Olá, eu gostaria de comprar seu Mandíbula da Enganação, Elmo Ósseo listado por 15 chaos na Kalandra (aba do baú: \"Shop2\"; posição: esquerda 11, topo 11)",
+        "logLevel": "INFO",
         "whisper": "Olá, eu gostaria de comprar seu Mandíbula da Enganação, Elmo Ósseo listado por 15 chaos na Kalandra (aba do baú: \"Shop2\"; posição: esquerda 11, topo 11)",
         "player": "CratoIgniteKal",
         "direction": "From"
@@ -1359,6 +1479,7 @@
       {
         "rawLine": "2022/10/12 13:58:57 2346109187 cff943d8 [INFO Client 46888] @Para CratoIgniteKal: Olá, eu gostaria de comprar seu Mandíbula da Enganação, Elmo Ósseo listado por 15 chaos na Kalandra (aba do baú: \"Shop2\"; posição: esquerda 11, topo 11)",
         "logMessage": "@Para CratoIgniteKal: Olá, eu gostaria de comprar seu Mandíbula da Enganação, Elmo Ósseo listado por 15 chaos na Kalandra (aba do baú: \"Shop2\"; posição: esquerda 11, topo 11)",
+        "logLevel": "INFO",
         "whisper": "Olá, eu gostaria de comprar seu Mandíbula da Enganação, Elmo Ósseo listado por 15 chaos na Kalandra (aba do baú: \"Shop2\"; posição: esquerda 11, topo 11)",
         "player": "CratoIgniteKal",
         "direction": "To"
@@ -1368,6 +1489,7 @@
       {
         "rawLine": "2021/09/04 12:06:22 1822515796 bb1 [INFO Client 36812] @To PatrickRn: Olá, eu gostaria de comprar o seu item Canto de Asenath Tiara de Ferro listado por 1 exalted na Expedition (aba do baú: \"Vendas\"; posição: esquerda 1, topo 6)",
         "logMessage": "@To PatrickRn: Olá, eu gostaria de comprar o seu item Canto de Asenath Tiara de Ferro listado por 1 exalted na Expedition (aba do baú: \"Vendas\"; posição: esquerda 1, topo 6)",
+        "logLevel": "INFO",
         "whisper": "Olá, eu gostaria de comprar o seu item Canto de Asenath Tiara de Ferro listado por 1 exalted na Expedition (aba do baú: \"Vendas\"; posição: esquerda 1, topo 6)",
         "direction": "To",
         "item": "Canto de Asenath Tiara de Ferro",
@@ -1386,6 +1508,7 @@
       {
         "rawLine": "2022/10/16 10:42:25 233499031 cff943d8 [INFO Client 19824] @Para CratoIgniteKal: Olá, eu gostaria de comprar o seu item Convite Contorcido na Kalandra (aba do baú: \"Frags\"; posição: esquerda 2, topo 3)",
         "logMessage": "@Para CratoIgniteKal: Olá, eu gostaria de comprar o seu item Convite Contorcido na Kalandra (aba do baú: \"Frags\"; posição: esquerda 2, topo 3)",
+        "logLevel": "INFO",
         "whisper": "Olá, eu gostaria de comprar o seu item Convite Contorcido na Kalandra (aba do baú: \"Frags\"; posição: esquerda 2, topo 3)",
         "direction": "To",
         "item": "Convite Contorcido",
@@ -1399,6 +1522,7 @@
       {
         "rawLine": "2022/10/17 18:43:36 348770671 cff943d8 [INFO Client 19972] @Para CratoIgniteKal: Olá, eu gostaria de comprar seu 10 Mapa: Templo Carmesim Superior (T16) por meu(s) 34 Orbe do Caos na Kalandra",
         "logMessage": "@Para CratoIgniteKal: Olá, eu gostaria de comprar seu 10 Mapa: Templo Carmesim Superior (T16) por meu(s) 34 Orbe do Caos na Kalandra",
+        "logLevel": "INFO",
         "whisper": "Olá, eu gostaria de comprar seu 10 Mapa: Templo Carmesim Superior (T16) por meu(s) 34 Orbe do Caos na Kalandra",
         "direction": "To",
         "item": {
@@ -1420,6 +1544,7 @@
       {
         "rawLine": "2022/10/16 10:39:23 233317281 cff943d8 [INFO Client 19824] @Para CratoIgniteKal: Olá, eu gostaria de comprar seu 2300 Força Vital Cristalizada Vívida por meu(s) 1 Orbe Divino na Kalandra",
         "logMessage": "@Para CratoIgniteKal: Olá, eu gostaria de comprar seu 2300 Força Vital Cristalizada Vívida por meu(s) 1 Orbe Divino na Kalandra",
+        "logLevel": "INFO",
         "whisper": "Olá, eu gostaria de comprar seu 2300 Força Vital Cristalizada Vívida por meu(s) 1 Orbe Divino na Kalandra",
         "direction": "To",
         "item": {
@@ -1441,6 +1566,7 @@
       {
         "rawLine": "2022/10/16 10:51:15 234029234 cff943d8 [INFO Client 19824] @Para TryingForChallenges: Olá, eu gostaria de comprar seu 10 Mapa: Mata Cinzenta (T16) por meu(s) 35 Orbe do Caos na Kalandra",
         "logMessage": "@Para TryingForChallenges: Olá, eu gostaria de comprar seu 10 Mapa: Mata Cinzenta (T16) por meu(s) 35 Orbe do Caos na Kalandra",
+        "logLevel": "INFO",
         "whisper": "Olá, eu gostaria de comprar seu 10 Mapa: Mata Cinzenta (T16) por meu(s) 35 Orbe do Caos na Kalandra",
         "direction": "To",
         "item": {
@@ -1475,6 +1601,7 @@
       {
         "rawLine": "2022/10/21 17:42:46 690719921 1186952b [DEBUG Client 39648] Generating level 69 area \"2_10_town\" with seed 1",
         "logMessage": "Generating level 69 area \"2_10_town\" with seed 1",
+        "logLevel": "DEBUG",
         "Id": "2_10_town",
         "Name": "Las Dársenas de Oriath",
         "Act": 10,
@@ -1493,6 +1620,7 @@
       {
         "rawLine": "2022/10/18 21:59:25 446919843 1186952b [DEBUG Client 24888] Generating level 83 area \"MapWorldsDunes\" with seed 3221167377",
         "logMessage": "Generating level 83 area \"MapWorldsDunes\" with seed 3221167377",
+        "logLevel": "DEBUG",
         "Id": "MapWorldsDunes",
         "Name": "Dunas",
         "Act": 11,
@@ -1511,6 +1639,7 @@
       {
         "rawLine": "2021/10/22 23:02:02 725176437 412 [DEBUG Client 30224] Generating level 33 area \"1_Labyrinth_OH_straight\" with seed 3762873214",
         "logMessage": "Generating level 33 area \"1_Labyrinth_OH_straight\" with seed 3762873214",
+        "logLevel": "DEBUG",
         "Id": "1_Labyrinth_OH_straight",
         "Name": "Camino de la Hacienda",
         "Act": 3,
@@ -1529,6 +1658,7 @@
       {
         "rawLine": "2021/10/23 00:51:48 731761718 412 [DEBUG Client 30224] Generating level 68 area \"HeistHub\" with seed 3419980492",
         "logMessage": "Generating level 68 area \"HeistHub\" with seed 3419980492",
+        "logLevel": "DEBUG",
         "Id": "HeistHub",
         "Name": "El Puerto de los renegados",
         "Act": 1,
@@ -1547,6 +1677,7 @@
       {
         "rawLine": "2021/10/27 17:47:04 99887093 412 [DEBUG Client 7768] Generating level 84 area \"MavenBoss\" with seed 1400455492",
         "logMessage": "Generating level 84 area \"MavenBoss\" with seed 1400455492",
+        "logLevel": "DEBUG",
         "Id": "MavenBoss",
         "Name": "Ausencia de misericordia y empatía",
         "Act": 11,
@@ -1567,6 +1698,7 @@
       {
         "rawLine": "2022/10/12 14:15:16 2347088500 cff943d8 [INFO Client 82104] : <<set:M>><<set:S>><<set:MS>>Has entrado a El Litoral Crepuscular",
         "logMessage": ": <<set:M>><<set:S>><<set:MS>>Has entrado a El Litoral Crepuscular",
+        "logLevel": "INFO",
         "newArea": "El Litoral Crepuscular"
       }
     ],
@@ -1574,6 +1706,7 @@
       {
         "rawLine": "2022/10/12 14:15:16 2347088500 cff943d8 [INFO Client 82104] : xyz abandonó el área",
         "logMessage": ": xyz abandonó el área",
+        "logLevel": "INFO",
         "player": "xyz",
         "action": "left"
       }
@@ -1582,6 +1715,7 @@
       {
         "rawLine": "2022/10/12 14:15:16 2347088500 cff943d8 [INFO Client 82104] : xyz se unió al área",
         "logMessage": ": xyz se unió al área",
+        "logLevel": "INFO",
         "player": "xyz",
         "action": "joined"
       }
@@ -1590,6 +1724,7 @@
       {
         "rawLine": "2022/10/12 14:16:41 2347173515 cff943d8 [INFO Client 82104] : El modo Ausente está habilitado. Autorespuesta \"Este jugador está AUS.\"",
         "logMessage": ": El modo Ausente está habilitado. Autorespuesta \"Este jugador está AUS.\"",
+        "logLevel": "INFO",
         "newMode": "AFK",
         "newStatus": "ON",
         "autoreply": "Este jugador está AUS."
@@ -1599,6 +1734,7 @@
       {
         "rawLine": "2022/10/12 14:16:42 2347174781 cff943d8 [INFO Client 82104] : El modo Ausente está deshabilitado.",
         "logMessage": ": El modo Ausente está deshabilitado.",
+        "logLevel": "INFO",
         "newMode": "AFK",
         "newStatus": "OFF"
       }
@@ -1607,6 +1743,7 @@
       {
         "rawLine": "2022/10/12 14:16:46 2347179015 cff943d8 [INFO Client 82104] : El modo No Molestar está habilitado. Autorespuesta \"Este jugador tiene el modo NM habilitado.\"",
         "logMessage": ": El modo No Molestar está habilitado. Autorespuesta \"Este jugador tiene el modo NM habilitado.\"",
+        "logLevel": "INFO",
         "newMode": "DND",
         "newStatus": "ON",
         "autoreply": "Este jugador tiene el modo NM habilitado."
@@ -1616,6 +1753,7 @@
       {
         "rawLine": "2022/10/12 14:16:47 2347180093 cff943d8 [INFO Client 82104] : El modo No Molestar está deshabilitado.",
         "logMessage": ": El modo No Molestar está deshabilitado.",
+        "logLevel": "INFO",
         "newMode": "DND",
         "newStatus": "OFF"
       }
@@ -1624,6 +1762,7 @@
       {
         "rawLine": "2022/10/12 14:15:16 2347088796 cff943d8 [INFO Client 82104] : Te has unido al canal de chat global 1 English.",
         "logMessage": ": Te has unido al canal de chat global 1 English.",
+        "logLevel": "INFO",
         "chatType": "global",
         "channel": 1,
         "language": "English"
@@ -1631,6 +1770,7 @@
       {
         "rawLine": "2022/10/12 14:15:16 2347088796 cff943d8 [INFO Client 82104] : Te has unido al canal de chat de comercio 1 English.",
         "logMessage": ": Te has unido al canal de chat de comercio 1 English.",
+        "logLevel": "INFO",
         "chatType": "trade",
         "channel": 1,
         "language": "English"
@@ -1640,6 +1780,7 @@
       {
         "rawLine": "2022/10/11 18:48:07 2277059640 ca3a6737 [INFO Client 71404] Connecting to instance server at 185.19.219.31:6112",
         "logMessage": "Connecting to instance server at 185.19.219.31:6112",
+        "logLevel": "INFO",
         "serverAddress": "185.19.219.31:6112"
       }
     ],
@@ -1647,6 +1788,7 @@
       {
         "rawLine": "2022/10/12 14:18:15 2347268125 cff943d8 [INFO Client 82104] : Tu personaje fue creado hace 25 días, 17 horas, 21 minutos, y 54 segundos.",
         "logMessage": ": Tu personaje fue creado hace 25 días, 17 horas, 21 minutos, y 54 segundos.",
+        "logLevel": "INFO",
         "days": 25,
         "hours": 17,
         "minutes": 21,
@@ -1657,6 +1799,7 @@
       {
         "rawLine": "2022/10/12 14:18:21 2347273593 cff943d8 [INFO Client 82104] : Has muerto 21 veces.",
         "logMessage": ": Has muerto 21 veces.",
+        "logLevel": "INFO",
         "deathCount": 21
       }
     ],
@@ -1664,6 +1807,7 @@
       {
         "rawLine": "2022/10/12 14:16:38 2347170468 cff943d8 [INFO Client 82104] : asdsagqwgyx (Templario) es ahora nivel 2",
         "logMessage": ": asdsagqwgyx (Templario) es ahora nivel 2",
+        "logLevel": "INFO",
         "characterLevel": 2,
         "character": "asdsagqwgyx",
         "class": "Templario"
@@ -1673,6 +1817,7 @@
       {
         "rawLine": "2022/10/11 18:46:41 2276973593 890d9d9b [INFO Client 71404] Connected to fra01.login.pathofexile.com in 16ms.",
         "logMessage": "Connected to fra01.login.pathofexile.com in 16ms.",
+        "logLevel": "INFO",
         "time": 16,
         "address": "fra01.login.pathofexile.com"
       }
@@ -1681,6 +1826,7 @@
       {
         "rawLine": "2022/10/12 14:18:19 2347271921 cff943d8 [INFO Client 82104] : Has jugado 2 días, 14 horas, 23 minutos, y 6 segundos.",
         "logMessage": ": Has jugado 2 días, 14 horas, 23 minutos, y 6 segundos.",
+        "logLevel": "INFO",
         "days": 2,
         "hours": 14,
         "minutes": 23,
@@ -1691,12 +1837,14 @@
       {
         "rawLine": "2022/10/12 14:16:54 2347186671 cff943d8 [INFO Client 82104] : Quedan 42 monstruos.",
         "logMessage": ": Quedan 42 monstruos.",
+        "logLevel": "INFO",
         "monsterCount": 42,
         "more": false
       },
       {
         "rawLine": "2022/10/12 14:17:22 2347214609 cff943d8 [INFO Client 82104] : Quedan más de 50 monstruos.",
         "logMessage": ": Quedan más de 50 monstruos.",
+        "logLevel": "INFO",
         "monsterCount": 50,
         "more": true
       }
@@ -1705,6 +1853,7 @@
       {
         "rawLine": "2022/10/12 14:17:24 2347216453 cff943d8 [INFO Client 82104] : asdsagqwgyx ha muerto.",
         "logMessage": ": asdsagqwgyx ha muerto.",
+        "logLevel": "INFO",
         "player": "asdsagqwgyx"
       }
     ],
@@ -1712,6 +1861,7 @@
       {
         "rawLine": "2022/10/12 14:17:08 2347200781 cff943d8 [INFO Client 82104] : Intercambio aceptado.",
         "logMessage": ": Intercambio aceptado.",
+        "logLevel": "INFO",
         "tradeAction": "accepted"
       }
     ],
@@ -1719,6 +1869,7 @@
       {
         "rawLine": "2022/10/12 14:17:09 2347202031 cff943d8 [INFO Client 82104] : Intercambio cancelado.",
         "logMessage": ": Intercambio cancelado.",
+        "logLevel": "INFO",
         "tradeAction": "cancelled"
       }
     ],
@@ -1726,6 +1877,7 @@
       {
         "rawLine": "2022/10/12 14:16:53 2347185593 cff943d8 [INFO Client 82104] @De Path_Of_Dik: Olá, eu gostaria de comprar seu 20 Mapa de Templo Carmesí Superior (T16) por meu(s) 68 Orbe do Caos na Kalandra",
         "logMessage": "@De Path_Of_Dik: Olá, eu gostaria de comprar seu 20 Mapa de Templo Carmesí Superior (T16) por meu(s) 68 Orbe do Caos na Kalandra",
+        "logLevel": "INFO",
         "whisper": "Olá, eu gostaria de comprar seu 20 Mapa de Templo Carmesí Superior (T16) por meu(s) 68 Orbe do Caos na Kalandra",
         "player": "Path_Of_Dik",
         "direction": "From"
@@ -1735,6 +1887,7 @@
       {
         "rawLine": "2022/10/12 14:17:53 2347245453 cff943d8 [INFO Client 82104] @Para CratoIgniteKal: Olá, eu gostaria de comprar seu Malicia de Cospri, Florete enjoyado listado por 25 chaos na Kalandra (aba do baú: \"Shop2\"; posição: esquerda 1, topo 1)",
         "logMessage": "@Para CratoIgniteKal: Olá, eu gostaria de comprar seu Malicia de Cospri, Florete enjoyado listado por 25 chaos na Kalandra (aba do baú: \"Shop2\"; posição: esquerda 1, topo 1)",
+        "logLevel": "INFO",
         "whisper": "Olá, eu gostaria de comprar seu Malicia de Cospri, Florete enjoyado listado por 25 chaos na Kalandra (aba do baú: \"Shop2\"; posição: esquerda 1, topo 1)",
         "player": "CratoIgniteKal",
         "direction": "To"
@@ -1744,6 +1897,7 @@
       {
         "rawLine": "2021/09/01 17:31:38 1582831203 bb1 [INFO Client 65888] @To ñape_con_niraj: Hola, quisiera comprar tu Torques de Condenación Amuleto Citrino listado por 3 chaos en Expedition (pestaña de alijo \"~price 3 chaos\"; posición: izquierda 18, arriba 10)",
         "logMessage": "@To ñape_con_niraj: Hola, quisiera comprar tu Torques de Condenación Amuleto Citrino listado por 3 chaos en Expedition (pestaña de alijo \"~price 3 chaos\"; posición: izquierda 18, arriba 10)",
+        "logLevel": "INFO",
         "whisper": "Hola, quisiera comprar tu Torques de Condenación Amuleto Citrino listado por 3 chaos en Expedition (pestaña de alijo \"~price 3 chaos\"; posición: izquierda 18, arriba 10)",
         "direction": "To",
         "item": "Torques de Condenación Amuleto Citrino",
@@ -1762,6 +1916,7 @@
       {
         "rawLine": "2022/10/16 11:19:30 235724062 cff943d8 [INFO Client 17216] @Para CratoIgniteKal: Hola, quisiera comprar tu Invitación de la Especialista: El Atlas en Kalandra (pestaña de alijo \"Frags\"; posición: izquierda 7, arriba 2)",
         "logMessage": "@Para CratoIgniteKal: Hola, quisiera comprar tu Invitación de la Especialista: El Atlas en Kalandra (pestaña de alijo \"Frags\"; posición: izquierda 7, arriba 2)",
+        "logLevel": "INFO",
         "whisper": "Hola, quisiera comprar tu Invitación de la Especialista: El Atlas en Kalandra (pestaña de alijo \"Frags\"; posición: izquierda 7, arriba 2)",
         "direction": "To",
         "item": "Invitación de la Especialista: El Atlas",
@@ -1775,6 +1930,7 @@
       {
         "rawLine": "2022/10/16 11:21:35 235849265 cff943d8 [INFO Client 17216] @Para CratoIgniteKal: Hola, quiero comprar tu(s) 1600 Orbe de alteración por mi(s) 2 Orbe divino en la liga Kalandra",
         "logMessage": "@Para CratoIgniteKal: Hola, quiero comprar tu(s) 1600 Orbe de alteración por mi(s) 2 Orbe divino en la liga Kalandra",
+        "logLevel": "INFO",
         "whisper": "Hola, quiero comprar tu(s) 1600 Orbe de alteración por mi(s) 2 Orbe divino en la liga Kalandra",
         "direction": "To",
         "item": {
@@ -1796,6 +1952,7 @@
       {
         "rawLine": "2022/10/16 11:20:46 235800765 cff943d8 [INFO Client 17216] @Para CratoIgniteKal: Hola, quiero comprar tu(s) 1200 Orbe de fusión por mi(s) 1 Orbe divino en la liga Kalandra",
         "logMessage": "@Para CratoIgniteKal: Hola, quiero comprar tu(s) 1200 Orbe de fusión por mi(s) 1 Orbe divino en la liga Kalandra",
+        "logLevel": "INFO",
         "whisper": "Hola, quiero comprar tu(s) 1200 Orbe de fusión por mi(s) 1 Orbe divino en la liga Kalandra",
         "direction": "To",
         "item": {
@@ -1817,6 +1974,7 @@
       {
         "rawLine": "2022/10/17 19:36:44 351958578 cff943d8 [INFO Client 21020] @Para CratoIgniteKal: Hola, quiero comprar tu(s) 1 Mapa de Laberinto Superior (G8) por mi(s) 5 Orbe de caos en la liga Kalandra",
         "logMessage": "@Para CratoIgniteKal: Hola, quiero comprar tu(s) 1 Mapa de Laberinto Superior (G8) por mi(s) 5 Orbe de caos en la liga Kalandra",
+        "logLevel": "INFO",
         "whisper": "Hola, quiero comprar tu(s) 1 Mapa de Laberinto Superior (G8) por mi(s) 5 Orbe de caos en la liga Kalandra",
         "direction": "To",
         "item": {
@@ -1851,6 +2009,7 @@
       {
         "rawLine": "2022/10/21 17:42:46 690719921 1186952b [DEBUG Client 39648] Generating level 69 area \"2_10_town\" with seed 1",
         "logMessage": "Generating level 69 area \"2_10_town\" with seed 1",
+        "logLevel": "DEBUG",
         "Id": "2_10_town",
         "Name": "Доки Ориата",
         "Act": 10,
@@ -1869,6 +2028,7 @@
       {
         "rawLine": "2022/10/18 21:59:25 446919843 1186952b [DEBUG Client 24888] Generating level 83 area \"MapWorldsDunes\" with seed 3221167377",
         "logMessage": "Generating level 83 area \"MapWorldsDunes\" with seed 3221167377",
+        "logLevel": "DEBUG",
         "Id": "MapWorldsDunes",
         "Name": "Дюны",
         "Act": 11,
@@ -1887,6 +2047,7 @@
       {
         "rawLine": "2021/10/22 23:02:02 725176437 412 [DEBUG Client 30224] Generating level 33 area \"1_Labyrinth_OH_straight\" with seed 3762873214",
         "logMessage": "Generating level 33 area \"1_Labyrinth_OH_straight\" with seed 3762873214",
+        "logLevel": "DEBUG",
         "Id": "1_Labyrinth_OH_straight",
         "Name": "Путь к усадьбе",
         "Act": 3,
@@ -1905,6 +2066,7 @@
       {
         "rawLine": "2021/10/23 00:51:48 731761718 412 [DEBUG Client 30224] Generating level 68 area \"HeistHub\" with seed 3419980492",
         "logMessage": "Generating level 68 area \"HeistHub\" with seed 3419980492",
+        "logLevel": "DEBUG",
         "Id": "HeistHub",
         "Name": "Разбойничья гавань",
         "Act": 1,
@@ -1923,6 +2085,7 @@
       {
         "rawLine": "2021/10/27 17:47:04 99887093 412 [DEBUG Client 7768] Generating level 84 area \"MavenBoss\" with seed 1400455492",
         "logMessage": "Generating level 84 area \"MavenBoss\" with seed 1400455492",
+        "logLevel": "DEBUG",
         "Id": "MavenBoss",
         "Name": "Отсутствие сострадания и сочувствия",
         "Act": 11,
@@ -1943,6 +2106,7 @@
       {
         "rawLine": "2022/10/12 14:40:39 2348611328 cff943d8 [INFO Client 26840] : <<set:NS>><<set:N>><<set:S>>Вы вошли в область Сумрачное взморье.",
         "logMessage": ": <<set:NS>><<set:N>><<set:S>>Вы вошли в область Сумрачное взморье.",
+        "logLevel": "INFO",
         "newArea": "Сумрачное взморье"
       }
     ],
@@ -1950,6 +2114,7 @@
       {
         "rawLine": "2022/10/12 14:47:01 2348994125 cff943d8 [INFO Client 26840] : MiiX_MniunGaD покинул область.",
         "logMessage": ": MiiX_MniunGaD покинул область.",
+        "logLevel": "INFO",
         "player": "MiiX_MniunGaD",
         "action": "left"
       }
@@ -1958,6 +2123,7 @@
       {
         "rawLine": "2022/10/12 14:46:40 2348972843 cff943d8 [INFO Client 26840] : MiiX_MniunGaD присоединился.",
         "logMessage": ": MiiX_MniunGaD присоединился.",
+        "logLevel": "INFO",
         "player": "MiiX_MniunGaD",
         "action": "joined"
       }
@@ -1966,6 +2132,7 @@
       {
         "rawLine": "2022/10/12 14:42:02 2348695109 cff943d8 [INFO Client 26840] : Режим \"отошёл\" включён. Авто-ответ \"Игрок отошёл.\".",
         "logMessage": ": Режим \"отошёл\" включён. Авто-ответ \"Игрок отошёл.\".",
+        "logLevel": "INFO",
         "newMode": "AFK",
         "newStatus": "ON",
         "autoreply": "Игрок отошёл."
@@ -1975,6 +2142,7 @@
       {
         "rawLine": "2022/10/12 14:42:03 2348696062 cff943d8 [INFO Client 26840] : Режим \"отошёл\" выключен.",
         "logMessage": ": Режим \"отошёл\" выключен.",
+        "logLevel": "INFO",
         "newMode": "AFK",
         "newStatus": "OFF"
       }
@@ -1983,6 +2151,7 @@
       {
         "rawLine": "2022/10/12 14:42:05 2348697312 cff943d8 [INFO Client 26840] : Режим \"недоступен\" включён. Авто-ответ \"Игрок находится в режиме афк.\".",
         "logMessage": ": Режим \"недоступен\" включён. Авто-ответ \"Игрок находится в режиме афк.\".",
+        "logLevel": "INFO",
         "newMode": "DND",
         "newStatus": "ON",
         "autoreply": "Игрок находится в режиме афк."
@@ -1992,6 +2161,7 @@
       {
         "rawLine": "2022/10/12 14:42:06 2348698250 cff943d8 [INFO Client 26840] : Режим \"недоступен\" выключен.",
         "logMessage": ": Режим \"недоступен\" выключен.",
+        "logLevel": "INFO",
         "newMode": "DND",
         "newStatus": "OFF"
       }
@@ -2000,6 +2170,7 @@
       {
         "rawLine": "2022/10/12 14:40:39 2348611734 cff943d8 [INFO Client 26840] : Вы присоединились к Общему каналу чата 1.",
         "logMessage": ": Вы присоединились к Общему каналу чата 1.",
+        "logLevel": "INFO",
         "chatType": "global",
         "channel": 1,
         "language": "English"
@@ -2007,6 +2178,7 @@
       {
         "rawLine": "2022/10/12 14:40:39 2348611734 cff943d8 [INFO Client 26840] : Вы присоединились к чату Торговли 1.",
         "logMessage": ": Вы присоединились к чату Торговли 1.",
+        "logLevel": "INFO",
         "chatType": "trade",
         "channel": 1,
         "language": "English"
@@ -2016,6 +2188,7 @@
       {
         "rawLine": "2022/10/11 18:48:07 2277059640 ca3a6737 [INFO Client 71404] Connecting to instance server at 185.19.219.31:6112",
         "logMessage": "Connecting to instance server at 185.19.219.31:6112",
+        "logLevel": "INFO",
         "serverAddress": "185.19.219.31:6112"
       }
     ],
@@ -2023,6 +2196,7 @@
       {
         "rawLine": "2022/10/12 14:43:29 2348781406 cff943d8 [INFO Client 26840] : Ваш персонаж был создан 25 дн., 17 час., 47 мин. и 8 сек. назад.",
         "logMessage": ": Ваш персонаж был создан 25 дн., 17 час., 47 мин. и 8 сек. назад.",
+        "logLevel": "INFO",
         "days": 25,
         "hours": 17,
         "minutes": 47,
@@ -2033,6 +2207,7 @@
       {
         "rawLine": "2022/10/12 14:43:33 2348785718 cff943d8 [INFO Client 26840] : Вы погибли 21 раз.",
         "logMessage": ": Вы погибли 21 раз.",
+        "logLevel": "INFO",
         "deathCount": 21
       }
     ],
@@ -2040,6 +2215,7 @@
       {
         "rawLine": "2022/10/12 14:41:58 2348691156 cff943d8 [INFO Client 26840] : asdaok (Жрец) достигает 2 уровня",
         "logMessage": ": asdaok (Жрец) достигает 2 уровня",
+        "logLevel": "INFO",
         "characterLevel": 2,
         "character": "asdaok",
         "class": "Жрец"
@@ -2049,6 +2225,7 @@
       {
         "rawLine": "2022/10/11 18:46:41 2276973593 890d9d9b [INFO Client 71404] Connected to fra01.login.pathofexile.com in 16ms.",
         "logMessage": "Connected to fra01.login.pathofexile.com in 16ms.",
+        "logLevel": "INFO",
         "time": 16,
         "address": "fra01.login.pathofexile.com"
       }
@@ -2057,6 +2234,7 @@
       {
         "rawLine": "2022/10/12 14:43:31 2348783531 cff943d8 [INFO Client 26840] : Время игры на этом персонаже: 2 дн., 14 час., 45 мин. и 4 сек..",
         "logMessage": ": Время игры на этом персонаже: 2 дн., 14 час., 45 мин. и 4 сек..",
+        "logLevel": "INFO",
         "days": 2,
         "hours": 14,
         "minutes": 45,
@@ -2067,12 +2245,14 @@
       {
         "rawLine": "2022/10/12 14:42:08 2348700390 cff943d8 [INFO Client 26840] : Осталось монстров: 46.",
         "logMessage": ": Осталось монстров: 46.",
+        "logLevel": "INFO",
         "monsterCount": 46,
         "more": false
       },
       {
         "rawLine": "2022/10/12 14:42:44 2348736359 cff943d8 [INFO Client 26840] : Осталось более 50 монстров.",
         "logMessage": ": Осталось более 50 монстров.",
+        "logLevel": "INFO",
         "monsterCount": 50,
         "more": true
       }
@@ -2081,6 +2261,7 @@
       {
         "rawLine": "2022/10/12 14:43:00 2348752203 cff943d8 [INFO Client 26840] : asdaok был повержен.",
         "logMessage": ": asdaok был повержен.",
+        "logLevel": "INFO",
         "player": "asdaok"
       }
     ],
@@ -2088,6 +2269,7 @@
       {
         "rawLine": "2022/10/12 14:42:34 2348727109 cff943d8 [INFO Client 26840] : Сделка совершена.",
         "logMessage": ": Сделка совершена.",
+        "logLevel": "INFO",
         "tradeAction": "accepted"
       }
     ],
@@ -2095,6 +2277,7 @@
       {
         "rawLine": "2022/10/12 14:42:36 2348728843 cff943d8 [INFO Client 26840] : Сделка отклонена.",
         "logMessage": ": Сделка отклонена.",
+        "logLevel": "INFO",
         "tradeAction": "cancelled"
       }
     ],
@@ -2102,6 +2285,7 @@
       {
         "rawLine": "2022/10/12 14:55:38 2349510515 cff943d8 [INFO Client 26840] @От кого TTV_Kyojincat: Здравствуйте, хочу купить у вас Чистое прорицание, Большой флакон равновесия за 90 chaos в лиге Kalandra (секция \"Shop2\"; позиция: 11 столбец, 6 ряд)",
         "logMessage": "@От кого TTV_Kyojincat: Здравствуйте, хочу купить у вас Чистое прорицание, Большой флакон равновесия за 90 chaos в лиге Kalandra (секция \"Shop2\"; позиция: 11 столбец, 6 ряд)",
+        "logLevel": "INFO",
         "whisper": "Здравствуйте, хочу купить у вас Чистое прорицание, Большой флакон равновесия за 90 chaos в лиге Kalandra (секция \"Shop2\"; позиция: 11 столбец, 6 ряд)",
         "player": "TTV_Kyojincat",
         "direction": "From"
@@ -2111,6 +2295,7 @@
       {
         "rawLine": "2022/10/12 14:43:23 2348775968 cff943d8 [INFO Client 26840] @Кому CratoIgniteKal: Hola, quisiera comprar tu Озорная пасть, Костяной шлем listado por 15 chaos en Kalandra (pestaña de alijo \"Shop2\"; posición: izquierda 11, arriba 11)",
         "logMessage": "@Кому CratoIgniteKal: Hola, quisiera comprar tu Озорная пасть, Костяной шлем listado por 15 chaos en Kalandra (pestaña de alijo \"Shop2\"; posición: izquierda 11, arriba 11)",
+        "logLevel": "INFO",
         "whisper": "Hola, quisiera comprar tu Озорная пасть, Костяной шлем listado por 15 chaos en Kalandra (pestaña de alijo \"Shop2\"; posición: izquierda 11, arriba 11)",
         "player": "CratoIgniteKal",
         "direction": "To"
@@ -2120,6 +2305,7 @@
       {
         "rawLine": "2022/10/12 14:55:38 2349510515 cff943d8 [INFO Client 26840] @Кому кого TTV_Kyojincat: Здравствуйте, хочу купить у вас Чистое прорицание, Большой флакон равновесия за 90 chaos в лиге Kalandra (секция \"Shop2\"; позиция: 11 столбец, 6 ряд)",
         "logMessage": "@Кому кого TTV_Kyojincat: Здравствуйте, хочу купить у вас Чистое прорицание, Большой флакон равновесия за 90 chaos в лиге Kalandra (секция \"Shop2\"; позиция: 11 столбец, 6 ряд)",
+        "logLevel": "INFO",
         "whisper": "Здравствуйте, хочу купить у вас Чистое прорицание, Большой флакон равновесия за 90 chaos в лиге Kalandra (секция \"Shop2\"; позиция: 11 столбец, 6 ряд)",
         "direction": "To",
         "item": "Чистое прорицание, Большой флакон равновесия",
@@ -2138,6 +2324,7 @@
       {
         "rawLine": "2022/10/16 12:19:30 239324218 cff943d8 [INFO Client 14608] @Кому CratoIgniteKal: Здравствуйте, хочу купить у вас Извивающееся приглашение в лиге Kalandra (секция \"Frags\"; позиция: 2 столбец, 3 ряд)",
         "logMessage": "@Кому CratoIgniteKal: Здравствуйте, хочу купить у вас Извивающееся приглашение в лиге Kalandra (секция \"Frags\"; позиция: 2 столбец, 3 ряд)",
+        "logLevel": "INFO",
         "whisper": "Здравствуйте, хочу купить у вас Извивающееся приглашение в лиге Kalandra (секция \"Frags\"; позиция: 2 столбец, 3 ряд)",
         "direction": "To",
         "item": "Извивающееся приглашение",
@@ -2151,6 +2338,7 @@
       {
         "rawLine": "2022/10/12 15:12:36 2350528734 cff943d8 [INFO Client 26840] @Кому кого <$$HU$$> RF_L_kaland: Здравствуйте, хочу купить у вас 20 Карта кровавого храма высокого качества (T16) за 68 Сфера хаоса в лиге Kalandra",
         "logMessage": "@Кому кого <$$HU$$> RF_L_kaland: Здравствуйте, хочу купить у вас 20 Карта кровавого храма высокого качества (T16) за 68 Сфера хаоса в лиге Kalandra",
+        "logLevel": "INFO",
         "whisper": "Здравствуйте, хочу купить у вас 20 Карта кровавого храма высокого качества (T16) за 68 Сфера хаоса в лиге Kalandra",
         "direction": "To",
         "item": {
@@ -2172,6 +2360,7 @@
       {
         "rawLine": "2022/10/16 12:18:23 239257187 cff943d8 [INFO Client 14608] @Кому CratoIgniteKal: Здравствуйте, хочу купить у вас 1200 Сфера соединения за 1 Божественная сфера в лиге Kalandra",
         "logMessage": "@Кому CratoIgniteKal: Здравствуйте, хочу купить у вас 1200 Сфера соединения за 1 Божественная сфера в лиге Kalandra",
+        "logLevel": "INFO",
         "whisper": "Здравствуйте, хочу купить у вас 1200 Сфера соединения за 1 Божественная сфера в лиге Kalandra",
         "direction": "To",
         "item": {
@@ -2206,6 +2395,7 @@
       {
         "rawLine": "2022/10/21 17:42:46 690719921 1186952b [DEBUG Client 39648] Generating level 69 area \"2_10_town\" with seed 1",
         "logMessage": "Generating level 69 area \"2_10_town\" with seed 1",
+        "logLevel": "DEBUG",
         "Id": "2_10_town",
         "Name": "ท่าเรือโอริอาท",
         "Act": 10,
@@ -2224,6 +2414,7 @@
       {
         "rawLine": "2022/10/18 21:59:25 446919843 1186952b [DEBUG Client 24888] Generating level 83 area \"MapWorldsDunes\" with seed 3221167377",
         "logMessage": "Generating level 83 area \"MapWorldsDunes\" with seed 3221167377",
+        "logLevel": "DEBUG",
         "Id": "MapWorldsDunes",
         "Name": "Dunes",
         "Act": 11,
@@ -2242,6 +2433,7 @@
       {
         "rawLine": "2021/10/22 23:02:02 725176437 412 [DEBUG Client 30224] Generating level 33 area \"1_Labyrinth_OH_straight\" with seed 3762873214",
         "logMessage": "Generating level 33 area \"1_Labyrinth_OH_straight\" with seed 3762873214",
+        "logLevel": "DEBUG",
         "Id": "1_Labyrinth_OH_straight",
         "Name": "เส้นทางคฤหาสน์",
         "Act": 3,
@@ -2260,6 +2452,7 @@
       {
         "rawLine": "2021/10/23 00:51:48 731761718 412 [DEBUG Client 30224] Generating level 68 area \"HeistHub\" with seed 3419980492",
         "logMessage": "Generating level 68 area \"HeistHub\" with seed 3419980492",
+        "logLevel": "DEBUG",
         "Id": "HeistHub",
         "Name": "ท่าเรือโจร",
         "Act": 1,
@@ -2278,6 +2471,7 @@
       {
         "rawLine": "2021/10/27 17:47:04 99887093 412 [DEBUG Client 7768] Generating level 84 area \"MavenBoss\" with seed 1400455492",
         "logMessage": "Generating level 84 area \"MavenBoss\" with seed 1400455492",
+        "logLevel": "DEBUG",
         "Id": "MavenBoss",
         "Name": "สูญสิ้นซึ่งเมตตาปรานี",
         "Act": 11,
@@ -2298,6 +2492,7 @@
       {
         "rawLine": "2022/10/12 15:14:30 2350643125 cff943d8 [INFO Client 69708] : คุณเข้าสู่ ชายฝั่งสนธยา",
         "logMessage": ": คุณเข้าสู่ ชายฝั่งสนธยา",
+        "logLevel": "INFO",
         "newArea": "ชายฝั่งสนธยา"
       }
     ],
@@ -2305,6 +2500,7 @@
       {
         "rawLine": "2022/10/12 15:14:30 2350643125 cff943d8 [INFO Client 69708] : asdf ออกจากพื้นที่",
         "logMessage": ": asdf ออกจากพื้นที่",
+        "logLevel": "INFO",
         "player": "asdf",
         "action": "left"
       }
@@ -2313,6 +2509,7 @@
       {
         "rawLine": "2022/10/12 15:14:30 2350643125 cff943d8 [INFO Client 69708] : asdf เข้าสู่พื้นที่",
         "logMessage": ": asdf เข้าสู่พื้นที่",
+        "logLevel": "INFO",
         "player": "asdf",
         "action": "joined"
       }
@@ -2321,6 +2518,7 @@
       {
         "rawLine": "2022/10/12 15:15:49 2350721609 cff943d8 [INFO Client 69708] : เปิดโหมด AFK แล้ว ตอบกลับอัตโนมัติ \"ผู้เล่นคนนี้กำลัง AFK (ไม่ได้เล่นอยู่ในขณะนี้)\"",
         "logMessage": ": เปิดโหมด AFK แล้ว ตอบกลับอัตโนมัติ \"ผู้เล่นคนนี้กำลัง AFK (ไม่ได้เล่นอยู่ในขณะนี้)\"",
+        "logLevel": "INFO",
         "newMode": "AFK",
         "newStatus": "ON",
         "autoreply": "ผู้เล่นคนนี้กำลัง AFK (ไม่ได้เล่นอยู่ในขณะนี้)"
@@ -2330,6 +2528,7 @@
       {
         "rawLine": "2022/10/12 15:15:50 2350722390 cff943d8 [INFO Client 69708] : ปิดโหมด AFK แล้ว",
         "logMessage": ": ปิดโหมด AFK แล้ว",
+        "logLevel": "INFO",
         "newMode": "AFK",
         "newStatus": "OFF"
       }
@@ -2338,6 +2537,7 @@
       {
         "rawLine": "2022/10/12 15:15:51 2350723812 cff943d8 [INFO Client 69708] : เปิดโหมด DND แล้ว ตอบกลับอัตโนมัติ \"ผู้เล่นคนนี้เปิดใช้โหมด DND\"",
         "logMessage": ": เปิดโหมด DND แล้ว ตอบกลับอัตโนมัติ \"ผู้เล่นคนนี้เปิดใช้โหมด DND\"",
+        "logLevel": "INFO",
         "newMode": "DND",
         "newStatus": "ON",
         "autoreply": "ผู้เล่นคนนี้เปิดใช้โหมด DND"
@@ -2347,6 +2547,7 @@
       {
         "rawLine": "2022/10/12 15:15:52 2350724890 cff943d8 [INFO Client 69708] : ปิดโหมด DND แล้ว",
         "logMessage": ": ปิดโหมด DND แล้ว",
+        "logLevel": "INFO",
         "newMode": "DND",
         "newStatus": "OFF"
       }
@@ -2355,6 +2556,7 @@
       {
         "rawLine": "2022/10/12 15:14:31 2350643484 cff943d8 [INFO Client 69708] : คุณได้เข้าร่วมช่องแชทเพื่อแลกเปลี่ยนEnglish หมายเลข 1 แล้ว",
         "logMessage": ": คุณได้เข้าร่วมช่องแชทเพื่อแลกเปลี่ยนEnglish หมายเลข 1 แล้ว",
+        "logLevel": "INFO",
         "chatType": "trade",
         "channel": 1,
         "language": "English"
@@ -2362,6 +2564,7 @@
       {
         "rawLine": "2022/10/12 15:14:31 2350643484 cff943d8 [INFO Client 69708] : คุณได้เข้าร่วมช่องแชทสาธารณะEnglish หมายเลข 1 แล้ว",
         "logMessage": ": คุณได้เข้าร่วมช่องแชทสาธารณะEnglish หมายเลข 1 แล้ว",
+        "logLevel": "INFO",
         "chatType": "global",
         "channel": 1,
         "language": "English"
@@ -2371,6 +2574,7 @@
       {
         "rawLine": "2022/10/11 18:48:07 2277059640 ca3a6737 [INFO Client 71404] Connecting to instance server at 185.19.219.31:6112",
         "logMessage": "Connecting to instance server at 185.19.219.31:6112",
+        "logLevel": "INFO",
         "serverAddress": "185.19.219.31:6112"
       }
     ],
@@ -2378,6 +2582,7 @@
       {
         "rawLine": "2022/10/12 15:16:49 2350781859 cff943d8 [INFO Client 69708] : ตัวละครของคุณสร้างขึ้นเมื่อ 25 วัน, 18 ชั่วโมง, 20 นาที และ 28 วินาที ก่อน",
         "logMessage": ": ตัวละครของคุณสร้างขึ้นเมื่อ 25 วัน, 18 ชั่วโมง, 20 นาที และ 28 วินาที ก่อน",
+        "logLevel": "INFO",
         "days": 25,
         "hours": 18,
         "minutes": 20,
@@ -2388,6 +2593,7 @@
       {
         "rawLine": "2022/10/12 15:16:52 2350785093 cff943d8 [INFO Client 69708] : คุณตายมาทั้งหมด 21 ครั้ง",
         "logMessage": ": คุณตายมาทั้งหมด 21 ครั้ง",
+        "logLevel": "INFO",
         "deathCount": 21
       }
     ],
@@ -2395,6 +2601,7 @@
       {
         "rawLine": "2022/10/12 15:15:47 2350719281 cff943d8 [INFO Client 69708] : ตอนนี้ lkaspdp (Templar) เข้าสู่เลเวล 2 แล้ว",
         "logMessage": ": ตอนนี้ lkaspdp (Templar) เข้าสู่เลเวล 2 แล้ว",
+        "logLevel": "INFO",
         "characterLevel": 2,
         "character": "lkaspdp",
         "class": "Templar"
@@ -2404,6 +2611,7 @@
       {
         "rawLine": "2022/10/11 18:46:41 2276973593 890d9d9b [INFO Client 71404] Connected to fra01.login.pathofexile.com in 16ms.",
         "logMessage": "Connected to fra01.login.pathofexile.com in 16ms.",
+        "logLevel": "INFO",
         "time": 16,
         "address": "fra01.login.pathofexile.com"
       }
@@ -2412,6 +2620,7 @@
       {
         "rawLine": "2022/10/12 15:16:51 2350783390 cff943d8 [INFO Client 69708] : คุณเล่นไป 2 วัน, 15 ชั่วโมง, 14 นาที และ 47 วินาที แล้ว",
         "logMessage": ": คุณเล่นไป 2 วัน, 15 ชั่วโมง, 14 นาที และ 47 วินาที แล้ว",
+        "logLevel": "INFO",
         "days": 2,
         "hours": 15,
         "minutes": 14,
@@ -2422,12 +2631,14 @@
       {
         "rawLine": "2022/10/12 15:15:54 2350726875 cff943d8 [INFO Client 69708] : เหลือมอนสเตอร์อีก 34 ตัว",
         "logMessage": ": เหลือมอนสเตอร์อีก 34 ตัว",
+        "logLevel": "INFO",
         "monsterCount": 34,
         "more": false
       },
       {
         "rawLine": "2022/10/12 15:16:20 2350753046 cff943d8 [INFO Client 69708] : เหลือมอนสเตอร์มากกว่า 50 ตัว",
         "logMessage": ": เหลือมอนสเตอร์มากกว่า 50 ตัว",
+        "logLevel": "INFO",
         "monsterCount": 50,
         "more": true
       }
@@ -2436,6 +2647,7 @@
       {
         "rawLine": "2022/10/12 15:16:29 2350762140 cff943d8 [INFO Client 69708] : lkaspdp ถูกสังหาร",
         "logMessage": ": lkaspdp ถูกสังหาร",
+        "logLevel": "INFO",
         "player": "lkaspdp"
       }
     ],
@@ -2443,6 +2655,7 @@
       {
         "rawLine": "2022/10/12 15:16:12 2350745046 cff943d8 [INFO Client 69708] : ยอมรับการแลกเปลี่ยนแล้ว",
         "logMessage": ": ยอมรับการแลกเปลี่ยนแล้ว",
+        "logLevel": "INFO",
         "tradeAction": "accepted"
       }
     ],
@@ -2450,6 +2663,7 @@
       {
         "rawLine": "2022/10/12 15:16:14 2350746531 cff943d8 [INFO Client 69708] : การแลกเปลี่ยนถูกยกเลิก",
         "logMessage": ": การแลกเปลี่ยนถูกยกเลิก",
+        "logLevel": "INFO",
         "tradeAction": "cancelled"
       }
     ],
@@ -2457,6 +2671,7 @@
       {
         "rawLine": "2022/10/12 16:13:56 2354208968 cff943d8 [INFO Client 81408] @จาก CratoIgniteKal: Здравствуйте, хочу купить у вас Mjölner, Gavel за 60 chaos в лиге Kalandra (секция \"Shop\"; позиция: 7 столбец, 2 ряд)",
         "logMessage": "@จาก CratoIgniteKal: Здравствуйте, хочу купить у вас Mjölner, Gavel за 60 chaos в лиге Kalandra (секция \"Shop\"; позиция: 7 столбец, 2 ряд)",
+        "logLevel": "INFO",
         "whisper": "Здравствуйте, хочу купить у вас Mjölner, Gavel за 60 chaos в лиге Kalandra (секция \"Shop\"; позиция: 7 столбец, 2 ряд)",
         "player": "CratoIgniteKal",
         "direction": "From"
@@ -2466,6 +2681,7 @@
       {
         "rawLine": "2022/10/12 16:13:56 2354208968 cff943d8 [INFO Client 81408] @ถึง CratoIgniteKal: Здравствуйте, хочу купить у вас Mjölner, Gavel за 60 chaos в лиге Kalandra (секция \"Shop\"; позиция: 7 столбец, 2 ряд)",
         "logMessage": "@ถึง CratoIgniteKal: Здравствуйте, хочу купить у вас Mjölner, Gavel за 60 chaos в лиге Kalandra (секция \"Shop\"; позиция: 7 столбец, 2 ряд)",
+        "logLevel": "INFO",
         "whisper": "Здравствуйте, хочу купить у вас Mjölner, Gavel за 60 chaos в лиге Kalandra (секция \"Shop\"; позиция: 7 столбец, 2 ряд)",
         "player": "CratoIgniteKal",
         "direction": "To"
@@ -2475,6 +2691,7 @@
       {
         "rawLine": "2022/09/14 16:56:55 1698654968 cff943d8 [INFO Client 37212] @To เล่นเอาฮา: สวัสดี เราต้องการซื้อ Einhar's Memory of the Sacred Grove ของคุณซึ่งตั้งขายไว้ในราคา 1.5 divine ในลีก Kalandra (คลังชื่อ \"7777\"; ตำแหน่ง: ซ้าย 4, บน 11)",
         "logMessage": "@To เล่นเอาฮา: สวัสดี เราต้องการซื้อ Einhar's Memory of the Sacred Grove ของคุณซึ่งตั้งขายไว้ในราคา 1.5 divine ในลีก Kalandra (คลังชื่อ \"7777\"; ตำแหน่ง: ซ้าย 4, บน 11)",
+        "logLevel": "INFO",
         "whisper": "สวัสดี เราต้องการซื้อ Einhar's Memory of the Sacred Grove ของคุณซึ่งตั้งขายไว้ในราคา 1.5 divine ในลีก Kalandra (คลังชื่อ \"7777\"; ตำแหน่ง: ซ้าย 4, บน 11)",
         "direction": "To",
         "item": "Einhar's Memory of the Sacred Grove",
@@ -2493,6 +2710,7 @@
       {
         "rawLine": "2022/10/16 12:32:51 240125140 cff943d8 [INFO Client 16620] @ถึง CratoIgniteKal: สวัสดี เราต้องการซื้อ คำเชิญของเมเวน: ผู้สังหารเอลเดอร์ ของคุณซึ่งตั้งขายไว้ในราคา 75 chaos ในลีก Kalandra (คลังชื่อ \"Shop\"; ตำแหน่ง: ซ้าย 10, บน 8)",
         "logMessage": "@ถึง CratoIgniteKal: สวัสดี เราต้องการซื้อ คำเชิญของเมเวน: ผู้สังหารเอลเดอร์ ของคุณซึ่งตั้งขายไว้ในราคา 75 chaos ในลีก Kalandra (คลังชื่อ \"Shop\"; ตำแหน่ง: ซ้าย 10, บน 8)",
+        "logLevel": "INFO",
         "whisper": "สวัสดี เราต้องการซื้อ คำเชิญของเมเวน: ผู้สังหารเอลเดอร์ ของคุณซึ่งตั้งขายไว้ในราคา 75 chaos ในลีก Kalandra (คลังชื่อ \"Shop\"; ตำแหน่ง: ซ้าย 10, บน 8)",
         "direction": "To",
         "item": "คำเชิญของเมเวน: ผู้สังหารเอลเดอร์",
@@ -2511,6 +2729,7 @@
       {
         "rawLine": "2022/10/16 12:30:25 239979171 cff943d8 [INFO Client 16620] @ถึง CratoIgniteKal: สวัสดี เราต้องการซื้อ พรแห่งชายูล่า ของคุณซึ่งตั้งขายไว้ในลีก Kalandra (คลังชื่อ \"Frags\"; ตำแหน่ง: ซ้าย 143, บน 1)",
         "logMessage": "@ถึง CratoIgniteKal: สวัสดี เราต้องการซื้อ พรแห่งชายูล่า ของคุณซึ่งตั้งขายไว้ในลีก Kalandra (คลังชื่อ \"Frags\"; ตำแหน่ง: ซ้าย 143, บน 1)",
+        "logLevel": "INFO",
         "whisper": "สวัสดี เราต้องการซื้อ พรแห่งชายูล่า ของคุณซึ่งตั้งขายไว้ในลีก Kalandra (คลังชื่อ \"Frags\"; ตำแหน่ง: ซ้าย 143, บน 1)",
         "direction": "To",
         "item": "พรแห่งชายูล่า",
@@ -2524,6 +2743,7 @@
       {
         "rawLine": "2022/10/16 12:28:11 239845015 cff943d8 [INFO Client 16620] @ถึง CratoIgniteKal: สวัสดี เราต้องการแลก 1 Divine Orb ของเรากับ 1200 Orb of Fusing ของคุณในลีก Kalandra",
         "logMessage": "@ถึง CratoIgniteKal: สวัสดี เราต้องการแลก 1 Divine Orb ของเรากับ 1200 Orb of Fusing ของคุณในลีก Kalandra",
+        "logLevel": "INFO",
         "whisper": "สวัสดี เราต้องการแลก 1 Divine Orb ของเรากับ 1200 Orb of Fusing ของคุณในลีก Kalandra",
         "direction": "To",
         "item": {
@@ -2545,6 +2765,7 @@
       {
         "rawLine": "2022/10/17 22:12:51 361325562 cff943d8 [INFO Client 12460] @ถึง CratoIgniteKal: สวัสดี เราต้องการแลก 5 Chaos Orb ของเรากับ 1 Superior Maze Map (T8) ของคุณในลีก Kalandra",
         "logMessage": "@ถึง CratoIgniteKal: สวัสดี เราต้องการแลก 5 Chaos Orb ของเรากับ 1 Superior Maze Map (T8) ของคุณในลีก Kalandra",
+        "logLevel": "INFO",
         "whisper": "สวัสดี เราต้องการแลก 5 Chaos Orb ของเรากับ 1 Superior Maze Map (T8) ของคุณในลีก Kalandra",
         "direction": "To",
         "item": {
@@ -2579,6 +2800,7 @@
       {
         "rawLine": "2022/10/21 17:42:46 690719921 1186952b [DEBUG Client 39648] Generating level 69 area \"2_10_town\" with seed 1",
         "logMessage": "Generating level 69 area \"2_10_town\" with seed 1",
+        "logLevel": "DEBUG",
         "Id": "2_10_town",
         "Name": "오리아스 부두",
         "Act": 10,
@@ -2597,6 +2819,7 @@
       {
         "rawLine": "2022/10/18 21:59:25 446919843 1186952b [DEBUG Client 24888] Generating level 83 area \"MapWorldsDunes\" with seed 3221167377",
         "logMessage": "Generating level 83 area \"MapWorldsDunes\" with seed 3221167377",
+        "logLevel": "DEBUG",
         "Id": "MapWorldsDunes",
         "Name": "사구",
         "Act": 11,
@@ -2615,6 +2838,7 @@
       {
         "rawLine": "2021/10/22 23:02:02 725176437 412 [DEBUG Client 30224] Generating level 33 area \"1_Labyrinth_OH_straight\" with seed 3762873214",
         "logMessage": "Generating level 33 area \"1_Labyrinth_OH_straight\" with seed 3762873214",
+        "logLevel": "DEBUG",
         "Id": "1_Labyrinth_OH_straight",
         "Name": "사유지 보도",
         "Act": 3,
@@ -2633,6 +2857,7 @@
       {
         "rawLine": "2021/10/23 00:51:48 731761718 412 [DEBUG Client 30224] Generating level 68 area \"HeistHub\" with seed 3419980492",
         "logMessage": "Generating level 68 area \"HeistHub\" with seed 3419980492",
+        "logLevel": "DEBUG",
         "Id": "HeistHub",
         "Name": "도둑 항구",
         "Act": 1,
@@ -2651,6 +2876,7 @@
       {
         "rawLine": "2021/10/27 17:47:04 99887093 412 [DEBUG Client 7768] Generating level 84 area \"MavenBoss\" with seed 1400455492",
         "logMessage": "Generating level 84 area \"MavenBoss\" with seed 1400455492",
+        "logLevel": "DEBUG",
         "Id": "MavenBoss",
         "Name": "자비와 공감의 부재",
         "Act": 11,
@@ -2671,6 +2897,7 @@
       {
         "rawLine": "2022/10/12 16:17:51 2354443671 cff943d8 [INFO Client 5020] : 라이온아이 초소에 진입했습니다.",
         "logMessage": ": 라이온아이 초소에 진입했습니다.",
+        "logLevel": "INFO",
         "newArea": "라이온아이 초소"
       }
     ],
@@ -2678,6 +2905,7 @@
       {
         "rawLine": "2022/10/12 16:17:51 2354443671 cff943d8 [INFO Client 5020] : asdf 님이 지역에서 나갔습니다",
         "logMessage": ": asdf 님이 지역에서 나갔습니다",
+        "logLevel": "INFO",
         "player": "asdf",
         "action": "left"
       }
@@ -2686,6 +2914,7 @@
       {
         "rawLine": "2022/10/12 16:26:03 2354935531 cff943d8 [INFO Client 5020] : TH๛ยมทูตตัวน้อย๛TH 님이 지역에 들어왔습니다.",
         "logMessage": ": TH๛ยมทูตตัวน้อย๛TH 님이 지역에 들어왔습니다.",
+        "logLevel": "INFO",
         "player": "TH๛ยมทูตตัวน้อย๛TH",
         "action": "joined"
       }
@@ -2694,6 +2923,7 @@
       {
         "rawLine": "2022/10/12 16:17:37 2354429453 cff943d8 [INFO Client 5020] : 자리 비움 모드를 설정했습니다. \"이 플레이어는 자리비움 상태입니다.\"을(를) 자동으로 답신합니다.",
         "logMessage": ": 자리 비움 모드를 설정했습니다. \"이 플레이어는 자리비움 상태입니다.\"을(를) 자동으로 답신합니다.",
+        "logLevel": "INFO",
         "newMode": "AFK",
         "newStatus": "ON",
         "autoreply": "이 플레이어는 자리비움 상태입니다."
@@ -2703,6 +2933,7 @@
       {
         "rawLine": "2022/10/12 16:17:38 2354430265 cff943d8 [INFO Client 5020] : 자리 비움 모드를 해제했습니다.",
         "logMessage": ": 자리 비움 모드를 해제했습니다.",
+        "logLevel": "INFO",
         "newMode": "AFK",
         "newStatus": "OFF"
       }
@@ -2711,6 +2942,7 @@
       {
         "rawLine": "2022/10/12 16:17:40 2354432671 cff943d8 [INFO Client 5020] : 방해 금지 모드를 설정했습니다. \"이 플레이어는 방해금지 모드 상태입니다.\"을(를) 자동으로 답신합니다.",
         "logMessage": ": 방해 금지 모드를 설정했습니다. \"이 플레이어는 방해금지 모드 상태입니다.\"을(를) 자동으로 답신합니다.",
+        "logLevel": "INFO",
         "newMode": "DND",
         "newStatus": "ON",
         "autoreply": "이 플레이어는 방해금지 모드 상태입니다."
@@ -2720,6 +2952,7 @@
       {
         "rawLine": "2022/10/12 16:17:41 2354433406 cff943d8 [INFO Client 5020] : 방해 금지 모드를 해제했습니다.",
         "logMessage": ": 방해 금지 모드를 해제했습니다.",
+        "logLevel": "INFO",
         "newMode": "DND",
         "newStatus": "OFF"
       }
@@ -2728,6 +2961,7 @@
       {
         "rawLine": "2022/10/12 16:16:17 2354349968 cff943d8 [INFO Client 5020] : 전체 채팅 채널 1 English에 참가했습니다.",
         "logMessage": ": 전체 채팅 채널 1 English에 참가했습니다.",
+        "logLevel": "INFO",
         "chatType": "global",
         "channel": 1,
         "language": "English"
@@ -2735,6 +2969,7 @@
       {
         "rawLine": "2022/10/12 16:16:17 2354349968 cff943d8 [INFO Client 5020] : 거래 채팅 채널 1 English에 참가했습니다.",
         "logMessage": ": 거래 채팅 채널 1 English에 참가했습니다.",
+        "logLevel": "INFO",
         "chatType": "trade",
         "channel": 1,
         "language": "English"
@@ -2744,6 +2979,7 @@
       {
         "rawLine": "2022/10/11 18:48:07 2277059640 ca3a6737 [INFO Client 71404] Connecting to instance server at 185.19.219.31:6112",
         "logMessage": "Connecting to instance server at 185.19.219.31:6112",
+        "logLevel": "INFO",
         "serverAddress": "185.19.219.31:6112"
       }
     ],
@@ -2751,6 +2987,7 @@
       {
         "rawLine": "2022/10/12 16:18:44 2354496875 cff943d8 [INFO Client 5020] : 25일, 19시, 22분, 23초 전에 캐릭터를 만들었습니다.",
         "logMessage": ": 25일, 19시, 22분, 23초 전에 캐릭터를 만들었습니다.",
+        "logLevel": "INFO",
         "days": 25,
         "hours": 19,
         "minutes": 22,
@@ -2761,6 +2998,7 @@
       {
         "rawLine": "2022/10/12 16:18:48 2354500406 cff943d8 [INFO Client 5020] : 21회 죽었습니다.",
         "logMessage": ": 21회 죽었습니다.",
+        "logLevel": "INFO",
         "deathCount": 21
       }
     ],
@@ -2768,6 +3006,7 @@
       {
         "rawLine": "2022/10/12 16:17:33 2354425375 cff943d8 [INFO Client 5020] : oooasda(템플러) 님이 2레벨이 되었습니다.",
         "logMessage": ": oooasda(템플러) 님이 2레벨이 되었습니다.",
+        "logLevel": "INFO",
         "characterLevel": 2,
         "character": "oooasda",
         "class": "템플러"
@@ -2777,6 +3016,7 @@
       {
         "rawLine": "2022/10/11 18:46:41 2276973593 890d9d9b [INFO Client 71404] Connected to fra01.login.pathofexile.com in 16ms.",
         "logMessage": "Connected to fra01.login.pathofexile.com in 16ms.",
+        "logLevel": "INFO",
         "time": 16,
         "address": "fra01.login.pathofexile.com"
       }
@@ -2785,6 +3025,7 @@
       {
         "rawLine": "2022/10/12 16:18:47 2354499171 cff943d8 [INFO Client 5020] : 2일, 15시, 20분, 1초 동안 플레이했습니다.",
         "logMessage": ": 2일, 15시, 20분, 1초 동안 플레이했습니다.",
+        "logLevel": "INFO",
         "days": 2,
         "hours": 15,
         "minutes": 20,
@@ -2795,12 +3036,14 @@
       {
         "rawLine": "2022/10/12 16:17:43 2354435609 cff943d8 [INFO Client 5020] : 몬스터 43개체가 남아있습니다.",
         "logMessage": ": 몬스터 43개체가 남아있습니다.",
+        "logLevel": "INFO",
         "monsterCount": 43,
         "more": false
       },
       {
         "rawLine": "2022/10/12 16:18:09 2354461687 cff943d8 [INFO Client 5020] : 몬스터가 50개체 이상 남아있습니다.",
         "logMessage": ": 몬스터가 50개체 이상 남아있습니다.",
+        "logLevel": "INFO",
         "monsterCount": 50,
         "more": true
       }
@@ -2809,6 +3052,7 @@
       {
         "rawLine": "2022/10/12 16:18:24 2354476859 cff943d8 [INFO Client 5020] : oooasda 님이 사망했습니다.",
         "logMessage": ": oooasda 님이 사망했습니다.",
+        "logLevel": "INFO",
         "player": "oooasda"
       }
     ],
@@ -2816,6 +3060,7 @@
       {
         "rawLine": "2022/10/12 16:18:01 2354453578 cff943d8 [INFO Client 5020] : 거래를 수락했습니다.",
         "logMessage": ": 거래를 수락했습니다.",
+        "logLevel": "INFO",
         "tradeAction": "accepted"
       }
     ],
@@ -2823,6 +3068,7 @@
       {
         "rawLine": "2022/10/12 16:18:03 2354455265 cff943d8 [INFO Client 5020] : 거래를 취소했습니다.",
         "logMessage": ": 거래를 취소했습니다.",
+        "logLevel": "INFO",
         "tradeAction": "cancelled"
       }
     ],
@@ -2830,6 +3076,7 @@
       {
         "rawLine": "2022/10/12 16:25:02 2354875109 cff943d8 [INFO Client 5020] @수신 <~•Lc•~> TH๛ยมทูตตัวน้อย๛TH: 안녕하세요, Kalandra 리그의 70 잿빛 숲 지도(T16)(을)를 245 카오스 오브(으)로 구매하고 싶습니다",
         "logMessage": "@수신 <~•Lc•~> TH๛ยมทูตตัวน้อย๛TH: 안녕하세요, Kalandra 리그의 70 잿빛 숲 지도(T16)(을)를 245 카오스 오브(으)로 구매하고 싶습니다",
+        "logLevel": "INFO",
         "whisper": "안녕하세요, Kalandra 리그의 70 잿빛 숲 지도(T16)(을)를 245 카오스 오브(으)로 구매하고 싶습니다",
         "player": "TH๛ยมทูตตัวน้อย๛TH",
         "direction": "From"
@@ -2839,6 +3086,7 @@
       {
         "rawLine": "2022/10/12 16:26:41 2354973531 cff943d8 [INFO Client 5020] @발신 TH๛ยมทูตตัวน้อย๛TH: ty gl",
         "logMessage": "@발신 TH๛ยมทูตตัวน้อย๛TH: ty gl",
+        "logLevel": "INFO",
         "whisper": "ty gl",
         "player": "TH๛ยมทูตตัวน้อย๛TH",
         "direction": "To"
@@ -2848,6 +3096,7 @@
       {
         "rawLine": "2022/10/12 19:25:54 2365726265 cff943d8 [INFO Client 83984] @To CratoIgniteKal: 안녕하세요, 25 chaos(으)로 올려놓은 Kalandra 리그의 Cospri's Malice, Jewelled Foil(을)를 구매하고 싶습니다 (보관함 탭 \"Shop2\", 위치: 왼쪽 2, 상단 1)",
         "logMessage": "@To CratoIgniteKal: 안녕하세요, 25 chaos(으)로 올려놓은 Kalandra 리그의 Cospri's Malice, Jewelled Foil(을)를 구매하고 싶습니다 (보관함 탭 \"Shop2\", 위치: 왼쪽 2, 상단 1)",
+        "logLevel": "INFO",
         "whisper": "안녕하세요, 25 chaos(으)로 올려놓은 Kalandra 리그의 Cospri's Malice, Jewelled Foil(을)를 구매하고 싶습니다 (보관함 탭 \"Shop2\", 위치: 왼쪽 2, 상단 1)",
         "direction": "To",
         "item": "Cospri's Malice, Jewelled Foil",
@@ -2866,6 +3115,7 @@
       {
         "rawLine": "2022/10/16 12:49:42 241136312 cff943d8 [INFO Client 7076] @발신 CratoIgniteKal: 안녕하세요, Kalandra 리그의 차율라의 축복(을)를 구매하고 싶습니다 (보관함 탭 \"Frags\", 위치: 왼쪽 143, 상단 1)",
         "logMessage": "@발신 CratoIgniteKal: 안녕하세요, Kalandra 리그의 차율라의 축복(을)를 구매하고 싶습니다 (보관함 탭 \"Frags\", 위치: 왼쪽 143, 상단 1)",
+        "logLevel": "INFO",
         "whisper": "안녕하세요, Kalandra 리그의 차율라의 축복(을)를 구매하고 싶습니다 (보관함 탭 \"Frags\", 위치: 왼쪽 143, 상단 1)",
         "direction": "To",
         "item": "차율라의 축복",
@@ -2879,6 +3129,7 @@
       {
         "rawLine": "2022/10/16 12:51:42 241256359 cff943d8 [INFO Client 7076] @발신 CratoIgniteKal: 안녕하세요, Kalandra 리그의 1200 연결의 오브(을)를 1 신성한 오브(으)로 구매하고 싶습니다",
         "logMessage": "@발신 CratoIgniteKal: 안녕하세요, Kalandra 리그의 1200 연결의 오브(을)를 1 신성한 오브(으)로 구매하고 싶습니다",
+        "logLevel": "INFO",
         "whisper": "안녕하세요, Kalandra 리그의 1200 연결의 오브(을)를 1 신성한 오브(으)로 구매하고 싶습니다",
         "direction": "To",
         "item": {
@@ -2900,6 +3151,7 @@
       {
         "rawLine": "2022/10/18 18:54:03 435797750 cff943d8 [INFO Client 32324] @발신 CratoIgniteKal: 안녕하세요, Kalandra 리그의 1 상급 미로 지도(T8)(을)를 5 카오스 오브(으)로 구매하고 싶습니다",
         "logMessage": "@발신 CratoIgniteKal: 안녕하세요, Kalandra 리그의 1 상급 미로 지도(T8)(을)를 5 카오스 오브(으)로 구매하고 싶습니다",
+        "logLevel": "INFO",
         "whisper": "안녕하세요, Kalandra 리그의 1 상급 미로 지도(T8)(을)를 5 카오스 오브(으)로 구매하고 싶습니다",
         "direction": "To",
         "item": {
