@@ -11,3 +11,4 @@ export { WhisperDirection } from "./WhisperDirection";
 export * from "./CurrencyGroup";
 export * from "./CurrencyId";
 export * from "./CurrencyItem";
+export * from "./WorldArea";

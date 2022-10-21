@@ -16,6 +16,11 @@ export interface CurrencyItem {
   whisperLabel: string;
 }
 
+/**
+ * Searches for the currency item by name
+ *
+ * @param name The localized name of the currency item
+ */
 export function getCurrencyItem(name: string, language: Language): CurrencyItem | undefined {
   if (!name) return;
 
