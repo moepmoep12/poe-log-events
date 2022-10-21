@@ -14,3 +14,4 @@ export { PlayedQueryEvent } from "./PlayedQueryEvent";
 export { RemainingMonsterEvent } from "./RemainingMonsterEvent";
 export { SlainEvent } from "./SlainEvent";
 export { TradeEvent } from "./TradeEvent";
+export { AreaGeneratedEvent } from "./AreaGeneratedEvent";

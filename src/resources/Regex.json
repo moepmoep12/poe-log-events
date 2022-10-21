@@ -1,5 +1,6 @@
 {
   "base": "(?<datetime>(?<date>^[0-9]{4}\\/[0-9]{2}\\/[0-9]{2}) (?<time>[0-9]{2}:[0-9]{2}:[0-9]{2})).*\\[(?<level>[A-Z]*) (?<src>[a-zA-Z]* [0-9]*)\\] (?<msg>.*)",
+  "areaGenerated": "Generating level (?<level>\\d+) area \"(?<area>.*)\" with seed (?<seed>\\d+)",
   "whisper": "@((?<from>From|De|Von|От кого|จาก|수신)|(?<to>To|À|An|Para|Кому|ถึง|발신)) (?<guild><.*>)?\\s?(?<other>\\S+): (?<whisper>.*)",
   "tradeItemPrice": {
     "en": "^(((Hi, )?I would like to buy your)|wtb) (?<name>.*) listed for (?<price>\\d*([.|,]\\d*)?) (?<currency>.*) in (?<league>.*) \\(stash( tab)? \"(?<stash>.*)\";( position:)? left (?<left>\\d*), top (?<top>\\d*)\\)(?<message>.*)?",

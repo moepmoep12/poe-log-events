@@ -1,4 +1,5 @@
 import { AreaEnteredMatcher } from "./AreaEnteredMatcher";
+import { AreaGeneratedMatcher } from "./AreaGeneratedMatcher";
 import { AreaMatcher } from "./AreaMatcher";
 import { AwayMatcher } from "./AwayMatcher";
 import { BaseMatcher } from "./BaseMatcher";
@@ -20,6 +21,7 @@ export { BaseMatcher } from "./BaseMatcher";
 
 export const rootMatcher = new BaseMatcher([
   new AreaEnteredMatcher(),
+  new AreaGeneratedMatcher(),
   new AreaMatcher(),
   new AwayMatcher(),
   new ChatJoinedMatcher(),

@@ -12,7 +12,7 @@ export class AreaEnteredMatcher extends Matcher {
     areaEntered as Record<string, string>
   );
 
-  public eventName: keyof PathOfExileLogEvents = "areaChanged";
+  public eventName: keyof PathOfExileLogEvents = "areaEntered";
 
   public match(line: string, logEvent: LogEvent, language: Language): AreaEnteredEvent | undefined {
     const regex = AreaEnteredMatcher.areaEnteredRegex[language];

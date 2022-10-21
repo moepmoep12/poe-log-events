@@ -11,16 +11,28 @@ import { Language } from "./models/Language";
 import { Matcher } from "./matching/Matcher";
 
 export interface LogOptions {
-  // the path to the Client.txt
+  /**
+   * The path to the Client.txt
+   *
+   * @example 'C:/Program Files (x86)/Grinding Gear Games/Path of Exile/logs/Client.txt'
+   */
   logFilePath: string;
 
-  // The client language. Default : English (en)
+  /**
+   * The client language. Default : English (en)
+   */
   language?: Language;
 
-  // The number of events that will be cached. Default : 1000
+  /**
+   * The number of events that will be cached. Default : 1000
+   */
   maxCachedEvents?: number;
 
-  // Whether to ignore debug events. Default: true
+  /**
+   * Whether to ignore debug events. Default: false
+   *
+   * @remarks If false, Debug events are now longer parsed and emitted.
+   */
   ignoreDebug?: boolean;
 }
 
@@ -46,7 +58,7 @@ export class PathOfExileLog extends TypedEmitter<PathOfExileLogEvents> {
       fromBeginning: false,
     });
 
-    this._tail.on("line", this.onNewLine.bind(this));
+    this._tail.on("line", this._onNewLine.bind(this));
 
     this._tail.on("error", (error) => {
       this.emit("error", new Error(`Tail has encountered an error:  ${JSON.stringify(error)}`));
@@ -71,7 +83,7 @@ export class PathOfExileLog extends TypedEmitter<PathOfExileLogEvents> {
     this._options.language = lan;
   }
 
-  private onNewLine(line: string): void {
+  private _onNewLine(line: string): void {
     try {
       if (line.includes("***** LOG FILE OPENING *****")) return;
 
@@ -85,7 +97,7 @@ export class PathOfExileLog extends TypedEmitter<PathOfExileLogEvents> {
         logMessage: line,
       };
 
-      this.visitMatcher(rootMatcher, logEvent as LogEvent);
+      this._visitMatcher(rootMatcher, logEvent as LogEvent);
     } catch (error) {
       this.emit("error", error);
     }
@@ -94,13 +106,13 @@ export class PathOfExileLog extends TypedEmitter<PathOfExileLogEvents> {
   private _optionsWithDefaults(options: LogOptions): Required<LogOptions> {
     const optionalDefaults: Required<Optional<LogOptions>> = {
       maxCachedEvents: 1000,
-      ignoreDebug: true,
+      ignoreDebug: false,
       language: Language.English,
     };
     return Object.assign(optionalDefaults, options);
   }
 
-  private cacheEvent(event: LogEvent) {
+  private _cacheEvent(event: LogEvent) {
     if (this._eventHistory.length == this.Options.maxCachedEvents) {
       this._eventHistory.splice(0);
     }
@@ -108,21 +120,18 @@ export class PathOfExileLog extends TypedEmitter<PathOfExileLogEvents> {
     this._eventHistory.push(event);
   }
 
-  private visitMatcher(matcher: Readonly<Matcher>, logEvent: LogEvent) {
+  private _visitMatcher(matcher: Readonly<Matcher>, logEvent: LogEvent) {
     try {
       const event = matcher.match(logEvent.logMessage, logEvent, this.Options.language);
       if (!event) return;
 
-      // for root matcher
-      if (event.logLevel == LogLevel.Debug && this.Options.ignoreDebug) {
-        return;
+      this._cacheEvent(event);
+      if (!(event.logLevel == LogLevel.Debug && this.Options.ignoreDebug)) {
+        this.emit(matcher.eventName, event);
       }
 
-      this.cacheEvent(event);
-      this.emit(matcher.eventName, event);
-
       for (const child of matcher.Children) {
-        this.visitMatcher(child, event);
+        this._visitMatcher(child, event);
       }
     } catch (error) {
       this.emit("error", error);

@@ -10,6 +10,7 @@ import { BaseMatcher } from "../src/matching/BaseMatcher";
 import { AreaMatcher } from "../src/matching/AreaMatcher";
 import { AreaEnteredMatcher } from "../src/matching/AreaEnteredMatcher";
 import { AwayMatcher } from "../src/matching/AwayMatcher";
+import { AreaGeneratedMatcher } from "../src/matching/AreaGeneratedMatcher";
 import { ChatJoinedMatcher } from "../src/matching/ChatJoinedMatcher";
 import { ConnectedMatcher } from "../src/matching/ConnectedMatcher";
 import { CreatedQueryMatcher } from "../src/matching/CreatedQueryMatcher";
@@ -29,6 +30,7 @@ const languages = Object.values(Language);
 
 const matchers = [
   new AreaEnteredMatcher(),
+  new AreaGeneratedMatcher(),
   new ConnectedMatcher(),
   new AreaMatcher("areaJoinedBy"),
   new AreaMatcher("areaLeftBy"),
@@ -84,16 +86,19 @@ function testMatcher(
       `No test events found for matcher ${matcher.constructor.name} (${language}) - ${eventName}`
     );
 
-    for (const testEvent of testEvents) {
+    for (let i = 0; i < testEvents.length; i++) {
+      const testEvent = testEvents[i];
+
       const logEvent = testEvent as unknown as LogEvent;
 
       const event = matcher.match(logEvent.logMessage, logEvent, language);
 
-      it(`#match()`, () => {
-        expect(event, "Failed to match!").to.be.not.undefined;
+      describe(`test #${i}`, () => {
+        it(`match()`, () => {
+          expect(event, "Failed to match!").to.be.not.undefined;
+        });
+        testObject(event as object, testEvent, ignoreKeys);
       });
-
-      testObject(event as object, testEvent, ignoreKeys);
     }
   });
 }

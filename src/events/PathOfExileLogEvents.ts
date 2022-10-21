@@ -1,5 +1,6 @@
 import { AreaEnteredEvent } from "./AreaEnteredEvent";
 import { AreaEvent } from "./AreaEvent";
+import { AreaGeneratedEvent } from "./AreaGeneratedEvent";
 import { AwayEvent } from "./AwayEvent";
 import { ChatJoinedEvent } from "./ChatJoinedEvent";
 import { ConnectedEvent } from "./ConnectedEvent";
@@ -16,81 +17,196 @@ import { TradeBulkEvent, TradeItemEvent } from "./whispers";
 import { WhisperEvent } from "./whispers/WhisperEvent";
 
 export interface PathOfExileLogEvents {
-  // emitted on error
+  /**
+   * Emitted on error
+   */
   error: (error: unknown) => void;
 
-  // emitted when a new line was parsed
+  /**
+   * Emitted when a new line was parsed
+   */
   line: (event: LogEvent) => void;
 
-  // emitted when a whisper was received
+  /**
+   * Emitted when a whisper was received
+   *
+   * @remarks `INFO` event
+   */
   whisperReceived: (event: WhisperEvent) => void;
 
-  // emitted when a whisper was sent to another player
+  /**
+   * Emitted when a whisper was sent to another player
+   *
+   * @remarks `INFO` event
+   */
   whisperSent: (event: WhisperEvent) => void;
 
-  // emitted when another player sends a trade whisper for buying an item
+  /**
+   * Emitted when another player sends a trade whisper for buying an item
+   *
+   * @remarks `INFO` event
+   */
   sellItemWhisperReceived: (event: TradeItemEvent) => void;
 
-  // emitted when the player sends a trade whisper for buying an item from another player
+  /**
+   * Emitted when the player sends a trade whisper for buying an item from another player
+   *
+   * @remarks `INFO` event
+   */
   buyItemWhisperSent: (event: TradeItemEvent) => void;
 
-  // emitted when another player sends a trade whisper for buying items in bulk
+  /**
+   * Emitted when another player sends a trade whisper for buying items in bulk
+   *
+   * @remarks `INFO` event
+   */
   sellBulkWhisperReceived: (event: TradeBulkEvent) => void;
 
-  // emitted when the player sends a trade whisper for buying an item in bulk from another player
+  /**
+   * Emitted when the player sends a trade whisper for buying an item in bulk from another player
+   *
+   * @remarks `INFO` event
+   */
   buyBulkWhisperSent: (event: TradeBulkEvent) => void;
 
-  // emitted when the player enters a new area
-  areaChanged: (event: AreaEnteredEvent) => void;
+  /**
+   * Emitted when the player enters a new area
+   *
+   * @remarks `INFO` event
+   *
+   * @remarks Only contains the area name. For detailed
+   * area information see {@link AreaGeneratedEvent} which is
+   * fired right before entering an area for the first time
+   * or use `getWorldAreaByName()` to search for the world area
+   */
+  areaEntered: (event: AreaEnteredEvent) => void;
 
-  // emitted when the current area was joined by another player
+  /**
+   * Emitted when the current area was joined by another player
+   *
+   * @remarks `INFO` event
+   */
   areaJoinedBy: (event: AreaEvent) => void;
 
-  // emitted when the current area was left by another player
+  /**
+   * Emitted when the current area was left by another player
+   *
+   * @remarks `INFO` event
+   */
   areaLeftBy: (event: AreaEvent) => void;
 
-  // emitted when a trade was accepted (npc or other player)
+  /**
+   * Emitted when a trade was accepted (npc or other player)
+   *
+   * @remarks `INFO` event
+   */
   tradeAccepted: (event: TradeEvent) => void;
 
-  // emitted when a trade was cancelled (npc or other player)
+  /**
+   * Emitted when a trade was cancelled (npc or other player)
+   *
+   * @remarks `INFO` event
+   */
   tradeCancelled: (event: TradeEvent) => void;
 
-  // emitted when the client connected to a server
+  /**
+   * Emitted when the client connected to a server
+   *
+   * @remarks `INFO` event
+   */
   connected: (event: ConnectedEvent) => void;
 
-  // emitted when the player starts being afk
+  /**
+   * Emitted when the player starts being afk
+   *
+   * @remarks `INFO` event
+   */
   afk: (event: AwayEvent) => void;
 
-  // emitted when the player is no longer afk
+  /**
+   * Emitted when the player is no longer afk
+   *
+   * @remarks `INFO` event
+   */
   afkEnd: (event: AwayEvent) => void;
 
-  // emitted when the player enters dnd mode
+  /**
+   * Emitted when the player enters dnd mode
+   *
+   * @remarks `INFO` event
+   */
   dnd: (event: AwayEvent) => void;
 
-  // emitted when the player left dnd mode
+  /**
+   * Emitted when the player left dnd mode
+   *
+   * @remarks `INFO` event
+   */
   dndEnd: (event: AwayEvent) => void;
 
-  // emitted when the player logged in
+  /**
+   * Emitted when the player logged in
+   *
+   * @remarks `INFO` event
+   */
   login: (event: LoginEvent) => void;
 
-  // emitted when the player joined a chat
+  /**
+   * Emitted when the player joined a chat
+   *
+   * @remarks `INFO` event
+   */
   chatJoined: (event: ChatJoinedEvent) => void;
 
-  // emitted when the player excuted the query `/deaths`
+  /**
+   * Emitted when the player excuted the query `/deaths`
+   *
+   * @remarks `INFO` event
+   */
   deathCount: (event: DeathsEvent) => void;
 
-  // emitted when the player excuted the query `/remaining`
+  /**
+   * Emitted when the player excuted the query `/remaining`
+   *
+   * @remarks `INFO` event
+   */
   remainingMonster: (event: RemainingMonsterEvent) => void;
 
-  // emitted when the character was slain
+  /**
+   * Emitted when the character was slain
+   *
+   * @remarks `INFO` event
+   */
   slain: (event: SlainEvent) => void;
 
-  // emitted when the player level changes
+  /**
+   * Emitted when the player level changes
+   *
+   * @remarks `INFO` event
+   */
   level: (event: LevelEvent) => void;
 
-  // emitted when the player excuted the query `/played`
+  /**
+   * Emitted when the player excuted the query `/played`
+   *
+   * @remarks `INFO` event
+   */
   playedQuery: (event: PlayedQueryEvent) => void;
 
-  // emitted when the player excuted the query `/created`
+  /**
+   * Emitted when the player excuted the query `/created`
+   *
+   * @remarks `INFO` event
+   */
   createdQuery: (event: CreatedQueryEvent) => void;
+
+  /**
+   * Emitted when a new area was generated which was entered
+   * for the first time
+   *
+   * @remarks `DEBUG` event.
+   *
+   * @remarks Does only trigger once for the same area
+   */
+  areaGenerated: (event: AreaGeneratedEvent) => void;
 }

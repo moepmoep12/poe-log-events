@@ -85,31 +85,32 @@ poeLog.on("error", (err) => {
 
 The available events are defined by the interface [PathOfExileLogEvents](src/events/PathOfExileLogEvents.ts). See below for a list.
 
-| **Name**                | **Description**                                          |
-| ----------------------- | -------------------------------------------------------- |
-| error                   | Error occured                                            |
-| line                    | New line was parsed                                      |
-| whisperReceived         | A whisper was received                                   |
-| whisperSent             | A whisper was sent                                       |
-| sellItemWhisperReceived | A trade whisper for selling an item was received         |
-| buyItemWhisperSent      | A trade whisper for buying an item was sent              |
-| sellBulkWhisperReceived | A trade whisper for selling an item in bulk was received |
-| buyBulkWhisperSent      | A trade whisper for buying an item in bulk was sent      |
-| areaChanged             | A new area was entered                                   |
-| areaJoinedBy            | The current area was joined by another player            |
-| areaLeftBy              | The current area was left by another player              |
-| tradeAccepted           | A trade was completed                                    |
-| tradeCancelled          | A trade was cancelled                                    |
-| connected               | Client connected to the PoE server                       |
-| afk                     | AFK mode started                                         |
-| afkEnd                  | AFK mode ended                                           |
-| dnd                     | DND mode started                                         |
-| dndEnd                  | DND mode ended                                           |
-| login                   | Client logged in                                         |
-| chatJoined              | A chat channel was joined                                |
-| deathCount              | /deaths command was executed                             |
-| remainingMonster        | /remaining command was executed                          |
-| slain                   | Player was slain                                         |
-| level                   | Player leveled up/down                                   |
-| playedQuery             | /played command was executed                             |
-| createdQuery            | /age command was executed                                |
+| **Name**                | **Description**                                          | **Type** |
+| ----------------------- | -------------------------------------------------------- | -------- |
+| error                   | Error occured                                            | -        |
+| line                    | New line was parsed                                      | INFO     |
+| whisperReceived         | A whisper was received                                   | INFO     |
+| whisperSent             | A whisper was sent                                       | INFO     |
+| sellItemWhisperReceived | A trade whisper for selling an item was received         | INFO     |
+| buyItemWhisperSent      | A trade whisper for buying an item was sent              | INFO     |
+| sellBulkWhisperReceived | A trade whisper for selling an item in bulk was received | INFO     |
+| buyBulkWhisperSent      | A trade whisper for buying an item in bulk was sent      | INFO     |
+| areaEntered             | A new area was entered                                   | INFO     |
+| areaJoinedBy            | The current area was joined by another player            | INFO     |
+| areaLeftBy              | The current area was left by another player              | INFO     |
+| tradeAccepted           | A trade was completed                                    | INFO     |
+| tradeCancelled          | A trade was cancelled                                    | INFO     |
+| connected               | Client connected to the PoE server                       | INFO     |
+| afk                     | AFK mode started                                         | INFO     |
+| afkEnd                  | AFK mode ended                                           | INFO     |
+| dnd                     | DND mode started                                         | INFO     |
+| dndEnd                  | DND mode ended                                           | INFO     |
+| login                   | Client logged in                                         | INFO     |
+| chatJoined              | A chat channel was joined                                | INFO     |
+| deathCount              | /deaths command was executed                             | INFO     |
+| remainingMonster        | /remaining command was executed                          | INFO     |
+| slain                   | Player was slain                                         | INFO     |
+| level                   | Player leveled up/down                                   | INFO     |
+| playedQuery             | /played command was executed                             | INFO     |
+| createdQuery            | /age command was executed                                | INFO     |
+| areaGenerated           | A new area was generated and entered by the player       | DEBUG    |
