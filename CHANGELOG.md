@@ -1,3 +1,17 @@
+# [3.0.0](https://github.com/moepmoep12/poe-log-events/compare/v2.0.0...v3.0.0) (2022-10-21)
+
+
+### Features
+
+* Add world areas ([ffca607](https://github.com/moepmoep12/poe-log-events/commit/ffca607702b80d47f3add9a5401bc19622ad76d8))
+
+
+### BREAKING CHANGES
+
+* - Renamed 'areaChanged' event to 'areaEntered' to be in line with the event object & matcher
+- Add event 'areaGenerated' & static world area resources
+- Improved comments
+
 # [2.0.0](https://github.com/moepmoep12/poe-log-events/compare/v1.0.0...v2.0.0) (2022-10-18)
 
 
