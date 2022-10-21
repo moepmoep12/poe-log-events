@@ -88,7 +88,6 @@ export class PathOfExileLog extends TypedEmitter<PathOfExileLogEvents> {
   private _onNewLine(line: string): void {
     try {
       if (line.includes("***** LOG FILE OPENING *****")) return;
-      console.log(`new line`, new Date(Date.now()));
 
       // Remove carriage return
       // NOTE: PoE run on wine, the client.txt file has Windows carriage return
