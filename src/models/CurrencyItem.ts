@@ -21,7 +21,7 @@ export interface CurrencyItem {
  *
  * @param name The localized name of the currency item
  */
-export function getCurrencyItem(name: string, language: Language): CurrencyItem | undefined {
+export function getCurrencyItemByName(name: string, language: Language): CurrencyItem | undefined {
   if (!name) return;
 
   // Handle map names in whispers.
@@ -50,5 +50,24 @@ export function getCurrencyItem(name: string, language: Language): CurrencyItem 
   }
 
   // sometimes the items are written in english although a different language is active
-  if (language != Language.English) return getCurrencyItem(name, Language.English);
+  if (language != Language.English) return getCurrencyItemByName(name, Language.English);
+}
+
+export function getCurrencyItemById(
+  id: string,
+  language: Language
+): Omit<CurrencyItem, "whisperLabel"> | undefined {
+  const data = currencyJson[language as keyof typeof currencyJson];
+
+  for (const group of data) {
+    for (const entry of group.entries) {
+      if (entry.id == id) {
+        return {
+          currencyGroup: group.id as CurrencyGroup,
+          currencyId: entry.id as CurrencyId,
+          localizedLabel: entry.text,
+        };
+      }
+    }
+  }
 }
