@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/moepmoep12/poe-log-events/compare/v3.1.2...v3.2.0) (2022-10-22)
+
+
+### Features
+
+* Add getCurrencyItemById ([07e7773](https://github.com/moepmoep12/poe-log-events/commit/07e77738e64014a4acd92673ae6820e91f218166))
+
 ## [3.1.2](https://github.com/moepmoep12/poe-log-events/compare/v3.1.1...v3.1.2) (2022-10-21)
 
 
