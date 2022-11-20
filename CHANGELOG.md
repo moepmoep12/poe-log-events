@@ -1,3 +1,27 @@
+# [4.0.0](https://github.com/moepmoep12/poe-log-events/compare/v3.2.0...v4.0.0) (2022-11-20)
+
+
+### Code Refactoring
+
+* currencies ([9c9f8cd](https://github.com/moepmoep12/poe-log-events/commit/9c9f8cdc12607d0d6604f980e8eea9b53c4fb173))
+
+
+### BREAKING CHANGES
+
+* Currencies have been reworked to better emphasize that these refer to the PoE Trade API.
+- The enum `CurrencyGroup` has been renamed to `TradeCurrencyGroup`
+- The type `CurrencyId` has been renamed to `TradeCurrencyId`
+- The interface `CurrencyItem` has been removed. It is replaced by the interfaces `TradeCurrencyItem`, `LocalizedTradeCurrencyItem`,
+ and `TradeBulkCurrencyItem` which is used by events
+- The method `getCurrencyItemByName` has been renamed to `getTradeCurrencyItemByName`
+- The method `getCurrencyItemById` has been renamed to `getTradeCurrencyItemByTradeId`
+- The exports inside TradeCurrencyIds.ts are exported together as TradeCurrencyIds.
+Thus the enums are now longer listed when importing the library with import {} from 'poe-log-events'
+- The tests have been adjusted accordingly
+- The script updateCurrencies.ts has been reworked to use ts-morph
+- The Currency.json has been updated. GGG fixed bugs with localization
+- Added & improved JSDOCs
+
 # [3.2.0](https://github.com/moepmoep12/poe-log-events/compare/v3.1.2...v3.2.0) (2022-10-22)
 
 
