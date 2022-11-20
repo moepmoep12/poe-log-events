@@ -1,14 +1,33 @@
-import { CurrencyItem } from "./CurrencyItem";
+import { TradeBulkCurrencyItem } from "./TradeCurrencyItem";
 
+/**
+ * A general request (whisper) to trade an item/currency
+ */
 export interface TradeRequest {
-  item: string | CurrencyItem;
+  /**
+   * The item to be bought/sold
+   */
+  item: string | TradeBulkCurrencyItem;
 
+  /**
+   * The league, e.g. Standard
+   */
   league: string;
 
+  /**
+   * The price of the item, if specified
+   */
   price?: number;
-  currency?: CurrencyItem;
+
+  /**
+   * The currency in which the item is priced
+   */
+  currency?: TradeBulkCurrencyItem;
 }
 
+/**
+ * A request (whisper) to trade an item
+ */
 export interface TradeItemRequest extends TradeRequest {
   item: string;
   stashTab: string;
@@ -16,7 +35,10 @@ export interface TradeItemRequest extends TradeRequest {
   top: number;
 }
 
+/**
+ * A request (whisper) to trade currency in bulk
+ */
 export interface TradeBulkRequest extends TradeRequest {
   amount: number;
-  item: CurrencyItem;
+  item: TradeBulkCurrencyItem;
 }

@@ -1,6 +1,6 @@
 import { regexPerLanguage } from "../../utils/Functions";
 
-import { CurrencyItem, getCurrencyItemByName } from "../../models/CurrencyItem";
+import { TradeBulkCurrencyItem, getTradeCurrencyItemByName } from "../../models/TradeCurrencyItem";
 import { TradeBulkEvent } from "../../events";
 import { PathOfExileLogEvents } from "../../events/PathOfExileLogEvents";
 import { WhisperEvent } from "../../events/whispers/WhisperEvent";
@@ -35,13 +35,16 @@ export class TradeBulkWhisperMatcher extends Matcher {
     if (logEvent.direction == WhisperDirection.From) this.eventName = "sellBulkWhisperReceived";
     else this.eventName = "buyBulkWhisperSent";
 
-    const currencyItem: CurrencyItem =
-      getCurrencyItemByName(groups["currency"], language) ||
-      ({ whisperLabel: groups["currency"] } as CurrencyItem);
+    let currencyItem = getTradeCurrencyItemByName(
+      groups["currency"],
+      language
+    ) as TradeBulkCurrencyItem;
+    if (!currencyItem) currencyItem = {} as TradeBulkCurrencyItem;
+    currencyItem.whisperLabel = groups["currency"];
 
-    const item: CurrencyItem =
-      getCurrencyItemByName(groups["name"], language) ||
-      ({ whisperLabel: groups["name"] } as CurrencyItem);
+    let item = getTradeCurrencyItemByName(groups["name"], language) as TradeBulkCurrencyItem;
+    if (!item) item = {} as TradeBulkCurrencyItem;
+    item.whisperLabel = groups["name"];
 
     return {
       ...logEvent,

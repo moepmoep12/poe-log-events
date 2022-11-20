@@ -16,6 +16,6 @@
     "inlineSourceMap": true,
     "strictPropertyInitialization": false
   },
-  "exclude": ["./node_modules", "./dist", "./tests", "./libconsumer"],
+  "exclude": ["./node_modules", "./dist", "./tests", "./libconsumer", "./scripts"],
   "include": ["src/**/*.ts"]
 }

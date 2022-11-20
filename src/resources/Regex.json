@@ -203,7 +203,7 @@
     },
     "ko-KR": {
       "search": "(상급\\s)?(?<name>.+?)\\(T(?<tier>\\d+)\\)",
-      "replace": "$<name> (등급 {Tier})"
+      "replace": "$<name> (등급 $<tier>)"
     }
   }
 }
