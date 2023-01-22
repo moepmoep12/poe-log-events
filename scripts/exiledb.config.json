@@ -1,0 +1,15 @@
+{
+  "tables": ["WorldAreas"],
+  "languages": [
+    "English",
+    "German",
+    "French",
+    "Korean",
+    "Portuguese",
+    "Russian",
+    "Spanish",
+    "Thai"
+  ],
+  "cachedir": "./../.cache",
+  "database": "../src/resources/exiledb.db"
+}

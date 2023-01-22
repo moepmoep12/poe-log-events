@@ -9,6 +9,7 @@ import { LogEvent } from "./events";
 import { LogLevel } from "./models";
 import { Language } from "./models/Language";
 import { Matcher } from "./matching/Matcher";
+import { ExileDB } from "./exiledb/ExileDB";
 
 export interface LogOptions {
   /**
@@ -60,10 +61,15 @@ export class PathOfExileLog extends TypedEmitter<PathOfExileLogEvents> {
       fsWatchOptions: { usePolling: true, disableGlobbing: true },
     });
 
-    this._tail.on("line", this._onNewLine.bind(this));
+    // wait for ExileDB to load its required data so it can be used synchronously in the code
+    ExileDB.Instance.Ready.then(() => {
+      this._tail.on("line", this._onNewLine.bind(this));
 
-    this._tail.on("error", (error) => {
-      this.emit("error", new Error(`Tail has encountered an error:  ${JSON.stringify(error)}`));
+      this._tail.on("error", (error) => {
+        this.emit("error", new Error(`Tail has encountered an error:  ${JSON.stringify(error)}`));
+      });
+    }).catch((err) => {
+      throw err;
     });
   }
 

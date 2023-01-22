@@ -8,7 +8,7 @@ export { LogMessage } from "./LogMessage";
 export { TradeAction } from "./TradeAction";
 export { TradeRequest, TradeBulkRequest, TradeItemRequest } from "./TradeRequest";
 export { WhisperDirection } from "./WhisperDirection";
+export { WorldArea } from "./WorldArea";
 export * from "./TradeCurrencyGroup";
 export * as TradeCurrencyIds from "./TradeCurrencyIds";
 export * from "./TradeCurrencyItem";
-export * from "./WorldArea";

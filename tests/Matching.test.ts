@@ -25,108 +25,111 @@ import { WhisperMatcher } from "../src/matching/whispers/WhisperMatcher";
 import { TradeItemWhisperMatcher } from "../src/matching/whispers/TradeItemWhisperMatcher";
 import { TradeBulkWhisperMatcher } from "../src/matching/whispers/TradeBulkWhisperMatcher";
 import { Matcher } from "../src/matching/Matcher";
+import { ExileDB } from "../src/exiledb/ExileDB";
 
-const languages = Object.values(Language);
+void ExileDB.Instance.Ready.then(() => {
+  const languages = Object.values(Language);
 
-const matchers = [
-  new AreaEnteredMatcher(),
-  new AreaGeneratedMatcher(),
-  new ConnectedMatcher(),
-  new AreaMatcher("areaJoinedBy"),
-  new AreaMatcher("areaLeftBy"),
-  new AwayMatcher("afk"),
-  new AwayMatcher("afkEnd"),
-  new AwayMatcher("dnd"),
-  new AwayMatcher("dndEnd"),
-  new ChatJoinedMatcher(),
-  new CreatedQueryMatcher(),
-  new DeathsMatcher(),
-  new LevelMatcher(),
-  new LoginMatcher(),
-  new PlayedQueryMatcher(),
-  new RemainingMonsterMatcher(),
-  new SlainMatcher(),
-  new TradeActionMatcher("tradeAccepted"),
-  new TradeActionMatcher("tradeCancelled"),
-  new WhisperMatcher([], "whisperReceived"),
-  new WhisperMatcher([], "whisperSent"),
-  new TradeItemWhisperMatcher("buyItemWhisperSent"),
-  new TradeBulkWhisperMatcher("buyBulkWhisperSent"),
-] as Array<Matcher>;
+  const matchers = [
+    new AreaEnteredMatcher(),
+    new AreaGeneratedMatcher(),
+    new ConnectedMatcher(),
+    new AreaMatcher("areaJoinedBy"),
+    new AreaMatcher("areaLeftBy"),
+    new AwayMatcher("afk"),
+    new AwayMatcher("afkEnd"),
+    new AwayMatcher("dnd"),
+    new AwayMatcher("dndEnd"),
+    new ChatJoinedMatcher(),
+    new CreatedQueryMatcher(),
+    new DeathsMatcher(),
+    new LevelMatcher(),
+    new LoginMatcher(),
+    new PlayedQueryMatcher(),
+    new RemainingMonsterMatcher(),
+    new SlainMatcher(),
+    new TradeActionMatcher("tradeAccepted"),
+    new TradeActionMatcher("tradeCancelled"),
+    new WhisperMatcher([], "whisperReceived"),
+    new WhisperMatcher([], "whisperSent"),
+    new TradeItemWhisperMatcher("buyItemWhisperSent"),
+    new TradeBulkWhisperMatcher("buyBulkWhisperSent"),
+  ] as Array<Matcher>;
 
-for (const language of languages) {
-  describe(`PoELogEvents - Matching (${language})`, function () {
-    testMatcher(new BaseMatcher(), language, ["firedAt", "rawLine"]);
+  for (const language of languages) {
+    describe(`PoELogEvents - Matching (${language})`, function () {
+      testMatcher(new BaseMatcher(), language, ["firedAt", "rawLine"]);
 
-    for (const matcher of matchers) {
-      testMatcher(matcher, language);
-    }
-  });
-}
+      for (const matcher of matchers) {
+        testMatcher(matcher, language);
+      }
+    });
+  }
 
-function testMatcher(
-  matcher: Readonly<Matcher>,
-  language: Language,
-  ignoreKeys: Array<keyof LogEvent> = [
-    "date",
-    "firedAt",
-    "logLevel",
-    "logMessage",
-    "rawLine",
-    "source",
-  ]
-) {
-  describe(`${matcher.constructor.name} - ${matcher.eventName}`, () => {
-    const data = TestLines[language as keyof typeof TestLines];
-    const eventName = matcher.eventName as keyof typeof data;
-    const testEvents = data[eventName];
+  function testMatcher(
+    matcher: Readonly<Matcher>,
+    language: Language,
+    ignoreKeys: Array<keyof LogEvent> = [
+      "date",
+      "firedAt",
+      "logLevel",
+      "logMessage",
+      "rawLine",
+      "source",
+    ]
+  ) {
+    describe(`${matcher.constructor.name} - ${matcher.eventName}`, () => {
+      const data = TestLines[language as keyof typeof TestLines];
+      const eventName = matcher.eventName as keyof typeof data;
+      const testEvents = data[eventName];
 
-    assert(
-      testEvents != undefined && testEvents.length > 0,
-      `No test events found for matcher ${matcher.constructor.name} (${language}) - ${eventName}`
-    );
+      assert(
+        testEvents != undefined && testEvents.length > 0,
+        `No test events found for matcher ${matcher.constructor.name} (${language}) - ${eventName}`
+      );
 
-    for (let i = 0; i < testEvents.length; i++) {
-      const testEvent = testEvents[i];
+      for (let i = 0; i < testEvents.length; i++) {
+        const testEvent = testEvents[i];
 
-      const logEvent = testEvent as unknown as LogEvent;
+        const logEvent = testEvent as unknown as LogEvent;
 
-      const event = matcher.match(logEvent.logMessage, logEvent, language);
+        const event = matcher.match(logEvent.logMessage, logEvent, language);
 
-      describe(`test #${i}`, () => {
-        it(`match()`, () => {
-          expect(event, "Failed to match!").to.be.not.undefined;
+        describe(`test #${i}`, () => {
+          it(`match()`, () => {
+            expect(event, "Failed to match!").to.be.not.undefined;
+          });
+          testObject(event as object, testEvent, ignoreKeys);
         });
-        testObject(event as object, testEvent, ignoreKeys);
-      });
-    }
-  });
-}
+      }
+    });
+  }
 
-function handleDate(obj: unknown): unknown {
-  if (!(typeof obj == "object")) return obj;
+  function handleDate(obj: unknown): unknown {
+    if (!(typeof obj == "object")) return obj;
 
-  if ("toISOString" in (obj as Date)) {
-    return (obj as Date).toISOString();
-  } else return obj;
-}
+    if ("toISOString" in (obj as Date)) {
+      return (obj as Date).toISOString();
+    } else return obj;
+  }
 
-function testObject(actual: object, expected: object, ignoreKeys: Array<keyof LogEvent>) {
-  for (const [key, actualValue] of Object.entries(actual || [])) {
-    if (ignoreKeys.includes(key as keyof LogEvent)) continue;
+  function testObject(actual: object, expected: object, ignoreKeys: Array<keyof LogEvent>) {
+    for (const [key, actualValue] of Object.entries(actual || [])) {
+      if (ignoreKeys.includes(key as keyof LogEvent)) continue;
 
-    const val: unknown = handleDate(actualValue);
+      const val: unknown = handleDate(actualValue);
 
-    if (typeof val == "object") {
-      describe(`${key}`, () => {
-        testObject(val as object, expected[key as keyof typeof expected], ignoreKeys);
-      });
-    } else {
-      it(`${key}`, () => {
-        expect(val, `Wrong value for key ${key}`).to.be.equal(
-          expected[key as keyof typeof expected]
-        );
-      });
+      if (typeof val == "object") {
+        describe(`${key}`, () => {
+          testObject(val as object, expected[key as keyof typeof expected], ignoreKeys);
+        });
+      } else {
+        it(`${key}`, () => {
+          expect(val, `Wrong value for key ${key}`).to.be.equal(
+            expected[key as keyof typeof expected]
+          );
+        });
+      }
     }
   }
-}
+});

@@ -1,6 +1,4 @@
-import { readFileSync } from "fs";
-import path from "path";
-
+import { ExileDB } from "../exiledb/ExileDB";
 import { Language } from "./Language";
 
 export interface WorldArea {
@@ -28,7 +26,7 @@ export interface WorldArea {
   Act: number;
 }
 
-const areaDict: Partial<Record<Language, Map<string, WorldArea>>> = {};
+// const areaDict: Partial<Record<Language, Map<string, WorldArea>>> = {};
 
 /**
  * Retrieves the world area by id
@@ -37,46 +35,26 @@ const areaDict: Partial<Record<Language, Map<string, WorldArea>>> = {};
  * @param language The language for localization
  * @returns The world area
  */
-export function getWorldAreaById(id: string, language: Language): Readonly<WorldArea> | undefined {
-  if (!id) return;
+export function getWorldAreaById(id: string, language: Language): WorldArea | undefined {
+  const exileDB = ExileDB.Instance;
+  const result = exileDB.getWorldAreaById(id, language);
+  if (!result) return;
 
-  // Lazy caching
-  if (!(language in areaDict)) cacheAreasForLanguage(language);
-
-  const areas = areaDict[language];
-  return areas?.get(id);
-}
-
-function cacheAreasForLanguage(language: Language) {
-  const map = new Map<string, WorldArea>();
-
-  const file = readFileSync(
-    path.join(__dirname, "../resources/worldAreas", `WorldAreas_${language}.json`),
-    "utf8"
-  );
-  const data = JSON.parse(file) as Array<WorldArea>;
-
-  for (const entry of data) {
-    const area: WorldArea = {
-      Id: entry.Id,
-      Name: entry.Name,
-      IsTown: entry.IsTown,
-      HasWaypoint: entry.HasWaypoint,
-      IsMapArea: entry.IsMapArea,
-      IsHideout: entry.IsHideout,
-      IsVaalArea: entry.IsVaalArea,
-      IsLabyrinthAirlock: entry.IsLabyrinthAirlock,
-      IsLabyrinthArea: entry.IsLabyrinthArea,
-      IsUniqueMapArea: entry.IsUniqueMapArea,
-      IsLabyrinthBossArea: entry.IsLabyrinthBossArea,
-      AreaLevel: entry.AreaLevel,
-      Act: entry.Act,
-    };
-    Object.freeze(area);
-    map.set(entry.Id, area);
-  }
-
-  areaDict[language] = map;
+  return {
+    Act: result.Act ?? 0,
+    AreaLevel: result.AreaLevel ?? 0,
+    HasWaypoint: parseBool(result.HasWaypoint),
+    Id: result.Id ?? "",
+    IsHideout: parseBool(result.IsHideout),
+    IsLabyrinthAirlock: parseBool(result.IsLabyrinthAirlock),
+    IsLabyrinthArea: parseBool(result.IsLabyrinthArea),
+    IsLabyrinthBossArea: parseBool(result.IsLabyrinthBossArea),
+    IsMapArea: parseBool(result.IsMapArea),
+    IsTown: parseBool(result.IsTown),
+    IsUniqueMapArea: parseBool(result.IsUniqueMapArea),
+    IsVaalArea: parseBool(result.IsVaalArea),
+    Name: result.Name ?? "",
+  };
 }
 
 /**
@@ -88,14 +66,29 @@ function cacheAreasForLanguage(language: Language) {
  * @remarks There might be more than one result because maps, for example,
  * are present in different tiers but share the same name.
  */
-export function getWorldAreaByName(name: string, language: Language): Array<Readonly<WorldArea>> {
-  if (!name) return [];
+export function getWorldAreaByName(name: string, language: Language): Array<WorldArea> {
+  const exileDB = ExileDB.Instance;
+  const queryResults = exileDB.getWorldAreaByName(name, language);
 
-  // Lazy caching
-  if (!(language in areaDict)) cacheAreasForLanguage(language);
+  return queryResults.map((result) => {
+    return {
+      Act: result.Act ?? 0,
+      AreaLevel: result.AreaLevel ?? 0,
+      HasWaypoint: parseBool(result.HasWaypoint),
+      Id: result.Id ?? "",
+      IsHideout: parseBool(result.IsHideout),
+      IsLabyrinthAirlock: parseBool(result.IsLabyrinthAirlock),
+      IsLabyrinthArea: parseBool(result.IsLabyrinthArea),
+      IsLabyrinthBossArea: parseBool(result.IsLabyrinthBossArea),
+      IsMapArea: parseBool(result.IsMapArea),
+      IsTown: parseBool(result.IsTown),
+      IsUniqueMapArea: parseBool(result.IsUniqueMapArea),
+      IsVaalArea: parseBool(result.IsVaalArea),
+      Name: result.Name ?? "",
+    };
+  });
+}
 
-  const areas = areaDict[language];
-  if (!areas) return [];
-
-  return Array.from(areas.values()).filter((area) => area.Name == name);
+function parseBool(val: number | null | string): boolean {
+  return val == "true";
 }
